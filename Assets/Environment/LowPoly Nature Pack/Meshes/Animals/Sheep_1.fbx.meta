@@ -1,0 +1,2392 @@
+fileFormatVersion: 2
+guid: 0fbac72c9c3d34420831386b443f6a13
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Armature.001
+    100004: Armature.002
+    100006: Armature.003
+    100008: Armature.004
+    100010: Armature.005
+    100012: Armature.006
+    100014: Armature.007
+    100016: Armature.008
+    100018: Armature.009
+    100020: Armature.010
+    100022: Armature.011
+    100024: Armature.012
+    100026: Bone
+    100028: Bone 1
+    100030: Bone 10
+    100032: Bone 11
+    100034: Bone 12
+    100036: Bone 2
+    100038: Bone 3
+    100040: Bone 4
+    100042: Bone 5
+    100044: Bone 6
+    100046: Bone 7
+    100048: Bone 8
+    100050: Bone 9
+    100052: Bone.001
+    100054: Bone.001 1
+    100056: Bone.001 10
+    100058: Bone.001 11
+    100060: Bone.001 12
+    100062: Bone.001 2
+    100064: Bone.001 3
+    100066: Bone.001 4
+    100068: Bone.001 5
+    100070: Bone.001 6
+    100072: Bone.001 7
+    100074: Bone.001 8
+    100076: Bone.001 9
+    100078: Bone.001_end
+    100080: Bone.002
+    100082: Bone.002 1
+    100084: Bone.002 10
+    100086: Bone.002 11
+    100088: Bone.002 12
+    100090: Bone.002 2
+    100092: Bone.002 3
+    100094: Bone.002 4
+    100096: Bone.002 5
+    100098: Bone.002 6
+    100100: Bone.002 7
+    100102: Bone.002 8
+    100104: Bone.002 9
+    100106: Bone.002_end
+    100108: Bone.003
+    100110: Bone.003 1
+    100112: Bone.003 10
+    100114: Bone.003 11
+    100116: Bone.003 12
+    100118: Bone.003 2
+    100120: Bone.003 3
+    100122: Bone.003 4
+    100124: Bone.003 5
+    100126: Bone.003 6
+    100128: Bone.003 7
+    100130: Bone.003 8
+    100132: Bone.003 9
+    100134: Bone.003_end
+    100136: Bone.003_end 1
+    100138: Bone.003_end 2
+    100140: Bone.004
+    100142: Bone.004 1
+    100144: Bone.004 10
+    100146: Bone.004 11
+    100148: Bone.004 12
+    100150: Bone.004 2
+    100152: Bone.004 3
+    100154: Bone.004 4
+    100156: Bone.004 5
+    100158: Bone.004 6
+    100160: Bone.004 7
+    100162: Bone.004 8
+    100164: Bone.004 9
+    100166: Bone.004_end
+    100168: Bone.004_end 1
+    100170: Bone.004_end 2
+    100172: Bone.005
+    100174: Bone.005 1
+    100176: Bone.005 10
+    100178: Bone.005 11
+    100180: Bone.005 12
+    100182: Bone.005 2
+    100184: Bone.005 3
+    100186: Bone.005 4
+    100188: Bone.005 5
+    100190: Bone.005 6
+    100192: Bone.005 7
+    100194: Bone.005 8
+    100196: Bone.005 9
+    100198: Bone.005_end
+    100200: Bone.005_end 1
+    100202: Bone.005_end 2
+    100204: Bone.005_end 3
+    100206: Bone.005_end 4
+    100208: Bone.005_end 5
+    100210: Bone.005_end 6
+    100212: Bone.005_end 7
+    100214: Bone.005_end 8
+    100216: Bone.005_end 9
+    100218: Bone.005_end_end
+    100220: Bone.005_end_end 1
+    100222: Bone.005_end_end 2
+    100224: Bone.006
+    100226: Bone.006 1
+    100228: Bone.006 10
+    100230: Bone.006 11
+    100232: Bone.006 12
+    100234: Bone.006 2
+    100236: Bone.006 3
+    100238: Bone.006 4
+    100240: Bone.006 5
+    100242: Bone.006 6
+    100244: Bone.006 7
+    100246: Bone.006 8
+    100248: Bone.006 9
+    100250: Bone.006_end
+    100252: Bone.006_end 1
+    100254: Bone.007
+    100256: Bone.007 1
+    100258: Bone.007 10
+    100260: Bone.007 11
+    100262: Bone.007 12
+    100264: Bone.007 2
+    100266: Bone.007 3
+    100268: Bone.007 4
+    100270: Bone.007 5
+    100272: Bone.007 6
+    100274: Bone.007 7
+    100276: Bone.007 8
+    100278: Bone.007 9
+    100280: Bone.007_end
+    100282: Bone.007_end 1
+    100284: Bone.007_end 2
+    100286: Bone.008
+    100288: Bone.008 1
+    100290: Bone.008 10
+    100292: Bone.008 11
+    100294: Bone.008 2
+    100296: Bone.008 3
+    100298: Bone.008 4
+    100300: Bone.008 5
+    100302: Bone.008 6
+    100304: Bone.008 7
+    100306: Bone.008 8
+    100308: Bone.008 9
+    100310: Bone.008_end
+    100312: Bone.008_end 1
+    100314: Bone.008_end 2
+    100316: Bone.008_end 3
+    100318: Bone.008_end 4
+    100320: Bone.008_end_end
+    100322: Bone.008_end_end 1
+    100324: Bone.009
+    100326: Bone.009 1
+    100328: Bone.009 10
+    100330: Bone.009 11
+    100332: Bone.009 2
+    100334: Bone.009 3
+    100336: Bone.009 4
+    100338: Bone.009 5
+    100340: Bone.009 6
+    100342: Bone.009 7
+    100344: Bone.009 8
+    100346: Bone.009 9
+    100348: Bone.009_end
+    100350: Bone.009_end 1
+    100352: Bone.009_end 2
+    100354: Bone.010
+    100356: Bone.010 1
+    100358: Bone.010 10
+    100360: Bone.010 11
+    100362: Bone.010 2
+    100364: Bone.010 3
+    100366: Bone.010 4
+    100368: Bone.010 5
+    100370: Bone.010 6
+    100372: Bone.010 7
+    100374: Bone.010 8
+    100376: Bone.010 9
+    100378: Bone.010_end
+    100380: Bone.010_end 1
+    100382: Bone.010_end_end
+    100384: Bone.011
+    100386: Bone.011 1
+    100388: Bone.011 10
+    100390: Bone.011 11
+    100392: Bone.011 2
+    100394: Bone.011 3
+    100396: Bone.011 4
+    100398: Bone.011 5
+    100400: Bone.011 6
+    100402: Bone.011 7
+    100404: Bone.011 8
+    100406: Bone.011 9
+    100408: Bone.011_end
+    100410: Bone.011_end 1
+    100412: Bone.011_end 2
+    100414: Bone.011_end 3
+    100416: Bone.011_end 4
+    100418: Bone.011_end 5
+    100420: Bone.011_end 6
+    100422: Bone.011_end_end
+    100424: Bone.011_end_end 1
+    100426: Bone.012
+    100428: Bone.012 1
+    100430: Bone.012 10
+    100432: Bone.012 2
+    100434: Bone.012 3
+    100436: Bone.012 4
+    100438: Bone.012 5
+    100440: Bone.012 6
+    100442: Bone.012 7
+    100444: Bone.012 8
+    100446: Bone.012 9
+    100448: Bone.012_end
+    100450: Bone.013
+    100452: Bone.013 1
+    100454: Bone.013 10
+    100456: Bone.013 2
+    100458: Bone.013 3
+    100460: Bone.013 4
+    100462: Bone.013 5
+    100464: Bone.013 6
+    100466: Bone.013 7
+    100468: Bone.013 8
+    100470: Bone.013 9
+    100472: Bone.013_end
+    100474: Bone.013_end 1
+    100476: Bone.014
+    100478: Bone.014 1
+    100480: Bone.014 10
+    100482: Bone.014 2
+    100484: Bone.014 3
+    100486: Bone.014 4
+    100488: Bone.014 5
+    100490: Bone.014 6
+    100492: Bone.014 7
+    100494: Bone.014 8
+    100496: Bone.014 9
+    100498: Bone.014_end
+    100500: Bone.014_end 1
+    100502: Bone.014_end 2
+    100504: Bone.014_end 3
+    100506: Bone.014_end_end
+    100508: Bone.015
+    100510: Bone.015 1
+    100512: Bone.015 2
+    100514: Bone.015 3
+    100516: Bone.015 4
+    100518: Bone.015 5
+    100520: Bone.015 6
+    100522: Bone.015 7
+    100524: Bone.015 8
+    100526: Bone.015 9
+    100528: Bone.015_end
+    100530: Bone.015_end 1
+    100532: Bone.015_end 2
+    100534: Bone.015_end 3
+    100536: Bone.015_end 4
+    100538: Bone.015_end_end
+    100540: Bone.015_end_end 1
+    100542: Bone.016
+    100544: Bone.016 1
+    100546: Bone.016 2
+    100548: Bone.016 3
+    100550: Bone.016 4
+    100552: Bone.016 5
+    100554: Bone.016 6
+    100556: Bone.016 7
+    100558: Bone.016 8
+    100560: Bone.016 9
+    100562: Bone.017
+    100564: Bone.017 1
+    100566: Bone.017 2
+    100568: Bone.017 3
+    100570: Bone.017 4
+    100572: Bone.017 5
+    100574: Bone.017 6
+    100576: Bone.017 7
+    100578: Bone.017 8
+    100580: Bone.017 9
+    100582: Bone.017_end
+    100584: Bone.017_end 1
+    100586: Bone.017_end 2
+    100588: Bone.017_end 3
+    100590: Bone.017_end_end
+    100592: Bone.018
+    100594: Bone.018 1
+    100596: Bone.018 2
+    100598: Bone.018 3
+    100600: Bone.018 4
+    100602: Bone.018 5
+    100604: Bone.018 6
+    100606: Bone.018 7
+    100608: Bone.018 8
+    100610: Bone.018 9
+    100612: Bone.018_end
+    100614: Bone.018_end 1
+    100616: Bone.019
+    100618: Bone.019 1
+    100620: Bone.019 2
+    100622: Bone.019 3
+    100624: Bone.019 4
+    100626: Bone.019 5
+    100628: Bone.019 6
+    100630: Bone.019 7
+    100632: Bone.019 8
+    100634: Bone.019 9
+    100636: Bone.019_end
+    100638: Bone.019_end 1
+    100640: Bone.019_end 2
+    100642: Bone.019_end 3
+    100644: Bone.019_end_end
+    100646: Bone.019_end_end 1
+    100648: Bone.020
+    100650: Bone.020 1
+    100652: Bone.020 2
+    100654: Bone.020 3
+    100656: Bone.020 4
+    100658: Bone.020 5
+    100660: Bone.020 6
+    100662: Bone.020 7
+    100664: Bone.020 8
+    100666: Bone.020_end
+    100668: Bone.020_end 1
+    100670: Bone.021
+    100672: Bone.021 1
+    100674: Bone.021 2
+    100676: Bone.021 3
+    100678: Bone.021 4
+    100680: Bone.021 5
+    100682: Bone.021 6
+    100684: Bone.021 7
+    100686: Bone.021_end
+    100688: Bone.021_end 1
+    100690: Bone.021_end 2
+    100692: Bone.021_end 3
+    100694: Bone.021_end_end
+    100696: Bone.022
+    100698: Bone.022 1
+    100700: Bone.022 2
+    100702: Bone.022 3
+    100704: Bone.022 4
+    100706: Bone.022 5
+    100708: Bone.022 6
+    100710: Bone.022_end
+    100712: Bone.022_end 1
+    100714: Bone.022_end 2
+    100716: Bone.022_end 3
+    100718: Bone.022_end_end
+    100720: Bone.023
+    100722: Bone.023 1
+    100724: Bone.023 2
+    100726: Bone.023_end
+    100728: Bone.023_end 1
+    100730: Bone.023_end 2
+    100732: Bone.023_end_end
+    100734: Bone.024
+    100736: Bone.024 1
+    100738: Bone.025
+    100740: Bone.025 1
+    100742: Bone.026
+    100744: Bone.026 1
+    100746: Bone.026_end
+    100748: Bone.026_end_end
+    100750: Bone.027
+    100752: Bone.027 1
+    100754: Bone.027_end
+    100756: Bone.027_end_end
+    100758: Bone.028
+    100760: Bone.028 1
+    100762: Bone.028_end
+    100764: Bone.028_end 1
+    100766: Bone.028_end_end
+    100768: Bone_end
+    100770: CampFire_1
+    100772: CampFire_1.001
+    100774: Circle
+    100776: Circle.001
+    100778: Circle.002
+    100780: Circle.004
+    100782: Cone
+    100784: Cone.001
+    100786: Cone.003
+    100788: Cube
+    100790: Cube.000
+    100792: Cube.001
+    100794: Cube.002
+    100796: Cube.003
+    100798: Cube.004
+    100800: Cube.005
+    100802: Cube.006
+    100804: Cube.007
+    100806: Cube.008
+    100808: Cube.009
+    100810: Cube.010
+    100812: Cube.011
+    100814: Cube.012
+    100816: Cube.013
+    100818: Cube.014
+    100820: Cube.015
+    100822: Cube.016
+    100824: Cube.017
+    100826: Cube.018
+    100828: Cube.019
+    100830: Cube.020
+    100832: Cube.021
+    100834: Cube.022
+    100836: Cube.023
+    100838: Cube.024
+    100840: Cube.025
+    100842: Cube.026
+    100844: Cube.027
+    100846: Cube.028
+    100848: Cube.029
+    100850: Cube.030
+    100852: Cube.031
+    100854: Cube.032
+    100856: Cube.033
+    100858: Cube.034
+    100860: Cube.035
+    100862: Cube.036
+    100864: Cube.037
+    100866: Cube.038
+    100868: Cube.039
+    100870: Cube.040
+    100872: Cube.041
+    100874: Cube.042
+    100876: Cube.043
+    100878: Cube.044
+    100880: Cube.045
+    100882: Cube.046
+    100884: Cube.047
+    100886: Cube.048
+    100888: Cube.049
+    100890: Cube.050
+    100892: Cube.051
+    100894: Cube.052
+    100896: Cube.053
+    100898: Cube.054
+    100900: Cube.055
+    100902: Cube.056
+    100904: Cube.057
+    100906: Cube.058
+    100908: Cube.059
+    100910: Cube.060
+    100912: Cube.061
+    100914: Cube.062
+    100916: Cube.063
+    100918: Cube.064
+    100920: Cube.065
+    100922: Cube.066
+    100924: Cube.067
+    100926: Cube.068
+    100928: Cube.092
+    100930: Cube.130
+    100932: Cube.131
+    100934: Cube.132
+    100936: Cube.133
+    100938: Cube.134
+    100940: Cube.136
+    100942: Cube.138
+    100944: Cube.139
+    100946: Cube.142
+    100948: Cube.143
+    100950: Cube.144
+    100952: Cube.145
+    100954: Cube.146
+    100956: Cube.147
+    100958: Cube.148
+    100960: Cube.149
+    100962: Cube.150
+    100964: Cube.151
+    100966: Cube.152
+    100968: Cube.153
+    100970: Cube.154
+    100972: Cube.155
+    100974: Cube.156
+    100976: Cube.157
+    100978: Cube.158
+    100980: Cube.159
+    100982: Cube.160
+    100984: Cube.161
+    100986: Cube.162
+    100988: Cube.163
+    100990: Cube.164
+    100992: Cube.165
+    100994: Cube.166
+    100996: Cube.167
+    100998: Cube.168
+    101000: Cube.169
+    101002: Cube.170
+    101004: Cube.171
+    101006: Cylinder
+    101008: Cylinder.000
+    101010: Cylinder.001
+    101012: Cylinder.002
+    101014: Cylinder.003
+    101016: Cylinder.004
+    101018: Cylinder.005
+    101020: Cylinder.006
+    101022: Cylinder.007
+    101024: Cylinder.008
+    101026: Cylinder.009
+    101028: Cylinder.010
+    101030: Cylinder.011
+    101032: Cylinder.012
+    101034: Cylinder.013
+    101036: Cylinder.014
+    101038: Cylinder.015
+    101040: Cylinder.016
+    101042: Cylinder.017
+    101044: Cylinder.018
+    101046: Cylinder.019
+    101048: Cylinder.020
+    101050: Cylinder.021
+    101052: Cylinder.022
+    101054: Cylinder.023
+    101056: Cylinder.024
+    101058: Cylinder.025
+    101060: Cylinder.040
+    101062: Cylinder.041
+    101064: Cylinder.042
+    101066: Cylinder.043
+    101068: Cylinder.044
+    101070: Cylinder.045
+    101072: Cylinder.046
+    101074: Cylinder.047
+    101076: Cylinder.048
+    101078: Icosphere
+    101080: Icosphere.001
+    101082: Icosphere.002
+    101084: Icosphere.003
+    101086: Icosphere.004
+    101088: Icosphere.005
+    101090: Icosphere.006
+    101092: Icosphere.007
+    101094: Icosphere.008
+    101096: Icosphere.009
+    101098: Icosphere.010
+    101100: Icosphere.011
+    101102: Icosphere.012
+    101104: Icosphere.013
+    101106: Icosphere.014
+    101108: Icosphere.015
+    101110: Icosphere.016
+    101112: Icosphere.017
+    101114: Icosphere.018
+    101116: Icosphere.019
+    101118: Icosphere.020
+    101120: Icosphere.021
+    101122: Icosphere.022
+    101124: Icosphere.023
+    101126: Icosphere.024
+    101128: Icosphere.025
+    101130: Icosphere.030
+    101132: Icosphere.032
+    101134: Icosphere.033
+    101136: Icosphere.034
+    101138: Icosphere.035
+    101140: Icosphere.036
+    101142: Icosphere.037
+    101144: Icosphere.038
+    101146: Icosphere.039
+    101148: Icosphere.040
+    101150: Icosphere.041
+    101152: Icosphere.042
+    101154: Icosphere.043
+    101156: Icosphere.044
+    101158: Icosphere.045
+    101160: Icosphere.046
+    101162: Icosphere.047
+    101164: Icosphere.048
+    101166: Icosphere.049
+    101168: Icosphere.050
+    101170: Icosphere.051
+    101172: Icosphere.052
+    101174: Icosphere.053
+    101176: Icosphere.054
+    101178: Icosphere.055
+    101180: Icosphere.056
+    101182: Icosphere.057
+    101184: Icosphere.058
+    101186: Icosphere.059
+    101188: Icosphere.061
+    101190: Icosphere.062
+    101192: Icosphere.063
+    101194: Icosphere.064
+    101196: Icosphere.065
+    101198: Icosphere.066
+    101200: Icosphere.067
+    101202: Icosphere.068
+    101204: Icosphere.069
+    101206: Plane
+    101208: Plane.000
+    101210: Plane.001
+    101212: Plane.002
+    101214: Plane.003
+    101216: Plane.004
+    101218: Plane.005
+    101220: Plane.006
+    101222: Plane.007
+    101224: Plane.008
+    101226: Plane.009
+    101228: Plane.010
+    101230: Plane.011
+    101232: Plane.012
+    101234: Plane.013
+    101236: Plane.014
+    101238: Plane.015
+    101240: //RootNode
+    101242: Sphere
+    101244: Sphere.003
+    101246: Wall.000
+    101248: Wall.002
+    400000: Armature
+    400002: Armature.001
+    400004: Armature.002
+    400006: Armature.003
+    400008: Armature.004
+    400010: Armature.005
+    400012: Armature.006
+    400014: Armature.007
+    400016: Armature.008
+    400018: Armature.009
+    400020: Armature.010
+    400022: Armature.011
+    400024: Armature.012
+    400026: Bone
+    400028: Bone 1
+    400030: Bone 10
+    400032: Bone 11
+    400034: Bone 12
+    400036: Bone 2
+    400038: Bone 3
+    400040: Bone 4
+    400042: Bone 5
+    400044: Bone 6
+    400046: Bone 7
+    400048: Bone 8
+    400050: Bone 9
+    400052: Bone.001
+    400054: Bone.001 1
+    400056: Bone.001 10
+    400058: Bone.001 11
+    400060: Bone.001 12
+    400062: Bone.001 2
+    400064: Bone.001 3
+    400066: Bone.001 4
+    400068: Bone.001 5
+    400070: Bone.001 6
+    400072: Bone.001 7
+    400074: Bone.001 8
+    400076: Bone.001 9
+    400078: Bone.001_end
+    400080: Bone.002
+    400082: Bone.002 1
+    400084: Bone.002 10
+    400086: Bone.002 11
+    400088: Bone.002 12
+    400090: Bone.002 2
+    400092: Bone.002 3
+    400094: Bone.002 4
+    400096: Bone.002 5
+    400098: Bone.002 6
+    400100: Bone.002 7
+    400102: Bone.002 8
+    400104: Bone.002 9
+    400106: Bone.002_end
+    400108: Bone.003
+    400110: Bone.003 1
+    400112: Bone.003 10
+    400114: Bone.003 11
+    400116: Bone.003 12
+    400118: Bone.003 2
+    400120: Bone.003 3
+    400122: Bone.003 4
+    400124: Bone.003 5
+    400126: Bone.003 6
+    400128: Bone.003 7
+    400130: Bone.003 8
+    400132: Bone.003 9
+    400134: Bone.003_end
+    400136: Bone.003_end 1
+    400138: Bone.003_end 2
+    400140: Bone.004
+    400142: Bone.004 1
+    400144: Bone.004 10
+    400146: Bone.004 11
+    400148: Bone.004 12
+    400150: Bone.004 2
+    400152: Bone.004 3
+    400154: Bone.004 4
+    400156: Bone.004 5
+    400158: Bone.004 6
+    400160: Bone.004 7
+    400162: Bone.004 8
+    400164: Bone.004 9
+    400166: Bone.004_end
+    400168: Bone.004_end 1
+    400170: Bone.004_end 2
+    400172: Bone.005
+    400174: Bone.005 1
+    400176: Bone.005 10
+    400178: Bone.005 11
+    400180: Bone.005 12
+    400182: Bone.005 2
+    400184: Bone.005 3
+    400186: Bone.005 4
+    400188: Bone.005 5
+    400190: Bone.005 6
+    400192: Bone.005 7
+    400194: Bone.005 8
+    400196: Bone.005 9
+    400198: Bone.005_end
+    400200: Bone.005_end 1
+    400202: Bone.005_end 2
+    400204: Bone.005_end 3
+    400206: Bone.005_end 4
+    400208: Bone.005_end 5
+    400210: Bone.005_end 6
+    400212: Bone.005_end 7
+    400214: Bone.005_end 8
+    400216: Bone.005_end 9
+    400218: Bone.005_end_end
+    400220: Bone.005_end_end 1
+    400222: Bone.005_end_end 2
+    400224: Bone.006
+    400226: Bone.006 1
+    400228: Bone.006 10
+    400230: Bone.006 11
+    400232: Bone.006 12
+    400234: Bone.006 2
+    400236: Bone.006 3
+    400238: Bone.006 4
+    400240: Bone.006 5
+    400242: Bone.006 6
+    400244: Bone.006 7
+    400246: Bone.006 8
+    400248: Bone.006 9
+    400250: Bone.006_end
+    400252: Bone.006_end 1
+    400254: Bone.007
+    400256: Bone.007 1
+    400258: Bone.007 10
+    400260: Bone.007 11
+    400262: Bone.007 12
+    400264: Bone.007 2
+    400266: Bone.007 3
+    400268: Bone.007 4
+    400270: Bone.007 5
+    400272: Bone.007 6
+    400274: Bone.007 7
+    400276: Bone.007 8
+    400278: Bone.007 9
+    400280: Bone.007_end
+    400282: Bone.007_end 1
+    400284: Bone.007_end 2
+    400286: Bone.008
+    400288: Bone.008 1
+    400290: Bone.008 10
+    400292: Bone.008 11
+    400294: Bone.008 2
+    400296: Bone.008 3
+    400298: Bone.008 4
+    400300: Bone.008 5
+    400302: Bone.008 6
+    400304: Bone.008 7
+    400306: Bone.008 8
+    400308: Bone.008 9
+    400310: Bone.008_end
+    400312: Bone.008_end 1
+    400314: Bone.008_end 2
+    400316: Bone.008_end 3
+    400318: Bone.008_end 4
+    400320: Bone.008_end_end
+    400322: Bone.008_end_end 1
+    400324: Bone.009
+    400326: Bone.009 1
+    400328: Bone.009 10
+    400330: Bone.009 11
+    400332: Bone.009 2
+    400334: Bone.009 3
+    400336: Bone.009 4
+    400338: Bone.009 5
+    400340: Bone.009 6
+    400342: Bone.009 7
+    400344: Bone.009 8
+    400346: Bone.009 9
+    400348: Bone.009_end
+    400350: Bone.009_end 1
+    400352: Bone.009_end 2
+    400354: Bone.010
+    400356: Bone.010 1
+    400358: Bone.010 10
+    400360: Bone.010 11
+    400362: Bone.010 2
+    400364: Bone.010 3
+    400366: Bone.010 4
+    400368: Bone.010 5
+    400370: Bone.010 6
+    400372: Bone.010 7
+    400374: Bone.010 8
+    400376: Bone.010 9
+    400378: Bone.010_end
+    400380: Bone.010_end 1
+    400382: Bone.010_end_end
+    400384: Bone.011
+    400386: Bone.011 1
+    400388: Bone.011 10
+    400390: Bone.011 11
+    400392: Bone.011 2
+    400394: Bone.011 3
+    400396: Bone.011 4
+    400398: Bone.011 5
+    400400: Bone.011 6
+    400402: Bone.011 7
+    400404: Bone.011 8
+    400406: Bone.011 9
+    400408: Bone.011_end
+    400410: Bone.011_end 1
+    400412: Bone.011_end 2
+    400414: Bone.011_end 3
+    400416: Bone.011_end 4
+    400418: Bone.011_end 5
+    400420: Bone.011_end 6
+    400422: Bone.011_end_end
+    400424: Bone.011_end_end 1
+    400426: Bone.012
+    400428: Bone.012 1
+    400430: Bone.012 10
+    400432: Bone.012 2
+    400434: Bone.012 3
+    400436: Bone.012 4
+    400438: Bone.012 5
+    400440: Bone.012 6
+    400442: Bone.012 7
+    400444: Bone.012 8
+    400446: Bone.012 9
+    400448: Bone.012_end
+    400450: Bone.013
+    400452: Bone.013 1
+    400454: Bone.013 10
+    400456: Bone.013 2
+    400458: Bone.013 3
+    400460: Bone.013 4
+    400462: Bone.013 5
+    400464: Bone.013 6
+    400466: Bone.013 7
+    400468: Bone.013 8
+    400470: Bone.013 9
+    400472: Bone.013_end
+    400474: Bone.013_end 1
+    400476: Bone.014
+    400478: Bone.014 1
+    400480: Bone.014 10
+    400482: Bone.014 2
+    400484: Bone.014 3
+    400486: Bone.014 4
+    400488: Bone.014 5
+    400490: Bone.014 6
+    400492: Bone.014 7
+    400494: Bone.014 8
+    400496: Bone.014 9
+    400498: Bone.014_end
+    400500: Bone.014_end 1
+    400502: Bone.014_end 2
+    400504: Bone.014_end 3
+    400506: Bone.014_end_end
+    400508: Bone.015
+    400510: Bone.015 1
+    400512: Bone.015 2
+    400514: Bone.015 3
+    400516: Bone.015 4
+    400518: Bone.015 5
+    400520: Bone.015 6
+    400522: Bone.015 7
+    400524: Bone.015 8
+    400526: Bone.015 9
+    400528: Bone.015_end
+    400530: Bone.015_end 1
+    400532: Bone.015_end 2
+    400534: Bone.015_end 3
+    400536: Bone.015_end 4
+    400538: Bone.015_end_end
+    400540: Bone.015_end_end 1
+    400542: Bone.016
+    400544: Bone.016 1
+    400546: Bone.016 2
+    400548: Bone.016 3
+    400550: Bone.016 4
+    400552: Bone.016 5
+    400554: Bone.016 6
+    400556: Bone.016 7
+    400558: Bone.016 8
+    400560: Bone.016 9
+    400562: Bone.017
+    400564: Bone.017 1
+    400566: Bone.017 2
+    400568: Bone.017 3
+    400570: Bone.017 4
+    400572: Bone.017 5
+    400574: Bone.017 6
+    400576: Bone.017 7
+    400578: Bone.017 8
+    400580: Bone.017 9
+    400582: Bone.017_end
+    400584: Bone.017_end 1
+    400586: Bone.017_end 2
+    400588: Bone.017_end 3
+    400590: Bone.017_end_end
+    400592: Bone.018
+    400594: Bone.018 1
+    400596: Bone.018 2
+    400598: Bone.018 3
+    400600: Bone.018 4
+    400602: Bone.018 5
+    400604: Bone.018 6
+    400606: Bone.018 7
+    400608: Bone.018 8
+    400610: Bone.018 9
+    400612: Bone.018_end
+    400614: Bone.018_end 1
+    400616: Bone.019
+    400618: Bone.019 1
+    400620: Bone.019 2
+    400622: Bone.019 3
+    400624: Bone.019 4
+    400626: Bone.019 5
+    400628: Bone.019 6
+    400630: Bone.019 7
+    400632: Bone.019 8
+    400634: Bone.019 9
+    400636: Bone.019_end
+    400638: Bone.019_end 1
+    400640: Bone.019_end 2
+    400642: Bone.019_end 3
+    400644: Bone.019_end_end
+    400646: Bone.019_end_end 1
+    400648: Bone.020
+    400650: Bone.020 1
+    400652: Bone.020 2
+    400654: Bone.020 3
+    400656: Bone.020 4
+    400658: Bone.020 5
+    400660: Bone.020 6
+    400662: Bone.020 7
+    400664: Bone.020 8
+    400666: Bone.020_end
+    400668: Bone.020_end 1
+    400670: Bone.021
+    400672: Bone.021 1
+    400674: Bone.021 2
+    400676: Bone.021 3
+    400678: Bone.021 4
+    400680: Bone.021 5
+    400682: Bone.021 6
+    400684: Bone.021 7
+    400686: Bone.021_end
+    400688: Bone.021_end 1
+    400690: Bone.021_end 2
+    400692: Bone.021_end 3
+    400694: Bone.021_end_end
+    400696: Bone.022
+    400698: Bone.022 1
+    400700: Bone.022 2
+    400702: Bone.022 3
+    400704: Bone.022 4
+    400706: Bone.022 5
+    400708: Bone.022 6
+    400710: Bone.022_end
+    400712: Bone.022_end 1
+    400714: Bone.022_end 2
+    400716: Bone.022_end 3
+    400718: Bone.022_end_end
+    400720: Bone.023
+    400722: Bone.023 1
+    400724: Bone.023 2
+    400726: Bone.023_end
+    400728: Bone.023_end 1
+    400730: Bone.023_end 2
+    400732: Bone.023_end_end
+    400734: Bone.024
+    400736: Bone.024 1
+    400738: Bone.025
+    400740: Bone.025 1
+    400742: Bone.026
+    400744: Bone.026 1
+    400746: Bone.026_end
+    400748: Bone.026_end_end
+    400750: Bone.027
+    400752: Bone.027 1
+    400754: Bone.027_end
+    400756: Bone.027_end_end
+    400758: Bone.028
+    400760: Bone.028 1
+    400762: Bone.028_end
+    400764: Bone.028_end 1
+    400766: Bone.028_end_end
+    400768: Bone_end
+    400770: CampFire_1
+    400772: CampFire_1.001
+    400774: Circle
+    400776: Circle.001
+    400778: Circle.002
+    400780: Circle.004
+    400782: Cone
+    400784: Cone.001
+    400786: Cone.003
+    400788: Cube
+    400790: Cube.000
+    400792: Cube.001
+    400794: Cube.002
+    400796: Cube.003
+    400798: Cube.004
+    400800: Cube.005
+    400802: Cube.006
+    400804: Cube.007
+    400806: Cube.008
+    400808: Cube.009
+    400810: Cube.010
+    400812: Cube.011
+    400814: Cube.012
+    400816: Cube.013
+    400818: Cube.014
+    400820: Cube.015
+    400822: Cube.016
+    400824: Cube.017
+    400826: Cube.018
+    400828: Cube.019
+    400830: Cube.020
+    400832: Cube.021
+    400834: Cube.022
+    400836: Cube.023
+    400838: Cube.024
+    400840: Cube.025
+    400842: Cube.026
+    400844: Cube.027
+    400846: Cube.028
+    400848: Cube.029
+    400850: Cube.030
+    400852: Cube.031
+    400854: Cube.032
+    400856: Cube.033
+    400858: Cube.034
+    400860: Cube.035
+    400862: Cube.036
+    400864: Cube.037
+    400866: Cube.038
+    400868: Cube.039
+    400870: Cube.040
+    400872: Cube.041
+    400874: Cube.042
+    400876: Cube.043
+    400878: Cube.044
+    400880: Cube.045
+    400882: Cube.046
+    400884: Cube.047
+    400886: Cube.048
+    400888: Cube.049
+    400890: Cube.050
+    400892: Cube.051
+    400894: Cube.052
+    400896: Cube.053
+    400898: Cube.054
+    400900: Cube.055
+    400902: Cube.056
+    400904: Cube.057
+    400906: Cube.058
+    400908: Cube.059
+    400910: Cube.060
+    400912: Cube.061
+    400914: Cube.062
+    400916: Cube.063
+    400918: Cube.064
+    400920: Cube.065
+    400922: Cube.066
+    400924: Cube.067
+    400926: Cube.068
+    400928: Cube.092
+    400930: Cube.130
+    400932: Cube.131
+    400934: Cube.132
+    400936: Cube.133
+    400938: Cube.134
+    400940: Cube.136
+    400942: Cube.138
+    400944: Cube.139
+    400946: Cube.142
+    400948: Cube.143
+    400950: Cube.144
+    400952: Cube.145
+    400954: Cube.146
+    400956: Cube.147
+    400958: Cube.148
+    400960: Cube.149
+    400962: Cube.150
+    400964: Cube.151
+    400966: Cube.152
+    400968: Cube.153
+    400970: Cube.154
+    400972: Cube.155
+    400974: Cube.156
+    400976: Cube.157
+    400978: Cube.158
+    400980: Cube.159
+    400982: Cube.160
+    400984: Cube.161
+    400986: Cube.162
+    400988: Cube.163
+    400990: Cube.164
+    400992: Cube.165
+    400994: Cube.166
+    400996: Cube.167
+    400998: Cube.168
+    401000: Cube.169
+    401002: Cube.170
+    401004: Cube.171
+    401006: Cylinder
+    401008: Cylinder.000
+    401010: Cylinder.001
+    401012: Cylinder.002
+    401014: Cylinder.003
+    401016: Cylinder.004
+    401018: Cylinder.005
+    401020: Cylinder.006
+    401022: Cylinder.007
+    401024: Cylinder.008
+    401026: Cylinder.009
+    401028: Cylinder.010
+    401030: Cylinder.011
+    401032: Cylinder.012
+    401034: Cylinder.013
+    401036: Cylinder.014
+    401038: Cylinder.015
+    401040: Cylinder.016
+    401042: Cylinder.017
+    401044: Cylinder.018
+    401046: Cylinder.019
+    401048: Cylinder.020
+    401050: Cylinder.021
+    401052: Cylinder.022
+    401054: Cylinder.023
+    401056: Cylinder.024
+    401058: Cylinder.025
+    401060: Cylinder.040
+    401062: Cylinder.041
+    401064: Cylinder.042
+    401066: Cylinder.043
+    401068: Cylinder.044
+    401070: Cylinder.045
+    401072: Cylinder.046
+    401074: Cylinder.047
+    401076: Cylinder.048
+    401078: Icosphere
+    401080: Icosphere.001
+    401082: Icosphere.002
+    401084: Icosphere.003
+    401086: Icosphere.004
+    401088: Icosphere.005
+    401090: Icosphere.006
+    401092: Icosphere.007
+    401094: Icosphere.008
+    401096: Icosphere.009
+    401098: Icosphere.010
+    401100: Icosphere.011
+    401102: Icosphere.012
+    401104: Icosphere.013
+    401106: Icosphere.014
+    401108: Icosphere.015
+    401110: Icosphere.016
+    401112: Icosphere.017
+    401114: Icosphere.018
+    401116: Icosphere.019
+    401118: Icosphere.020
+    401120: Icosphere.021
+    401122: Icosphere.022
+    401124: Icosphere.023
+    401126: Icosphere.024
+    401128: Icosphere.025
+    401130: Icosphere.030
+    401132: Icosphere.032
+    401134: Icosphere.033
+    401136: Icosphere.034
+    401138: Icosphere.035
+    401140: Icosphere.036
+    401142: Icosphere.037
+    401144: Icosphere.038
+    401146: Icosphere.039
+    401148: Icosphere.040
+    401150: Icosphere.041
+    401152: Icosphere.042
+    401154: Icosphere.043
+    401156: Icosphere.044
+    401158: Icosphere.045
+    401160: Icosphere.046
+    401162: Icosphere.047
+    401164: Icosphere.048
+    401166: Icosphere.049
+    401168: Icosphere.050
+    401170: Icosphere.051
+    401172: Icosphere.052
+    401174: Icosphere.053
+    401176: Icosphere.054
+    401178: Icosphere.055
+    401180: Icosphere.056
+    401182: Icosphere.057
+    401184: Icosphere.058
+    401186: Icosphere.059
+    401188: Icosphere.061
+    401190: Icosphere.062
+    401192: Icosphere.063
+    401194: Icosphere.064
+    401196: Icosphere.065
+    401198: Icosphere.066
+    401200: Icosphere.067
+    401202: Icosphere.068
+    401204: Icosphere.069
+    401206: Plane
+    401208: Plane.000
+    401210: Plane.001
+    401212: Plane.002
+    401214: Plane.003
+    401216: Plane.004
+    401218: Plane.005
+    401220: Plane.006
+    401222: Plane.007
+    401224: Plane.008
+    401226: Plane.009
+    401228: Plane.010
+    401230: Plane.011
+    401232: Plane.012
+    401234: Plane.013
+    401236: Plane.014
+    401238: Plane.015
+    401240: //RootNode
+    401242: Sphere
+    401244: Sphere.003
+    401246: Wall.000
+    401248: Wall.002
+    2100000: Wood_2
+    2100002: Leaves
+    2100004: Leaves.012
+    2100006: Wood.030
+    2100008: Birch.003
+    2100010: DarkSpots_Birch.003
+    2100012: Wood.031
+    2100014: Leaves.013
+    2100016: Birch.005
+    2100018: DarkSpots_Birch.005
+    2100020: Wood.033
+    2100022: Leaves.015
+    2100024: Wood.036
+    2100026: Birch.008
+    2100028: Light_wood.008
+    2100030: DarkSpots_Birch.008
+    2100032: Wood.043
+    2100034: Birch
+    2100036: DarkSpots_Birch
+    2100038: Wood.022
+    2100040: Wood
+    2100042: Wood.067
+    2100044: Snow
+    2100046: Wood.025
+    2100048: Leaves.007
+    2100050: Wood.027
+    2100052: Leaves.008
+    2100054: MamutTree
+    2100056: LightLeaves
+    2100058: Wood.038
+    2100060: Rocks.022
+    2100062: Moos
+    2100064: Rocks.018
+    2100066: Rocks.016
+    2100068: Rocks.014
+    2100070: Rocks.012
+    2100072: Rocks.019
+    2100074: Rocks.021
+    2100076: Mushroom_bottom.001
+    2100078: Cactus
+    2100080: Seegrass.001
+    2100082: Leaves.034
+    2100084: Berrys.010
+    2100086: Berrys.008
+    2100088: Leaves.032
+    2100090: Leaves.031
+    2100092: Berrys.007
+    2100094: Berrys.006
+    2100096: Leaves.030
+    2100098: Leaves.029
+    2100100: Berrys.005
+    2100102: Leaves.028
+    2100104: Berrys.004
+    2100106: Leaves.027
+    2100108: Berrys.003
+    2100110: Leaves.026
+    2100112: Berrys.002
+    2100114: Leaves.025
+    2100116: Berrys.001
+    2100118: Leaves.024
+    2100120: Berrys
+    2100122: Wood.073
+    2100124: Wood.069
+    2100126: Wood.039
+    2100128: Light_wood.001
+    2100130: Wood.014
+    2100132: Wood.013
+    2100134: Wood.012
+    2100136: Wood.009
+    2100138: Wood.045
+    2100140: Wood.044
+    2100142: Wood.042
+    2100144: Wood.011
+    2100146: Wood.006
+    2100148: Wood.015
+    2100150: Light_wood.002
+    2100152: Snow.001
+    2100154: Wood.002
+    2100156: Wood.071
+    2100158: Cow_black
+    2100160: Cow_white
+    2100162: Hornes
+    2100164: Cow_pink
+    2100166: Camel
+    2100168: Giraff
+    2100170: Giraff_tale
+    2100172: Horse
+    2100174: Hooves
+    2100176: Tale
+    2100178: Elephant
+    2100180: Ivory
+    2100182: Fish 1
+    2100184: Fish 2
+    2100186: Wool_dark
+    2100188: Wool
+    2100190: Kangaroo
+    2100192: Wolf_dark
+    2100194: Wolf_white
+    2100196: Lion
+    2100198: Lion_dark
+    2100200: Chicken
+    2100202: Chicken_red
+    2100204: Chicken_2
+    2100206: Fox
+    2100208: Fox_2
+    2100210: Bed_1
+    2100212: Bed_2
+    2100214: Ice
+    2100216: Light_wood
+    2100218: Cloth_red
+    2100220: Wood.003
+    2100222: Wood.004
+    2100224: Rocks
+    2100226: Wood.005
+    2100228: Tend_Fabric
+    2100230: Rope
+    2100232: Straw
+    2100234: Wood.007
+    2100236: Wood.008
+    2100238: Wood.010
+    2100240: Wood.016
+    2100242: Light_wood.003
+    2100244: Snow.002
+    2100246: Rocks.002
+    2100248: Wood.017
+    2100250: Light_wood.004
+    2100252: Honescombs
+    2100254: Wood.018
+    2100256: Light_wood.005
+    2100258: Rocks.001
+    2100260: Cactus.001
+    2100262: Cactus.003
+    2100264: Rocks.003
+    2100266: Snow.004
+    2100268: Rocks.004
+    2100270: Wood.019
+    2100272: Snow.005
+    2100274: Wood.020
+    2100276: Wood.021
+    2100278: Rocks.005
+    2100280: Snow.007
+    2100282: Rocks.006
+    2100284: Rocks.007
+    2100286: Rocks.008
+    2100288: Snow.008
+    2100290: Rocks.009
+    2100292: Rocks.011
+    2100294: Snow.010
+    2100296: Leaves.001
+    2100298: Leaves.002
+    2100300: Dark_Cloth
+    2100302: Wood.023
+    2100304: Stalk
+    2100306: Blossom_orange
+    2100308: Blossom_blue
+    2100310: Leaves.003
+    2100312: Blossom_yellow.001
+    2100314: Leaves.004
+    2100316: Stalk.001
+    2100318: Leaves.005
+    2100320: Blossom_red
+    2100322: Stalk.002
+    2100324: Leaves.006
+    2100326: Mushroom_bottom
+    2100328: Mushroom_top
+    2100330: Snow.009
+    2100332: Mushroom_top.001
+    2100334: Material.002
+    2100336: Material.000
+    2100338: Material.001
+    2100340: Material.003
+    2100342: Wood.024
+    2100344: Dark Leaves
+    2100346: Wood.026
+    2100348: Dark Leaves.001
+    2100350: Birch.001
+    2100352: DarkSpots_Birch.001
+    2100354: Leaves.009
+    2100356: Wood.028
+    2100358: Dark Leaves.002
+    2100360: Birch.002
+    2100362: DarkSpots_Birch.002
+    2100364: Leaves.010
+    2100366: Wood.029
+    2100368: Leaves.011
+    2100370: Wood.032
+    2100372: Leaves.014
+    2100374: Birch.004
+    2100376: DarkSpots_Birch.004
+    2100378: Light_wood.007
+    2100380: Wood.034
+    2100382: PalmWood
+    2100384: LightLeaves.001
+    2100386: Kokonut
+    2100388: PalmWood.001
+    2100390: LightLeaves.002
+    2100392: Kokonut.001
+    2100394: OldWood
+    2100396: Liane
+    2100398: OldWood.002
+    2100400: Moos.002
+    2100402: Liane.002
+    2100404: OldWood.001
+    2100406: Moos.001
+    2100408: PalmWood.002
+    2100410: LightLeaves.003
+    2100412: Kokonut.002
+    2100414: PalmWood.003
+    2100416: LightLeaves.004
+    2100418: Kokonut.003
+    2100420: Leaves.018
+    2100422: Birch.006
+    2100424: Leaves.019
+    2100426: DarkSpots_Birch.006
+    2100428: Birch.007
+    2100430: DarkSpots_Birch.007
+    2100432: Wood.035
+    2100434: Leaves.021
+    2100436: Leaves.022
+    2100438: Glass
+    2100440: TreeHouse
+    2100442: Leaves.023
+    2100444: Wood.037
+    2100446: Rocks.010
+    2100448: Snow.012
+    2100450: Rocks.013
+    2100452: Snow.013
+    2100454: Rocks.015
+    2100456: Snow.014
+    2100458: Rocks.017
+    2100460: Snow.015
+    2100462: Snow.016
+    2100464: Rocks.020
+    2100466: Snow.017
+    2100468: Snow.018
+    2100470: Rocks.023
+    2100472: Snow.019
+    2100474: Rocks.024
+    2100476: Rocks.026
+    2100478: Snow.021
+    2100480: Rocks.025
+    2100482: Rocks.027
+    2100484: Snow.020
+    2100486: Rocks.028
+    2100488: Snow.022
+    2100490: Snow.023
+    2100492: Snow.024
+    2100494: Snow.025
+    2100496: Snow.026
+    2100498: Snow.027
+    2100500: Snow.028
+    2100502: Snow.029
+    2100504: Snow.030
+    2100506: Snow.032
+    2100508: Rocks_2
+    2100510: Rocks_2.001
+    2100512: Rocks_2.002
+    2100514: Wood.040
+    2100516: Snow.031
+    2100518: Wood.041
+    2100520: Water
+    2100522: Sand
+    2100524: Rocks.029
+    2100526: Grass
+    2100528: Snow.033
+    2100530: Rocks_2.003
+    2100532: Wood.046
+    2100534: Snow.034
+    2100536: Wood.047
+    2100538: Dark Leaves.003
+    2100540: Snow.035
+    2100542: Wood.048
+    2100544: Snow.036
+    2100546: Dark Leaves.004
+    2100548: Wood.049
+    2100550: Dark Leaves.005
+    2100552: Snow.037
+    2100554: Snow.038
+    2100556: Wood.050
+    2100558: Dark Leaves.006
+    2100560: Wood.051
+    2100562: Dark Leaves.007
+    2100564: Snow.039
+    2100566: Wood.052
+    2100568: Snow.040
+    2100570: Dark Leaves.008
+    2100572: Glass.001
+    2100574: TreeHouse.001
+    2100576: Wood.053
+    2100578: Snow.041
+    2100580: Wood.054
+    2100582: Snow.042
+    2100584: Wood.055
+    2100586: Snow.043
+    2100588: Wood.057
+    2100590: Snow.045
+    2100592: Wood.059
+    2100594: Birch.009
+    2100596: DarkSpots_Birch.009
+    2100598: Snow.047
+    2100600: Wood.060
+    2100602: Birch.010
+    2100604: DarkSpots_Birch.010
+    2100606: Wood.056
+    2100608: Snow.044
+    2100610: Wood.061
+    2100612: Snow.048
+    2100614: Wood.062
+    2100616: Snow.049
+    2100618: Snow.050
+    2100620: Wood.063
+    2100622: Snow.051
+    2100624: Karrot
+    2100626: Rocks.030
+    2100628: Rocks.031
+    2100630: Snow.052
+    2100632: Wood.064
+    2100634: Snow.053
+    2100636: Tend_Fabric.001
+    2100638: Rope.001
+    2100640: Skin
+    2100642: T-Shirt
+    2100644: Shoe
+    2100646: Troussers
+    2100648: Hair
+    2100650: Straw.001
+    2100652: Snow.054
+    2100654: Grass.001
+    2100656: Rocks.032
+    2100658: Grass.002
+    2100660: Rocks.033
+    2100662: Dirt
+    2100664: Steel
+    2100666: Wood.065
+    2100668: Water.001
+    2100670: Rocks.034
+    2100672: Grass.003
+    2100674: Snow.056
+    2100676: Rocks.035
+    2100678: Grass.004
+    2100680: Light_wood.011
+    2100682: Straw.003
+    2100684: Snow.058
+    2100686: Wood.072
+    2100688: Snow.059
+    2300000: CampFire_1
+    2300002: CampFire_1.001
+    2300004: Circle
+    2300006: Circle.001
+    2300008: Circle.002
+    2300010: Circle.004
+    2300012: Cone
+    2300014: Cone.001
+    2300016: Cone.003
+    2300018: Cube
+    2300020: Cube.001
+    2300022: Cube.002
+    2300024: Cube.003
+    2300026: Cube.004
+    2300028: Cube.005
+    2300030: Cube.006
+    2300032: Cube.007
+    2300034: Cube.008
+    2300036: Cube.009
+    2300038: Cube.010
+    2300040: Cube.011
+    2300042: Cube.012
+    2300044: Cube.013
+    2300046: Cube.014
+    2300048: Cube.015
+    2300050: Cube.016
+    2300052: Cube.017
+    2300054: Cube.018
+    2300056: Cube.019
+    2300058: Cube.020
+    2300060: Cube.021
+    2300062: Cube.022
+    2300064: Cube.023
+    2300066: Cube.024
+    2300068: Cube.025
+    2300070: Cube.026
+    2300072: Cube.027
+    2300074: Cube.028
+    2300076: Cube.029
+    2300078: Cube.030
+    2300080: Cube.031
+    2300082: Cube.032
+    2300084: Cube.033
+    2300086: Cube.034
+    2300088: Cube.035
+    2300090: Cube.036
+    2300092: Cube.037
+    2300094: Cube.038
+    2300096: Cube.039
+    2300098: Cube.040
+    2300100: Cube.041
+    2300102: Cube.042
+    2300104: Cube.043
+    2300106: Cube.044
+    2300108: Cube.045
+    2300110: Cube.046
+    2300112: Cube.047
+    2300114: Cube.048
+    2300116: Cube.049
+    2300118: Cube.050
+    2300120: Cube.051
+    2300122: Cube.052
+    2300124: Cube.053
+    2300126: Cube.054
+    2300128: Cube.055
+    2300130: Cube.056
+    2300132: Cube.057
+    2300134: Cube.058
+    2300136: Cube.059
+    2300138: Cube.060
+    2300140: Cube.061
+    2300142: Cube.062
+    2300144: Cube.063
+    2300146: Cube.064
+    2300148: Cube.065
+    2300150: Cube.066
+    2300152: Cube.067
+    2300154: Cube.068
+    2300156: Cube.092
+    2300158: Cube.130
+    2300160: Cube.131
+    2300162: Cube.132
+    2300164: Cube.133
+    2300166: Cube.134
+    2300168: Cube.136
+    2300170: Cube.138
+    2300172: Cube.139
+    2300174: Cube.142
+    2300176: Cube.143
+    2300178: Cube.144
+    2300180: Cube.145
+    2300182: Cube.146
+    2300184: Cube.147
+    2300186: Cube.148
+    2300188: Cube.149
+    2300190: Cube.150
+    2300192: Cube.151
+    2300194: Cube.152
+    2300196: Cube.153
+    2300198: Cube.154
+    2300200: Cube.155
+    2300202: Cube.156
+    2300204: Cube.157
+    2300206: Cube.158
+    2300208: Cube.159
+    2300210: Cube.160
+    2300212: Cube.161
+    2300214: Cube.162
+    2300216: Cube.163
+    2300218: Cube.164
+    2300220: Cube.165
+    2300222: Cube.166
+    2300224: Cube.167
+    2300226: Cube.168
+    2300228: Cube.169
+    2300230: Cube.170
+    2300232: Cube.171
+    2300234: Cylinder
+    2300236: Cylinder.000
+    2300238: Cylinder.001
+    2300240: Cylinder.002
+    2300242: Cylinder.003
+    2300244: Cylinder.004
+    2300246: Cylinder.005
+    2300248: Cylinder.006
+    2300250: Cylinder.007
+    2300252: Cylinder.008
+    2300254: Cylinder.009
+    2300256: Cylinder.010
+    2300258: Cylinder.011
+    2300260: Cylinder.012
+    2300262: Cylinder.013
+    2300264: Cylinder.014
+    2300266: Cylinder.015
+    2300268: Cylinder.016
+    2300270: Cylinder.017
+    2300272: Cylinder.018
+    2300274: Cylinder.019
+    2300276: Cylinder.020
+    2300278: Cylinder.021
+    2300280: Cylinder.022
+    2300282: Cylinder.023
+    2300284: Cylinder.024
+    2300286: Cylinder.025
+    2300288: Cylinder.040
+    2300290: Cylinder.041
+    2300292: Cylinder.042
+    2300294: Cylinder.043
+    2300296: Cylinder.044
+    2300298: Cylinder.045
+    2300300: Cylinder.046
+    2300302: Cylinder.047
+    2300304: Cylinder.048
+    2300306: Icosphere
+    2300308: Icosphere.001
+    2300310: Icosphere.002
+    2300312: Icosphere.003
+    2300314: Icosphere.004
+    2300316: Icosphere.005
+    2300318: Icosphere.006
+    2300320: Icosphere.007
+    2300322: Icosphere.008
+    2300324: Icosphere.009
+    2300326: Icosphere.010
+    2300328: Icosphere.011
+    2300330: Icosphere.012
+    2300332: Icosphere.013
+    2300334: Icosphere.014
+    2300336: Icosphere.015
+    2300338: Icosphere.016
+    2300340: Icosphere.017
+    2300342: Icosphere.018
+    2300344: Icosphere.019
+    2300346: Icosphere.020
+    2300348: Icosphere.021
+    2300350: Icosphere.022
+    2300352: Icosphere.023
+    2300354: Icosphere.024
+    2300356: Icosphere.025
+    2300358: Icosphere.030
+    2300360: Icosphere.032
+    2300362: Icosphere.033
+    2300364: Icosphere.034
+    2300366: Icosphere.035
+    2300368: Icosphere.036
+    2300370: Icosphere.037
+    2300372: Icosphere.038
+    2300374: Icosphere.039
+    2300376: Icosphere.040
+    2300378: Icosphere.041
+    2300380: Icosphere.042
+    2300382: Icosphere.043
+    2300384: Icosphere.044
+    2300386: Icosphere.045
+    2300388: Icosphere.046
+    2300390: Icosphere.047
+    2300392: Icosphere.048
+    2300394: Icosphere.049
+    2300396: Icosphere.050
+    2300398: Icosphere.051
+    2300400: Icosphere.052
+    2300402: Icosphere.053
+    2300404: Icosphere.054
+    2300406: Icosphere.055
+    2300408: Icosphere.056
+    2300410: Icosphere.057
+    2300412: Icosphere.058
+    2300414: Icosphere.059
+    2300416: Icosphere.061
+    2300418: Icosphere.062
+    2300420: Icosphere.063
+    2300422: Icosphere.064
+    2300424: Icosphere.065
+    2300426: Icosphere.066
+    2300428: Icosphere.067
+    2300430: Icosphere.068
+    2300432: Icosphere.069
+    2300434: Plane
+    2300436: Plane.009
+    2300438: Plane.010
+    2300440: Plane.012
+    2300442: Plane.013
+    2300444: Plane.014
+    2300446: Sphere
+    2300448: Wall.000
+    2300450: Wall.002
+    2300452: //RootNode
+    3300000: CampFire_1
+    3300002: CampFire_1.001
+    3300004: Circle
+    3300006: Circle.001
+    3300008: Circle.002
+    3300010: Circle.004
+    3300012: Cone
+    3300014: Cone.001
+    3300016: Cone.003
+    3300018: Cube
+    3300020: Cube.001
+    3300022: Cube.002
+    3300024: Cube.003
+    3300026: Cube.004
+    3300028: Cube.005
+    3300030: Cube.006
+    3300032: Cube.007
+    3300034: Cube.008
+    3300036: Cube.009
+    3300038: Cube.010
+    3300040: Cube.011
+    3300042: Cube.012
+    3300044: Cube.013
+    3300046: Cube.014
+    3300048: Cube.015
+    3300050: Cube.016
+    3300052: Cube.017
+    3300054: Cube.018
+    3300056: Cube.019
+    3300058: Cube.020
+    3300060: Cube.021
+    3300062: Cube.022
+    3300064: Cube.023
+    3300066: Cube.024
+    3300068: Cube.025
+    3300070: Cube.026
+    3300072: Cube.027
+    3300074: Cube.028
+    3300076: Cube.029
+    3300078: Cube.030
+    3300080: Cube.031
+    3300082: Cube.032
+    3300084: Cube.033
+    3300086: Cube.034
+    3300088: Cube.035
+    3300090: Cube.036
+    3300092: Cube.037
+    3300094: Cube.038
+    3300096: Cube.039
+    3300098: Cube.040
+    3300100: Cube.041
+    3300102: Cube.042
+    3300104: Cube.043
+    3300106: Cube.044
+    3300108: Cube.045
+    3300110: Cube.046
+    3300112: Cube.047
+    3300114: Cube.048
+    3300116: Cube.049
+    3300118: Cube.050
+    3300120: Cube.051
+    3300122: Cube.052
+    3300124: Cube.053
+    3300126: Cube.054
+    3300128: Cube.055
+    3300130: Cube.056
+    3300132: Cube.057
+    3300134: Cube.058
+    3300136: Cube.059
+    3300138: Cube.060
+    3300140: Cube.061
+    3300142: Cube.062
+    3300144: Cube.063
+    3300146: Cube.064
+    3300148: Cube.065
+    3300150: Cube.066
+    3300152: Cube.067
+    3300154: Cube.068
+    3300156: Cube.092
+    3300158: Cube.130
+    3300160: Cube.131
+    3300162: Cube.132
+    3300164: Cube.133
+    3300166: Cube.134
+    3300168: Cube.136
+    3300170: Cube.138
+    3300172: Cube.139
+    3300174: Cube.142
+    3300176: Cube.143
+    3300178: Cube.144
+    3300180: Cube.145
+    3300182: Cube.146
+    3300184: Cube.147
+    3300186: Cube.148
+    3300188: Cube.149
+    3300190: Cube.150
+    3300192: Cube.151
+    3300194: Cube.152
+    3300196: Cube.153
+    3300198: Cube.154
+    3300200: Cube.155
+    3300202: Cube.156
+    3300204: Cube.157
+    3300206: Cube.158
+    3300208: Cube.159
+    3300210: Cube.160
+    3300212: Cube.161
+    3300214: Cube.162
+    3300216: Cube.163
+    3300218: Cube.164
+    3300220: Cube.165
+    3300222: Cube.166
+    3300224: Cube.167
+    3300226: Cube.168
+    3300228: Cube.169
+    3300230: Cube.170
+    3300232: Cube.171
+    3300234: Cylinder
+    3300236: Cylinder.000
+    3300238: Cylinder.001
+    3300240: Cylinder.002
+    3300242: Cylinder.003
+    3300244: Cylinder.004
+    3300246: Cylinder.005
+    3300248: Cylinder.006
+    3300250: Cylinder.007
+    3300252: Cylinder.008
+    3300254: Cylinder.009
+    3300256: Cylinder.010
+    3300258: Cylinder.011
+    3300260: Cylinder.012
+    3300262: Cylinder.013
+    3300264: Cylinder.014
+    3300266: Cylinder.015
+    3300268: Cylinder.016
+    3300270: Cylinder.017
+    3300272: Cylinder.018
+    3300274: Cylinder.019
+    3300276: Cylinder.020
+    3300278: Cylinder.021
+    3300280: Cylinder.022
+    3300282: Cylinder.023
+    3300284: Cylinder.024
+    3300286: Cylinder.025
+    3300288: Cylinder.040
+    3300290: Cylinder.041
+    3300292: Cylinder.042
+    3300294: Cylinder.043
+    3300296: Cylinder.044
+    3300298: Cylinder.045
+    3300300: Cylinder.046
+    3300302: Cylinder.047
+    3300304: Cylinder.048
+    3300306: Icosphere
+    3300308: Icosphere.001
+    3300310: Icosphere.002
+    3300312: Icosphere.003
+    3300314: Icosphere.004
+    3300316: Icosphere.005
+    3300318: Icosphere.006
+    3300320: Icosphere.007
+    3300322: Icosphere.008
+    3300324: Icosphere.009
+    3300326: Icosphere.010
+    3300328: Icosphere.011
+    3300330: Icosphere.012
+    3300332: Icosphere.013
+    3300334: Icosphere.014
+    3300336: Icosphere.015
+    3300338: Icosphere.016
+    3300340: Icosphere.017
+    3300342: Icosphere.018
+    3300344: Icosphere.019
+    3300346: Icosphere.020
+    3300348: Icosphere.021
+    3300350: Icosphere.022
+    3300352: Icosphere.023
+    3300354: Icosphere.024
+    3300356: Icosphere.025
+    3300358: Icosphere.030
+    3300360: Icosphere.032
+    3300362: Icosphere.033
+    3300364: Icosphere.034
+    3300366: Icosphere.035
+    3300368: Icosphere.036
+    3300370: Icosphere.037
+    3300372: Icosphere.038
+    3300374: Icosphere.039
+    3300376: Icosphere.040
+    3300378: Icosphere.041
+    3300380: Icosphere.042
+    3300382: Icosphere.043
+    3300384: Icosphere.044
+    3300386: Icosphere.045
+    3300388: Icosphere.046
+    3300390: Icosphere.047
+    3300392: Icosphere.048
+    3300394: Icosphere.049
+    3300396: Icosphere.050
+    3300398: Icosphere.051
+    3300400: Icosphere.052
+    3300402: Icosphere.053
+    3300404: Icosphere.054
+    3300406: Icosphere.055
+    3300408: Icosphere.056
+    3300410: Icosphere.057
+    3300412: Icosphere.058
+    3300414: Icosphere.059
+    3300416: Icosphere.061
+    3300418: Icosphere.062
+    3300420: Icosphere.063
+    3300422: Icosphere.064
+    3300424: Icosphere.065
+    3300426: Icosphere.066
+    3300428: Icosphere.067
+    3300430: Icosphere.068
+    3300432: Icosphere.069
+    3300434: Plane
+    3300436: Plane.009
+    3300438: Plane.010
+    3300440: Plane.012
+    3300442: Plane.013
+    3300444: Plane.014
+    3300446: Sphere
+    3300448: Wall.000
+    3300450: Wall.002
+    3300452: //RootNode
+    4300000: Cube.171
+    4300002: Icosphere.018
+    4300004: Cube.170
+    4300006: Cube.169
+    4300008: Cube.168
+    4300010: Icosphere.025
+    4300012: Icosphere.024
+    4300014: Cube.167
+    4300016: Icosphere.023
+    4300018: Cube.166
+    4300020: Cube.165
+    4300022: Cube.164
+    4300024: Cube.163
+    4300026: Cube.162
+    4300028: Cube.161
+    4300030: Cylinder.023
+    4300032: Cube.160
+    4300034: Cube.159
+    4300036: Cube.158
+    4300038: Cube.053
+    4300040: Icosphere.017
+    4300042: Icosphere.016
+    4300044: Cube.051
+    4300046: Cylinder.048
+    4300048: Icosphere.069
+    4300050: Icosphere.068
+    4300052: Icosphere.067
+    4300054: Icosphere.066
+    4300056: Icosphere.065
+    4300058: Icosphere.064
+    4300060: Cube.157
+    4300062: Icosphere.063
+    4300064: Cylinder.047
+    4300066: Cylinder.046
+    4300068: Cube.156
+    4300070: Cube.155
+    4300072: Cube.154
+    4300074: Icosphere.062
+    4300076: Icosphere.061
+    4300078: Icosphere.059
+    4300080: Icosphere.057
+    4300082: Icosphere.050
+    4300084: Icosphere.042
+    4300086: Icosphere.040
+    4300088: Icosphere.035
+    4300090: Icosphere.034
+    4300092: Icosphere.033
+    4300094: Cylinder.045
+    4300096: Cylinder.044
+    4300098: Cube.153
+    4300100: Cylinder.040
+    4300102: Cube.152
+    4300104: Cube.151
+    4300106: Cube.150
+    4300108: Cube.149
+    4300110: Cube.148
+    4300112: Cube.147
+    4300114: Cube.146
+    4300116: Cube.145
+    4300118: Cube.144
+    4300120: Cube.143
+    4300122: Cube.142
+    4300124: Cube.139
+    4300126: Cube.138
+    4300128: Cube.136
+    4300130: Cylinder.043
+    4300132: Cube.134
+    4300134: Cube.133
+    4300136: Icosphere.004
+    4300138: Cube.033
+    4300140: Plane.001
+    4300142: Plane.000
+    4300144: Plane.002
+    4300146: Cube.000
+    4300148: Plane.005
+    4300150: Plane.003
+    4300152: Plane.004
+    4300154: Plane.006
+    4300156: Plane.007
+    4300158: Plane.008
+    4300160: Plane.011
+    4300162: Plane.015
+    4300164: Cube
+    4300166: Cube.007
+    4300168: Cube.006
+    4300170: Cylinder
+    4300172: Plane.009
+    4300174: Cube.047
+    4300176: Circle.001
+    4300178: Cube.012
+    4300180: Circle
+    4300182: Cube.061
+    4300184: Cylinder.000
+    4300186: Cube.008
+    4300188: Cube.060
+    4300190: Plane.010
+    4300192: Cube.005
+    4300194: Cube.059
+    4300196: Cube.057
+    4300198: Cylinder.022
+    4300200: Cube.003
+    4300202: CampFire_1
+    4300204: Cube.004
+    4300206: CampFire_1.001
+    4300208: Cube.013
+    4300210: Cube.014
+    4300212: Cube.015
+    4300214: Icosphere.056
+    4300216: Icosphere.011
+    4300218: Cube.020
+    4300220: Cube.011
+    4300222: Cube.009
+    4300224: Icosphere.051
+    4300226: Icosphere.015
+    4300228: Icosphere.014
+    4300230: Icosphere.053
+    4300232: Icosphere.010
+    4300234: Icosphere.054
+    4300236: Cube.028
+    4300238: Cube.001
+    4300240: Cube.002
+    4300242: Cube.066
+    4300244: Cube.065
+    4300246: Cylinder.003
+    4300248: Cube.058
+    4300250: Cube.056
+    4300252: Cube.024
+    4300254: Cube.010
+    4300256: Cylinder.017
+    4300258: Cylinder.009
+    4300260: Cube.038
+    4300262: Cube.037
+    4300264: Cube.041
+    4300266: Cube.039
+    4300268: Cube.044
+    4300270: Cylinder.011
+    4300272: Cube.029
+    4300274: Cylinder.024
+    4300276: Icosphere.030
+    4300278: Cube.046
+    4300280: Cylinder.012
+    4300282: Cube.035
+    4300284: Cube.027
+    4300286: Icosphere.045
+    4300288: Cube.043
+    4300290: Cube.055
+    4300292: Icosphere.037
+    4300294: Cube.023
+    4300296: Cube.052
+    4300298: Cylinder.005
+    4300300: Cylinder.001
+    4300302: Cylinder.015
+    4300304: Cylinder.019
+    4300306: Cylinder.014
+    4300308: Cylinder.002
+    4300310: Cylinder.004
+    4300312: Cube.045
+    4300314: Cube.021
+    4300316: Cube.030
+    4300318: Cube.016
+    4300320: Cube.025
+    4300322: Wall.000
+    4300324: Cylinder.020
+    4300326: Icosphere.022
+    4300328: Icosphere.032
+    4300330: Icosphere.038
+    4300332: Icosphere.021
+    4300334: Icosphere.009
+    4300336: Icosphere.019
+    4300338: Icosphere.001
+    4300340: Icosphere.008
+    4300342: Icosphere.036
+    4300344: Icosphere.005
+    4300346: Cube.032
+    4300348: Icosphere.007
+    4300350: Icosphere.006
+    4300352: Icosphere.020
+    4300354: Icosphere.052
+    4300356: Icosphere.013
+    4300358: Icosphere.058
+    4300360: Icosphere.012
+    4300362: Icosphere.049
+    4300364: Icosphere.048
+    4300366: Icosphere.003
+    4300368: Icosphere.047
+    4300370: Icosphere.044
+    4300372: Icosphere.043
+    4300374: Icosphere.055
+    4300376: Icosphere.041
+    4300378: Icosphere.046
+    4300380: Icosphere.039
+    4300382: Cube.017
+    4300384: Cube.092
+    4300386: Cube.018
+    4300388: Cube.019
+    4300390: Cube.022
+    4300392: Cube.026
+    4300394: Cube.062
+    4300396: Cube.068
+    4300398: Cube.067
+    4300400: Cube.064
+    4300402: Cube.063
+    4300404: Plane.012
+    4300406: Plane.013
+    4300408: Plane
+    4300410: Icosphere.002
+    4300412: Cylinder.007
+    4300414: Cylinder.008
+    4300416: Cylinder.018
+    4300418: Cylinder.006
+    4300420: Cylinder.010
+    4300422: Cylinder.013
+    4300424: Wall.002
+    4300426: Cube.031
+    4300428: Icosphere
+    4300430: Cube.042
+    4300432: Cube.054
+    4300434: Cube.034
+    4300436: Cube.036
+    4300438: Cube.040
+    4300440: Cube.048
+    4300442: Cube.049
+    4300444: Plane.014
+    4300446: Cylinder.016
+    4300448: Sphere
+    4300450: Circle.002
+    4300452: Cube.050
+    4300454: Sphere.003
+    4300456: Cylinder.021
+    4300458: Cone.003
+    4300460: Cone.001
+    4300462: Cone
+    4300464: Cylinder.025
+    4300466: Cylinder.041
+    4300468: Circle.004
+    4300470: Cube.130
+    4300472: Cube.131
+    4300474: Cube.132
+    4300476: Cylinder.042
+    7400000: Armature|RestPosition
+    9500000: //RootNode
+    13700000: Cube.000
+    13700002: Plane.000
+    13700004: Plane.001
+    13700006: Plane.002
+    13700008: Plane.003
+    13700010: Plane.004
+    13700012: Plane.005
+    13700014: Plane.006
+    13700016: Plane.007
+    13700018: Plane.008
+    13700020: Plane.011
+    13700022: Plane.015
+    13700024: Sphere.003
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

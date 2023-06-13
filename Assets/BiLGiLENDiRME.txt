@@ -1,0 +1,3 @@
+Calismalarinizi asagidaki path'te bulunan sahnede yapabilirsiniz. Kolay gelsin:)
+
+Assets/Environment/SimpleLowPolyNature/Scenes/DemoDay.unity

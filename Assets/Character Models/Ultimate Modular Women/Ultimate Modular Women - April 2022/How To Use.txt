@@ -1,0 +1,22 @@
+This pack can be used in four ways, that's why you'll find four separate folders:
+
+All together:
+Here you'll find a master .blend file with all the outfits, and an FBX with everything too.
+You can either open the .blend file in Blender, press the eye icon on the right to turn on the combination of meshes
+that you want, select everything by pressing A and export that specific character (remember to check the "Selected Objects" option before exporting)
+In engines like Unity, you can import everything (Humans_All.fbx) and just delete what you don't want.
+
+Humanoid Rigs: 
+If you want to retarget animations using Unity, use the Humanod Rig versions, they don't have animations but you can retarget 
+animations like the ones from Mixamo.
+
+Individual Characters:
+In case you don't want to use the modular aspect of this pack, you can just use each individual character
+as a separate model, with its own rig and animations.
+
+Separate Skeletal Meshes and Animations:
+You can import the set of animations, and the Skeletal Meshes that compose each outfit separately,
+and assemble it in your engine, recommended for engines like Unreal Engine.
+
+Example tutorial:
+https://www.youtube.com/watch?v=OULbDgWxAgc
