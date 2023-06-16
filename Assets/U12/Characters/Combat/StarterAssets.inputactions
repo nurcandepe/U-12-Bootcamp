@@ -42,9 +42,9 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "DrawSwort",
+                    "name": "DrawSword",
                     "type": "Button",
-                    "id": "dcaffab8-5ed7-4ac5-8169-52e6d3839088",
+                    "id": "3d7afe3e-9bd4-4995-9734-6d23cd7b4887",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press",
@@ -53,7 +53,7 @@
                 {
                     "name": "Attack",
                     "type": "Button",
-                    "id": "3c4dd1d3-b39f-4d7e-bd8a-a5cec90f1141",
+                    "id": "51f76f07-ece5-4d4b-afb1-9aef99aa8d30",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press",
@@ -239,18 +239,18 @@
                 },
                 {
                     "name": "",
-                    "id": "da4cc47c-db8f-4f17-ac51-2bfdacaacd00",
+                    "id": "8422800e-5c96-4278-a9f9-b6db95be9b68",
                     "path": "<Keyboard>/1",
                     "interactions": "Tap",
                     "processors": "",
-                    "groups": "KeyboardMouse",
-                    "action": "DrawSwort",
+                    "groups": "",
+                    "action": "DrawSword",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "7b9a106b-2fec-4df5-b22e-d7169639584e",
+                    "id": "b715eb43-4783-4f02-90c2-fc283bd755ba",
                     "path": "<Mouse>/leftButton",
                     "interactions": "Tap",
                     "processors": "",
