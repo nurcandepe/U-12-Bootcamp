@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e41c8d6b802afb741b26c22425967e07
+guid: dadaa18a4e3411a48a053ee8cf1bf698
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -33,18 +33,18 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: hit2
+      name: Walking
       takeName: mixamo.com
       internalID: -203655887218126122
-      firstFrame: 3
-      lastFrame: 46
+      firstFrame: 0
+      lastFrame: 24
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 1
       loopBlendPositionY: 1
