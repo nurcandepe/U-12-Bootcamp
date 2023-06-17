@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using StarterAssets;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class HealthSystem : MonoBehaviour
     //[SerializeField] GameObject ragdoll;
 
     Animator animator;
+    private bool isDead = false;
+
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -28,8 +31,21 @@ public class HealthSystem : MonoBehaviour
 
     void Die()
     {
-       // Instantiate(ragdoll, transform.position, transform.rotation);
-        Destroy(this.gameObject);
+        // Instantiate(ragdoll, transform.position, transform.rotation);
+       // Destroy(this.gameObject);
+        isDead = true;
+        animator.SetTrigger("isDead");
+
+        ThirdPersonController tpsController = GetComponent<ThirdPersonController>();
+        if(tpsController != null)
+        {
+            tpsController.enabled = false;
+        }
+
+
+
+
+
     }
     /*public void HitVFX(Vector3 hitPosition)
     {
