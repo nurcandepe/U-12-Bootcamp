@@ -762,6 +762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   hitVFX: {fileID: 1743637094903878, guid: 021a2f7a2c5bc4449b4c64a66a050e8c, type: 3}
+  ragdoll: {fileID: 7438963454953310112, guid: 48f926035b87bbf40b4bbd25e7183a90, type: 3}
   attackCD: 1
   attackRange: 1.51
   aggroRange: 8

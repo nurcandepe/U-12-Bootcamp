@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] float health = 3f;
     [SerializeField] GameObject hitVFX;
+    [SerializeField] GameObject ragdoll;
 
     [Header("Combat")]
     [SerializeField] float attackCD = 3f;
@@ -67,6 +68,7 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        Instantiate(ragdoll, transform.position,transform.rotation);
         Destroy(this.gameObject);
     }
 
