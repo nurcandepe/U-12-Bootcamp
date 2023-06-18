@@ -16,7 +16,8 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 1
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Copied Avatar Rig Configuration mis-match. Transform hierarchy
+      does not match:\n\tTransform 'Hips' is not an ancestor of 'UpperLeg.L'\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 

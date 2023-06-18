@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+//using UnityEngine.InputSystem;
 #if ENABLE_INPUT_SYSTEM && STARTER_ASSETS_PACKAGES_CHECKED
 using UnityEngine.InputSystem;
 #endif
@@ -102,8 +103,9 @@ namespace StarterAssets
         private PlayerInput _playerInput;
 #endif
         private Animator _animator;
-        private CharacterController _controller;
-        private StarterAssetsInputs _input;
+        public CharacterController _controller;
+        public StarterAssetsInputs _input;
+        //public PlayerInput playerInput;
         private GameObject _mainCamera;
 
         private const float _threshold = 0.01f;
@@ -134,6 +136,7 @@ namespace StarterAssets
 
         private void Start()
         {
+
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
             
             _hasAnimator = TryGetComponent(out _animator);
@@ -159,6 +162,24 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
+
+            /*if (isSwordDrawed = false)
+            {
+                if (Input.GetKeyDown(KeyCode.Mouse0))
+                {
+                    _animator.SetTrigger("DrawSword");
+                    isSwordDrawed = true;
+                }
+            }*/
+
+           /* if (isSwordDrawed = true)
+            {
+                if (Input.GetKeyDown(KeyCode.Mouse0))
+                {
+                    _animator.SetTrigger("SheathSword");
+                    isSwordDrawed = false;
+                }
+            }*/
         }
 
         private void LateUpdate()
