@@ -5,6 +5,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     [SerializeField] float health = 3f;
+    [SerializeField] GameObject hitVFX;
 
     [Header("Combat")]
     [SerializeField] float attackCD = 3f;
@@ -56,8 +57,9 @@ public class Enemy : MonoBehaviour
     {
         health -= damageAmount;
         animator.SetTrigger("damage");
+        CameraShake.Instance.ShakeCamera(1f, 0.2f); //CAMERA SHAKE
 
-        if(health <= 0)
+        if (health <= 0)
         {
             Die();
         }
@@ -86,5 +88,16 @@ public class Enemy : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, aggroRange);
     }
 
+    /*public void isKilled()
+    {
+        print("Killed");
+        animator.SetBool("isKilled", true);
+    }*/
+
+    public void HitVFX(Vector3 hitPosition)
+    {
+        GameObject hit = Instantiate(hitVFX, hitPosition, Quaternion.identity);
+        Destroy(hit, 3f);
+    }
 
 }

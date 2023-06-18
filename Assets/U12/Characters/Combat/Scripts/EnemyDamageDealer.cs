@@ -29,7 +29,7 @@ public class EnemyDamageDealer : MonoBehaviour
                 {
                     // //debug // print("enemy has dealt damage");
                     health.TakeDamage(weaponDamage);
-                    //health.HitVFX(hit.point);
+                    health.HitVFX(hit.point);
                     hasDealtDamage = true;
                 }
             }

@@ -28,6 +28,7 @@ public class DamageDealer : MonoBehaviour
                 {
                     //print("damage");
                     enemy.TakeDamage(weaponDamage);
+                    enemy.HitVFX(hit.point);
                     hasDealtDamage.Add(hit.transform.gameObject);
                 }
             }

@@ -6,11 +6,12 @@ using StarterAssets;
 public class HealthSystem : MonoBehaviour
 {
     [SerializeField] float health = 100;
-    //[SerializeField] GameObject hitVFX;
+    [SerializeField] GameObject hitVFX;
     //[SerializeField] GameObject ragdoll;
 
     Animator animator;
     private bool isDead = false;
+    public Enemy enemy;
 
     void Start()
     {
@@ -21,7 +22,7 @@ public class HealthSystem : MonoBehaviour
     {
         health -= damageAmount;
         animator.SetTrigger("damage");
-        //CameraShake.Instance.ShakeCamera(2f, 0.2f);
+        CameraShake.Instance.ShakeCamera(1f, 0.2f); //CAMERA SHAKE
 
         if (health <= 0)
         {
@@ -35,6 +36,7 @@ public class HealthSystem : MonoBehaviour
        // Destroy(this.gameObject);
         isDead = true;
         animator.SetTrigger("isDead");
+        health = 100;
 
         ThirdPersonController tpsController = GetComponent<ThirdPersonController>();
         if(tpsController != null)
@@ -42,15 +44,19 @@ public class HealthSystem : MonoBehaviour
             tpsController.enabled = false;
         }
 
-
-
+ 
+        /*if(enemy != null)
+        {
+            enemy.enabled = false;
+        }*/
+        //animator.SetBool("isKilled", true);
 
 
     }
-    /*public void HitVFX(Vector3 hitPosition)
+    public void HitVFX(Vector3 hitPosition)
     {
         GameObject hit = Instantiate(hitVFX, hitPosition, Quaternion.identity);
         Destroy(hit, 3f);
 
-    }*/
+    }   
 }
