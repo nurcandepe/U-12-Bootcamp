@@ -111,10 +111,14 @@ public class CombatScript : MonoBehaviour
     public Animator _animator;
     private bool isSwordDrawed;
 
+    public bool isBlocking;
+
     void Start()
     {
         _animator = GetComponent<Animator>();
         isSwordDrawed = false;
+
+        isBlocking = false;
     }
 
     void Update()
@@ -142,6 +146,20 @@ public class CombatScript : MonoBehaviour
             {
                 _animator.SetTrigger("Attack");
             }
+            }
+
+            if (Input.GetMouseButtonDown(1))
+            {
+            if (isSwordDrawed == true)
+            {
+                _animator.SetBool("isBlocking", true);
+                isBlocking = true;
+            }
+            }
+            else if (Input.GetMouseButtonUp(1))
+            {
+                _animator.SetBool("isBlocking", false);
+                isBlocking = false;
             }
     }
 }

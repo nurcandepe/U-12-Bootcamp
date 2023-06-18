@@ -32,24 +32,28 @@ public class Enemy : MonoBehaviour
 
         /*if (player == null)
             return;*/
+        HealthSystem healthSystem = FindObjectOfType<HealthSystem>();
 
-        if(timePassed >= attackCD)
+        if (healthSystem != null && healthSystem.isDead != true)
         {
-            if(Vector3.Distance(player.transform.position, transform.position) <= attackRange)
+            if (timePassed >= attackCD)
             {
-                animator.SetTrigger("attack");
-                timePassed = 0;
+                if (Vector3.Distance(player.transform.position, transform.position) <= attackRange)
+                {
+                    animator.SetTrigger("attack");
+                    timePassed = 0;
+                }
             }
-        }
-        timePassed += Time.deltaTime;
+            timePassed += Time.deltaTime;
 
-        if(newDestinationCD <= 0 && Vector3.Distance(player.transform.position, transform.position) <= aggroRange)
-        {
-            newDestinationCD = 0.5f;
-            agent.SetDestination(player.transform.position);
+            if (newDestinationCD <= 0 && Vector3.Distance(player.transform.position, transform.position) <= aggroRange)
+            {
+                newDestinationCD = 0.5f;
+                agent.SetDestination(player.transform.position);
+            }
+            newDestinationCD -= Time.deltaTime;
+            transform.LookAt(player.transform);
         }
-        newDestinationCD -= Time.deltaTime; 
-        transform.LookAt(player.transform);
     }
 
 

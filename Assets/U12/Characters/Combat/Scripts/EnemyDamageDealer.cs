@@ -18,19 +18,24 @@ public class EnemyDamageDealer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        CombatScript combatScript = FindObjectOfType<CombatScript>();
+
         if (canDealDamage && !hasDealtDamage)
         {
-            RaycastHit hit;
-
-            int layerMask = 1 << 8;
-            if (Physics.Raycast(transform.position, -transform.up, out hit, weaponLength, layerMask))
+            if(combatScript.isBlocking != true)
             {
-                if (hit.transform.TryGetComponent(out HealthSystem health))
+                RaycastHit hit;
+
+                int layerMask = 1 << 8;
+                if (Physics.Raycast(transform.position, -transform.up, out hit, weaponLength, layerMask))
                 {
-                    // //debug // print("enemy has dealt damage");
-                    health.TakeDamage(weaponDamage);
-                    health.HitVFX(hit.point);
-                    hasDealtDamage = true;
+                    if (hit.transform.TryGetComponent(out HealthSystem health))
+                    {
+                        // //debug // print("enemy has dealt damage");
+                        health.TakeDamage(weaponDamage);
+                        health.HitVFX(hit.point);
+                        hasDealtDamage = true;
+                    }
                 }
             }
         }

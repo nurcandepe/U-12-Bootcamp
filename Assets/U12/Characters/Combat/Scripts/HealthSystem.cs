@@ -10,7 +10,7 @@ public class HealthSystem : MonoBehaviour
     //[SerializeField] GameObject ragdoll;
 
     Animator animator;
-    private bool isDead = false;
+    public bool isDead = false;
     public Enemy enemy;
 
     void Start()
