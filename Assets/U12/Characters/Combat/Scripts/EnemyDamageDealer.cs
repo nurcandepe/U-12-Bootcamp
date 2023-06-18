@@ -38,6 +38,10 @@ public class EnemyDamageDealer : MonoBehaviour
                     }
                 }
             }
+            else if(combatScript.isBlocking == true)
+            {
+                combatScript.BlockTrigger();
+            }
         }
     }
     public void StartDealDamage()

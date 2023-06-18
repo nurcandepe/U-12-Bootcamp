@@ -162,4 +162,13 @@ public class CombatScript : MonoBehaviour
                 isBlocking = false;
             }
     }
+    public void BlockTrigger()
+    {
+        _animator.SetBool("BlockImpact", true);
+    }
+
+    public void BlockTriggerOFF()
+    {
+        _animator.SetBool("BlockImpact", false);
+    }
 }
