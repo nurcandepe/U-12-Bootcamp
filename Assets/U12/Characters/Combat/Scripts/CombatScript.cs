@@ -110,6 +110,7 @@ public class CombatScript : MonoBehaviour
 
     public Animator _animator;
     private bool isSwordDrawed;
+    private bool isBowDrawed;
 
     public bool isBlocking;
 
@@ -117,6 +118,7 @@ public class CombatScript : MonoBehaviour
     {
         _animator = GetComponent<Animator>();
         isSwordDrawed = false;
+        isBowDrawed = false;
 
         isBlocking = false;
     }
@@ -126,21 +128,92 @@ public class CombatScript : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Alpha1))
             {
-            if (isSwordDrawed == false)
+            if (isBowDrawed == false)
             {
-                _animator.SetTrigger("DrawSword");
-                isSwordDrawed = true;
-            }
+                if (isSwordDrawed == false)
+                {
+                    _animator.SetTrigger("DrawSword");
+                    isSwordDrawed = true;
+                    _animator.SetBool("SwordInHand", true);
+                    
+                }
 
-            else if (isSwordDrawed == true)
+                else if (isSwordDrawed == true)
+                {
+                    _animator.SetTrigger("SheathSword");
+                    isSwordDrawed = false;
+                    _animator.SetBool("SwordInHand", false);
+                   
+                }
+            }
+            else if (isBowDrawed == true)
             {
-                _animator.SetTrigger("SheathSword");
-                isSwordDrawed = false;
+                if (isSwordDrawed == false)
+                {
+                    //_animator.SetBool("Changing",true);
+                    _animator.SetBool("BowInHand", false);
+                    _animator.SetBool("SwordInHand", true);
+                    _animator.SetTrigger("SheathBow");
+                    _animator.SetTrigger("DrawSword");
+                    isBowDrawed = false;
+                    isSwordDrawed = true;
+
+                    
+
+                }
+
+               /* else if (isSwordDrawed == true)
+                {
+                    _animator.SetTrigger("SheathSword");
+                    isSwordDrawed = false;
+                }*/
             }
 
+        }
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+        if(isSwordDrawed == false)
+            {
+                if (isBowDrawed == false)
+                {
+                    _animator.SetTrigger("DrawBow");
+                    isBowDrawed = true;
+                    _animator.SetBool("BowInHand", true);
+                }
+
+                else if (isBowDrawed == true)
+                {
+                    _animator.SetTrigger("SheathBow");
+                    isBowDrawed = false;
+                    _animator.SetBool("BowInHand", false);
+                }
+            }
+        else if(isSwordDrawed == true)
+            {
+                if (isBowDrawed == false)
+                {
+                    //_animator.SetBool("Changing",true);
+                    _animator.SetBool("SwordInHand", false);
+                    _animator.SetBool("BowInHand", true);
+                    _animator.SetTrigger("SheathSword");
+                    _animator.SetTrigger("DrawBow");
+                    isSwordDrawed = false;
+                    isBowDrawed = true;
+                   
+                    
+                }
+
+               /* else if (isBowDrawed == true)
+                {
+                    _animator.SetTrigger("SheathBow");
+                   isBowDrawed = false;
+                }*/
             }
 
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
             {
             if (isSwordDrawed == true)
             {

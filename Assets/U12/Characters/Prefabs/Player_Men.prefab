@@ -5376,6 +5376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 0}
+  isBlocking: 0
 --- !u!114 &1653456248596523775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5391,6 +5392,9 @@ MonoBehaviour:
   weaponHolder: {fileID: 7208080577095850868}
   weapon: {fileID: 3113527866483889337, guid: 0839cd75d4ac6664681460fd2fbe6f06, type: 3}
   weaponSheath: {fileID: 7208080576110805816}
+  bowHolder: {fileID: 0}
+  bow: {fileID: 0}
+  bowSheath: {fileID: 0}
 --- !u!114 &1653456248596523774
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5405,6 +5409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   hitVFX: {fileID: 1743637094903878, guid: 021a2f7a2c5bc4449b4c64a66a050e8c, type: 3}
+  isDead: 0
   enemy: {fileID: 0}
 --- !u!1 &8871561948775848670
 GameObject:
