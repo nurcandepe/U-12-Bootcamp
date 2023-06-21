@@ -5375,7 +5375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51559a0dcafbf064aaa6c38608628afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 0}
+  _animator: {fileID: 3818285869601425849}
   isBlocking: 0
 --- !u!114 &1653456248596523775
 MonoBehaviour:
@@ -5392,9 +5392,6 @@ MonoBehaviour:
   weaponHolder: {fileID: 7208080577095850868}
   weapon: {fileID: 3113527866483889337, guid: 0839cd75d4ac6664681460fd2fbe6f06, type: 3}
   weaponSheath: {fileID: 7208080576110805816}
-  bowHolder: {fileID: 0}
-  bow: {fileID: 0}
-  bowSheath: {fileID: 0}
 --- !u!114 &1653456248596523774
 MonoBehaviour:
   m_ObjectHideFlags: 0
