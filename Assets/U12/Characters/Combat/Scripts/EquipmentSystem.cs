@@ -8,12 +8,35 @@ public class EquipmentSystem : MonoBehaviour
     [SerializeField] GameObject weapon;
     [SerializeField] GameObject weaponSheath;
 
+    [SerializeField] GameObject shieldHolder;
+    [SerializeField] GameObject shield;
+    [SerializeField] GameObject shieldSheath;
+
     GameObject currentWeaponInSheath;
     GameObject currentWeaponInHand;
+
+    GameObject shieldInSheath;
+    GameObject shieldInHand;
+
+    public Animator _animator;
 
     void Start()
     {
         currentWeaponInSheath = Instantiate(weapon, weaponSheath.transform);
+        shieldInSheath = Instantiate(shield, shieldSheath.transform);
+        _animator = GetComponent<Animator>();
+    }
+
+    public void DrawShield()
+    {
+        shieldInHand = Instantiate(shield, shieldHolder.transform);
+        Destroy(shieldInSheath);
+    }
+
+    public void SheathShield()
+    {
+        shieldInSheath = Instantiate(shield, shieldSheath.transform);
+        Destroy(shieldInHand);
     }
 
     public void DrawWeapon()
@@ -53,5 +76,10 @@ public class EquipmentSystem : MonoBehaviour
         {
             combatScript.enabled = true;
         }
+    }
+
+    public void ShieldImpactOff()
+    {
+        _animator.SetBool("BlockImpact", false);
     }
 }

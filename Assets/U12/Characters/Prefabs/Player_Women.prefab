@@ -1130,7 +1130,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1017401221028374983}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.20000029, y: 1.375, z: -4}
+  m_LocalPosition: {x: 0.19999981, y: 1.375, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2650,6 +2650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 0}
+  isBlocking: 0
 --- !u!114 &4832242780541237170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2679,6 +2680,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   hitVFX: {fileID: 1743637094903878, guid: 021a2f7a2c5bc4449b4c64a66a050e8c, type: 3}
+  isDead: 0
   enemy: {fileID: 0}
 --- !u!1 &3585768167624501141
 GameObject:
@@ -4835,7 +4837,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7963283875331515992}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.20000029, y: 1.375, z: -4}
+  m_LocalPosition: {x: 0.19999981, y: 1.375, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
