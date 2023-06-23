@@ -120,14 +120,7 @@ public class EquipmentSystem : MonoBehaviour
         }
 
         Intercation interaction = FindObjectOfType<Intercation>();
-        interaction.isHitting = false;
+        interaction.DestroyTree();
     }
-
-   /* public void DestroyTree()
-    {
-
-    }*/
-
-
 
 }
