@@ -82,4 +82,9 @@ public class EquipmentSystem : MonoBehaviour
     {
         _animator.SetBool("BlockImpact", false);
     }
+
+    public void BlockingOff()
+    {
+        _animator.SetBool("isBlocking", false);
+    }
 }
