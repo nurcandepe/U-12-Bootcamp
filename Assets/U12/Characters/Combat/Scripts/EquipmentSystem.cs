@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using StarterAssets;
 
 public class EquipmentSystem : MonoBehaviour
 {
@@ -87,4 +88,46 @@ public class EquipmentSystem : MonoBehaviour
     {
         _animator.SetBool("isBlocking", false);
     }
+
+
+    public void InteractionStart()
+    {
+        ThirdPersonController tpsController = GetComponent<ThirdPersonController>();
+        if (tpsController != null)
+        {
+            tpsController.enabled = false;
+        }
+
+        CombatScript combatScript = GetComponent<CombatScript>();
+        if (combatScript != null)
+        {
+            combatScript.enabled = false;
+        }
+    }
+
+    public void InteractionEnd()
+    {
+        ThirdPersonController tpsController = GetComponent<ThirdPersonController>();
+        if (tpsController != null)
+        {
+            tpsController.enabled = true;
+        }
+
+        CombatScript combatScript = GetComponent<CombatScript>();
+        if (combatScript != null)
+        {
+            combatScript.enabled = true;
+        }
+
+        Intercation interaction = FindObjectOfType<Intercation>();
+        interaction.isHitting = false;
+    }
+
+   /* public void DestroyTree()
+    {
+
+    }*/
+
+
+
 }
