@@ -2144,6 +2144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3576b8f993d4664883996e5ab2285e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryPanel: {fileID: 546687692}
   uiList:
   - {fileID: 1898334894}
   - {fileID: 1847608911}

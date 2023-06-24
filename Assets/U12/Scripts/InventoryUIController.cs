@@ -4,14 +4,24 @@ using UnityEngine;
 
 public class InventoryUIController : MonoBehaviour
 {
-    public List<SlotUI> uiList = new List<SlotUI>();
     Inventory userInventory;
     MouseController mouseController;
+
+    public GameObject inventoryPanel;
+    //private bool isPanelOpen = false;
+
+
+    //Paneldeki Tüm Slotlarý Gösteriyoruz
+    public List<SlotUI> uiList = new List<SlotUI>();
 
     private void Start()
     {
         userInventory = gameObject.GetComponent<Inventory>();
         mouseController = gameObject.GetComponent<MouseController>();
+        
+        //Oyun baþýnda envanteri ve fare imlecini kapatýyoruz.
+        inventoryPanel.SetActive(false);
+        mouseController.MouseOff();
         UpdateUI();
     }
 
@@ -19,7 +29,7 @@ public class InventoryUIController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
-            mouseController.MouseAutoReverse();
+            PanelAutoReverse();
         }
     }
 
@@ -45,6 +55,20 @@ public class InventoryUIController : MonoBehaviour
                 uiList[i].itemImage.sprite = null;
                 uiList[i].itemCountText.gameObject.SetActive(false);
             }
+        }
+    }
+
+    private void PanelAutoReverse()
+    {
+        if (inventoryPanel.activeSelf)
+        {
+            inventoryPanel.SetActive(false);
+            mouseController.MouseOff();
+        }
+        else
+        {
+            inventoryPanel.SetActive(true);
+            mouseController.MouseOn();
         }
     }
 }
