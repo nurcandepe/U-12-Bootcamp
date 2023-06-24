@@ -9,6 +9,8 @@ public class Intercation : MonoBehaviour
     private Animator _animator;
     private bool isHitting = false;
 
+    private GameObject triggeredObject;
+
     [SerializeField] GameObject axeHolder;
     [SerializeField] GameObject axe;
     [SerializeField] GameObject pickaxe;
@@ -47,7 +49,7 @@ public class Intercation : MonoBehaviour
                 {
                     if (Input.GetKeyDown(KeyCode.E))
                     {
-                        _animator.SetBool("hitTree", true);
+                        _animator.SetBool("hitRock", true); 
                         isHitting = true;
                         axeInHand = Instantiate(pickaxe, axeHolder.transform);
                     }
@@ -61,11 +63,13 @@ public class Intercation : MonoBehaviour
         {
            // Debug.Log("Agac ");
             canHit = true;
+            triggeredObject = other.gameObject;
         }
         else if (other.gameObject.CompareTag("Rock"))
         {
            // Debug.Log("Rock");
             canBreak = true;
+            triggeredObject = other.gameObject;
         }
     }
     private void OnTriggerExit(Collider other)
@@ -88,6 +92,11 @@ public class Intercation : MonoBehaviour
     {
         canHit = false;
         _animator.SetBool("hitTree", false);
+        _animator.SetBool("hitRock", false); 
         Destroy(axeInHand);
+        Destroy(triggeredObject);
+        canHit = false;
+        canBreak = false;
+        isHitting = false;
     }
 }
