@@ -120,7 +120,13 @@ public class EquipmentSystem : MonoBehaviour
         }
 
         Intercation interaction = FindObjectOfType<Intercation>();
-        interaction.DestroyTree();
+        interaction.InteractionAnimatorConfigure();
+    }
+
+    public void DestroyTheTriggeredObject()
+    {
+        Intercation interaction = FindObjectOfType<Intercation>();
+        interaction.DestroyTriggeredObject();
     }
 
 }

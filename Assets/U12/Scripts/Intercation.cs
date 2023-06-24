@@ -88,15 +88,20 @@ public class Intercation : MonoBehaviour
         }
     }
 
-    public void DestroyTree()
+    public void InteractionAnimatorConfigure()
     {
         canHit = false;
         _animator.SetBool("hitTree", false);
         _animator.SetBool("hitRock", false); 
         Destroy(axeInHand);
-        Destroy(triggeredObject);
+       // Destroy(triggeredObject);
         canHit = false;
         canBreak = false;
         isHitting = false;
+    }
+
+    public void DestroyTriggeredObject()
+    {
+        Destroy(triggeredObject);
     }
 }
