@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 public class CombatScript : MonoBehaviour
 {
     public Animator _animator;
-    private bool isSwordDrawed;
+    public bool isSwordDrawed;
     public bool isBlocking;
 
 

@@ -5,7 +5,14 @@ using UnityEngine;
 public class Intercation : MonoBehaviour
 {
     private bool canHit = false;
+    private bool canBreak = false;
     private Animator _animator;
+    private bool isHitting = false;
+
+    [SerializeField] GameObject axeHolder;
+    [SerializeField] GameObject axe;
+    [SerializeField] GameObject pickaxe;
+    GameObject axeInHand;
 
     void Start()
     {
@@ -14,11 +21,37 @@ public class Intercation : MonoBehaviour
 
     void Update()
     {
+        CombatScript combatScript = FindObjectOfType<CombatScript>();
+
         if (canHit)
         {
-            if (Input.GetKeyDown(KeyCode.E))
+          if(combatScript.isSwordDrawed != true)
             {
-                _animator.SetBool("hitTree", true);
+                if(isHitting != true)
+                {
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        _animator.SetBool("hitTree", true);
+                        isHitting = true;
+                        axeInHand = Instantiate(axe, axeHolder.transform);
+                    }
+               }
+            }
+
+        }
+        else if (canBreak)
+        {
+            if (combatScript.isSwordDrawed != true)
+            {
+                if(isHitting != true)
+                {
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        _animator.SetBool("hitTree", true);
+                        isHitting = true;
+                        axeInHand = Instantiate(pickaxe, axeHolder.transform);
+                    }
+               }
             }
         }
     }
@@ -26,17 +59,28 @@ public class Intercation : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Tree"))
         {
-            //Debug.Log("Agac ");
+           // Debug.Log("Agac ");
             canHit = true;
+        }
+        else if (other.gameObject.CompareTag("Rock"))
+        {
+           // Debug.Log("Rock");
+            canBreak = true;
         }
     }
     private void OnTriggerExit(Collider other)
     {
-        //Debug.Log("Agac cikti");
         if (other.gameObject.CompareTag("Tree"))
         {
-            //Debug.Log("Agactan cikildi");
+           // Debug.Log("Agactan cikildi");
             canHit = false;
+            isHitting = false;
+        }
+        else if (other.gameObject.CompareTag("Rock"))
+        {
+           // Debug.Log("Rock Out");
+            canBreak = false;
+            isHitting = false;
         }
     }
 
@@ -44,5 +88,6 @@ public class Intercation : MonoBehaviour
     {
         canHit = false;
         _animator.SetBool("hitTree", false);
+        Destroy(axeInHand);
     }
 }
