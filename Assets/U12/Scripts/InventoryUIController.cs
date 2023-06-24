@@ -6,11 +6,21 @@ public class InventoryUIController : MonoBehaviour
 {
     public List<SlotUI> uiList = new List<SlotUI>();
     Inventory userInventory;
+    MouseController mouseController;
 
     private void Start()
     {
         userInventory = gameObject.GetComponent<Inventory>();
+        mouseController = gameObject.GetComponent<MouseController>();
         UpdateUI();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            mouseController.MouseAutoReverse();
+        }
     }
 
     public void UpdateUI()
