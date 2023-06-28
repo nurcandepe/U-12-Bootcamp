@@ -30,7 +30,7 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
-    void Die()
+    public void Die()
     {
         // Instantiate(ragdoll, transform.position, transform.rotation);
        // Destroy(this.gameObject);
