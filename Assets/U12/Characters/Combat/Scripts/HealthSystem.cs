@@ -32,8 +32,6 @@ public class HealthSystem : MonoBehaviour
 
     public void Die()
     {
-        // Instantiate(ragdoll, transform.position, transform.rotation);
-       // Destroy(this.gameObject);
         isDead = true;
         animator.SetTrigger("isDead");
         health = 100;
@@ -43,15 +41,11 @@ public class HealthSystem : MonoBehaviour
         {
             tpsController.enabled = false;
         }
+    }
 
- 
-        /*if(enemy != null)
-        {
-            enemy.enabled = false;
-        }*/
-        //animator.SetBool("isKilled", true);
-
-
+    public void StopDie()
+    {
+        animator.SetBool("DeadBool",true);
     }
     public void HitVFX(Vector3 hitPosition)
     {
