@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4860764220213462}
   - component: {fileID: 33253939306409260}
   - component: {fileID: 23837492293159518}
+  - component: {fileID: 5303347755349311914}
   m_Layer: 0
   m_Name: SpearD (6)
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5303347755349311914
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1008216086136584}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 5395c56e03889384398da83042f0b46e, type: 3}
 --- !u!1 &1311725443889936
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +109,7 @@ GameObject:
   - component: {fileID: 4616488554291980}
   - component: {fileID: 33605891467109624}
   - component: {fileID: 23771608123197894}
+  - component: {fileID: 7432957102729647419}
   m_Layer: 0
   m_Name: SpearD (4)
   m_TagString: Untagged
@@ -167,6 +183,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7432957102729647419
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311725443889936}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 5395c56e03889384398da83042f0b46e, type: 3}
 --- !u!1 &1338808813722488
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,6 +208,7 @@ GameObject:
   - component: {fileID: 4008263434231290}
   - component: {fileID: 33767459938869006}
   - component: {fileID: 23024739037874072}
+  - component: {fileID: 3657112904800885635}
   m_Layer: 0
   m_Name: SpearD (1)
   m_TagString: Untagged
@@ -250,6 +281,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3657112904800885635
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1338808813722488}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 5395c56e03889384398da83042f0b46e, type: 3}
 --- !u!1 &1498791207746926
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +434,7 @@ GameObject:
   - component: {fileID: 4046807222424656}
   - component: {fileID: 33369888237370770}
   - component: {fileID: 23739020642098042}
+  - component: {fileID: 6565974077121024169}
   m_Layer: 0
   m_Name: SpearD (5)
   m_TagString: Untagged
@@ -461,6 +507,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6565974077121024169
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533954398984724}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 5395c56e03889384398da83042f0b46e, type: 3}
 --- !u!1 &1650723854434010
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,6 +532,7 @@ GameObject:
   - component: {fileID: 4363820140832408}
   - component: {fileID: 33578627958305448}
   - component: {fileID: 23279996916830800}
+  - component: {fileID: 3644090273926596190}
   m_Layer: 0
   m_Name: SpearD (3)
   m_TagString: Untagged
@@ -544,6 +605,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3644090273926596190
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650723854434010}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 5395c56e03889384398da83042f0b46e, type: 3}
 --- !u!1 &1729526444844092
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,6 +630,7 @@ GameObject:
   - component: {fileID: 4875821021075144}
   - component: {fileID: 33628232929064336}
   - component: {fileID: 23829621543932378}
+  - component: {fileID: 1494223373248635985}
   m_Layer: 0
   m_Name: SpearD (8)
   m_TagString: Untagged
@@ -627,6 +703,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1494223373248635985
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1729526444844092}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 5395c56e03889384398da83042f0b46e, type: 3}
 --- !u!1 &1826391478264026
 GameObject:
   m_ObjectHideFlags: 0
@@ -638,6 +728,7 @@ GameObject:
   - component: {fileID: 4809595351350106}
   - component: {fileID: 33763283131463934}
   - component: {fileID: 23774227400217108}
+  - component: {fileID: 66638004671941239}
   m_Layer: 0
   m_Name: SpearD (2)
   m_TagString: Untagged
@@ -710,6 +801,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &66638004671941239
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826391478264026}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 5395c56e03889384398da83042f0b46e, type: 3}
 --- !u!1 &1833567552968946
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,6 +826,7 @@ GameObject:
   - component: {fileID: 4803314916592114}
   - component: {fileID: 33715872849311494}
   - component: {fileID: 23008813928714042}
+  - component: {fileID: 5079833470504733790}
   m_Layer: 0
   m_Name: SpearD (7)
   m_TagString: Untagged
@@ -793,6 +899,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5079833470504733790
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833567552968946}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 5395c56e03889384398da83042f0b46e, type: 3}
 --- !u!1 &1915419554402406
 GameObject:
   m_ObjectHideFlags: 0
@@ -804,6 +924,7 @@ GameObject:
   - component: {fileID: 4036345505925138}
   - component: {fileID: 33391704044155462}
   - component: {fileID: 23124783542801482}
+  - component: {fileID: 5019803963740661453}
   m_Layer: 0
   m_Name: SpearD
   m_TagString: Untagged
@@ -876,6 +997,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5019803963740661453
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1915419554402406}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: 5395c56e03889384398da83042f0b46e, type: 3}
 --- !u!1 &3672403107361807771
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,8 +1055,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2, y: 1, z: 1.7}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2, y: 1, z: 1.7551584}
+  m_Center: {x: 0, y: 0, z: 0.02757907}
 --- !u!114 &7187072405924719512
 MonoBehaviour:
   m_ObjectHideFlags: 0
