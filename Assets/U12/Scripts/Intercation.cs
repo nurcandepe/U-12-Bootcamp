@@ -17,13 +17,14 @@ public class Intercation : MonoBehaviour
     [SerializeField] GameObject pickaxe;
     GameObject axeInHand;
 
+    private GameObject tempObject;
     public GameObject log;
     public GameObject stone;
 
     void Start()
     {
         _animator = GetComponentInParent<Animator>();
-        _transform = GetComponentInParent<Transform>();
+        //_transform = GetComponentInParent<Transform>();
     }
 
     void Update()
@@ -116,15 +117,15 @@ public class Intercation : MonoBehaviour
     {
         if (other.tag == "Tree")
         {
-            GameObject newObject = Instantiate(log);
-            newObject.transform.position = _transform.position;
-            newObject.SetActive(true);
+            tempObject = log;
         }
         else if(other.tag == "Rock")
         {
-            GameObject newObject = Instantiate(stone);
-            newObject.transform.position = _transform.position;
-            newObject.SetActive(true);
+            tempObject = stone;
         }
+            
+        GameObject newObject = Instantiate(tempObject);
+        newObject.transform.position = other.transform.position;
+        newObject.SetActive(true);
     }
 }
