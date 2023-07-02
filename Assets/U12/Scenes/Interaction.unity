@@ -4916,6 +4916,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4287029888090569488, guid: 96debf0fd81ab0d4f9e217cb3b78e4c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
     - target: {fileID: 4371419483540200155, guid: 96debf0fd81ab0d4f9e217cb3b78e4c9,
         type: 3}
       propertyPath: log
@@ -4926,8 +4931,13 @@ PrefabInstance:
         type: 3}
       propertyPath: stone
       value: 
-      objectReference: {fileID: 1679006955222707452, guid: cf53279dffb051f43835b0f7fd9fd69e,
+      objectReference: {fileID: 4695085743662960305, guid: b3e666ed958e9c7428a830afa55b8621,
         type: 3}
+    - target: {fileID: 6621236496887461237, guid: 96debf0fd81ab0d4f9e217cb3b78e4c9,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
     - target: {fileID: 7208080576687243670, guid: 96debf0fd81ab0d4f9e217cb3b78e4c9,
         type: 3}
       propertyPath: m_RootOrder
