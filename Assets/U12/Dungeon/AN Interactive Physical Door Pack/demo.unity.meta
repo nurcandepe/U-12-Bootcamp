@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/U12/Dungeon/AN Interactive Physical Door Pack/demo.unity.meta
 guid: 1fa5aeedf0015124987c02e0a469abdd
 DefaultImporter:
+========
+guid: e9d059c89fb7679448a6ba34baedd826
+NativeFormatImporter:
+>>>>>>>> veysel:Assets/U12/Characters/farmer.controller.meta
   externalObjects: {}
+  mainObjectFileID: 9100000
   userData: 
   assetBundleName: 
   assetBundleVariant: 
