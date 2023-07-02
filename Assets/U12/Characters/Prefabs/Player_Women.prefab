@@ -549,6 +549,9 @@ GameObject:
   - component: {fileID: 9113659174181254099}
   - component: {fileID: 9113659174181254096}
   - component: {fileID: 9113659174181254097}
+  - component: {fileID: 346551914624030982}
+  - component: {fileID: 2063968629745602068}
+  - component: {fileID: 1826239680469220265}
   m_Layer: 8
   m_Name: PlayerArmature
   m_TagString: Player
@@ -845,6 +848,45 @@ MonoBehaviour:
   hitVFX: {fileID: 1743637094903878, guid: 021a2f7a2c5bc4449b4c64a66a050e8c, type: 3}
   isDead: 0
   enemy: {fileID: 0}
+--- !u!114 &346551914624030982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340480472013494562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c15b55c46823e454ebc7f79255b3aba5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInventory: {fileID: 11400000, guid: c136ccef9c8d02c4282c0791d6a00422, type: 2}
+--- !u!114 &2063968629745602068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340480472013494562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3576b8f993d4664883996e5ab2285e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventoryPanel: {fileID: 0}
+  uiList: []
+--- !u!114 &1826239680469220265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340480472013494562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37a4f13ce3ec9ec4fbfb448d2c50dee3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1411429468837987313
 GameObject:
   m_ObjectHideFlags: 0
