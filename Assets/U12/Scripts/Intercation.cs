@@ -102,6 +102,7 @@ public class Intercation : MonoBehaviour
 
     public void DestroyTriggeredObject()
     {
+        //Debug.Log(triggeredObject.tag);
         Destroy(triggeredObject);
     }
 }

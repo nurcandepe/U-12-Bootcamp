@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbc5b576b14075a4aad26166f3ad919f, type: 3}
+  m_Name: Stone6
+  m_EditorClassIdentifier: 
+  itemName: Stone 6
+  itemDescription: Material Stone
+  canStackable: 1
+  itemIcon: {fileID: 21300000, guid: 9873721cec25bbf4b9f70db4ba05ed9a, type: 3}
+  itemPrefab: {fileID: 1679006955222707452, guid: cf53279dffb051f43835b0f7fd9fd69e,
+    type: 3}
