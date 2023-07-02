@@ -4916,6 +4916,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4371419483540200155, guid: 96debf0fd81ab0d4f9e217cb3b78e4c9,
+        type: 3}
+      propertyPath: log
+      value: 
+      objectReference: {fileID: 522459008932986039, guid: c82df2cf0bfd57f46a40dfb255d3df92,
+        type: 3}
+    - target: {fileID: 4371419483540200155, guid: 96debf0fd81ab0d4f9e217cb3b78e4c9,
+        type: 3}
+      propertyPath: stone
+      value: 
+      objectReference: {fileID: 1679006955222707452, guid: cf53279dffb051f43835b0f7fd9fd69e,
+        type: 3}
     - target: {fileID: 7208080576687243670, guid: 96debf0fd81ab0d4f9e217cb3b78e4c9,
         type: 3}
       propertyPath: m_RootOrder

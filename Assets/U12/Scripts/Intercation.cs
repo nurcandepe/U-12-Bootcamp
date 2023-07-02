@@ -8,6 +8,7 @@ public class Intercation : MonoBehaviour
     private bool canBreak = false;
     private Animator _animator;
     private bool isHitting = false;
+    private Transform _transform;
 
     private GameObject triggeredObject;
 
@@ -16,9 +17,13 @@ public class Intercation : MonoBehaviour
     [SerializeField] GameObject pickaxe;
     GameObject axeInHand;
 
+    public GameObject log;
+    public GameObject stone;
+
     void Start()
     {
         _animator = GetComponentInParent<Animator>();
+        _transform = GetComponentInParent<Transform>();
     }
 
     void Update()
@@ -61,13 +66,13 @@ public class Intercation : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Tree"))
         {
-           // Debug.Log("Agac ");
+            //Debug.Log("Agac ");
             canHit = true;
             triggeredObject = other.gameObject;
         }
         else if (other.gameObject.CompareTag("Rock"))
         {
-           // Debug.Log("Rock");
+            //Debug.Log("Rock");
             canBreak = true;
             triggeredObject = other.gameObject;
         }
@@ -82,7 +87,7 @@ public class Intercation : MonoBehaviour
         }
         else if (other.gameObject.CompareTag("Rock"))
         {
-           // Debug.Log("Rock Out");
+            //Debug.Log("Rock Out");
             canBreak = false;
             isHitting = false;
         }
@@ -94,7 +99,7 @@ public class Intercation : MonoBehaviour
         _animator.SetBool("hitTree", false);
         _animator.SetBool("hitRock", false); 
         Destroy(axeInHand);
-       // Destroy(triggeredObject);
+        //Destroy(triggeredObject);
         canHit = false;
         canBreak = false;
         isHitting = false;
@@ -103,6 +108,23 @@ public class Intercation : MonoBehaviour
     public void DestroyTriggeredObject()
     {
         //Debug.Log(triggeredObject.tag);
+        CreateObjects(triggeredObject);
         Destroy(triggeredObject);
+    }
+
+    private void CreateObjects(GameObject other)
+    {
+        if (other.tag == "Tree")
+        {
+            GameObject newObject = Instantiate(log);
+            newObject.transform.position = _transform.position;
+            newObject.SetActive(true);
+        }
+        else if(other.tag == "Rock")
+        {
+            GameObject newObject = Instantiate(stone);
+            newObject.transform.position = _transform.position;
+            newObject.SetActive(true);
+        }
     }
 }
