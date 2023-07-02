@@ -112,6 +112,8 @@ namespace StarterAssets
 
         private bool _hasAnimator;
 
+  
+
         private bool IsCurrentDeviceMouse
         {
             get
@@ -163,23 +165,7 @@ namespace StarterAssets
             GroundedCheck();
             Move();
 
-            /*if (isSwordDrawed = false)
-            {
-                if (Input.GetKeyDown(KeyCode.Mouse0))
-                {
-                    _animator.SetTrigger("DrawSword");
-                    isSwordDrawed = true;
-                }
-            }*/
-
-           /* if (isSwordDrawed = true)
-            {
-                if (Input.GetKeyDown(KeyCode.Mouse0))
-                {
-                    _animator.SetTrigger("SheathSword");
-                    isSwordDrawed = false;
-                }
-            }*/
+           
         }
 
         private void LateUpdate()
