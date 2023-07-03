@@ -1,46 +1,38 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.VFX;
 
 public class DragonScript : MonoBehaviour
 {
-    /*
-using UnityEngine;
-using UnityEngine.VFX;
+    public GameObject flamethrowerEffect;
+    //public GameObject smokeEffect;
+    [SerializeField] GameObject flameThrowerHolder;
+    GameObject flame;
+    //GameObject smoke;
 
-public class DragonFlameController : MonoBehaviour
-{
-    public VisualEffect flamethrowerEffect;
-    private Animation dragonAnimation;
     private bool isFlamethrowerActive = false;
 
     private void Start()
     {
-        dragonAnimation = GetComponent<Animation>();
     }
 
     private void Update()
     {
-        if (dragonAnimation.isPlaying && !isFlamethrowerActive)
-        {
-            StartFlamethrower();
-        }
-        else if (!dragonAnimation.isPlaying && isFlamethrowerActive)
-        {
-            StopFlamethrower();
-        }
+
+
     }
 
-    private void StartFlamethrower()
+    public void StartFlameThrower()
     {
-        flamethrowerEffect.Play();
+        flame = Instantiate(flamethrowerEffect, flameThrowerHolder.transform);
         isFlamethrowerActive = true;
     }
 
-    private void StopFlamethrower()
+    public void StopFlameThrower()
     {
-        flamethrowerEffect.Stop();
+        flamethrowerEffect.SetActive(false);
         isFlamethrowerActive = false;
     }
-}*/
+
 }
