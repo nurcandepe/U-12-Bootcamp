@@ -94,11 +94,6 @@ public class Enemy : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, aggroRange);
     }
 
-    /*public void isKilled()
-    {
-        print("Killed");
-        animator.SetBool("isKilled", true);
-    }*/
 
     public void HitVFX(Vector3 hitPosition)
     {

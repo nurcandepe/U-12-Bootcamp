@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TeethAttack : MonoBehaviour
+public class DragonClawAttack : MonoBehaviour
 {
     private Animator _animator;
 
@@ -14,6 +14,6 @@ public class TeethAttack : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        _animator.SetTrigger("TeethAttack");
+        _animator.SetBool("isAttacking", true);
     }
 }
