@@ -4705,7 +4705,7 @@ GameObject:
   - component: {fileID: 2338911736295901625}
   m_Layer: 8
   m_Name: Flamethrower
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4910,7 +4910,7 @@ GameObject:
   - component: {fileID: 2338911736309650697}
   m_Layer: 8
   m_Name: FlamethrowerFire
-  m_TagString: Untagged
+  m_TagString: Fire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5066,7 +5066,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 50
+      scalar: 60
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -8579,7 +8579,7 @@ ParticleSystem:
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 2
     inside: 1
     outside: 0

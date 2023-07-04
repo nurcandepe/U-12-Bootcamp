@@ -10,11 +10,15 @@ public class DragonScript : MonoBehaviour
    [SerializeField] GameObject flameThrowerHolder;
     GameObject flame;
 
+    public GameObject flameNear;
+    public GameObject flameFar;
+
     private bool isFlamethrowerActive = false;
 
     private void Start()
     {
         damageDealerTrigger.SetActive(false);
+        flameNear.SetActive(false);
     }
 
     private void Update()
@@ -60,6 +64,26 @@ public class DragonScript : MonoBehaviour
         DragonDamageDealer dragon = damageDealerTrigger.GetComponent<DragonDamageDealer>();
         dragon.enabled = true;
         damageDealerTrigger.SetActive(true);
+    }
+
+    public void FlameNearOn()
+    {
+        flameNear.SetActive(true);
+    }
+
+    public void FlameNearOff()
+    {
+        flameNear.SetActive(false);
+    }
+
+    public void FlameFarOn()
+    {
+        flameFar.SetActive(true);
+    }
+
+    public void FlameFarOff()
+    {
+        flameFar.SetActive(false);
     }
 
 }
