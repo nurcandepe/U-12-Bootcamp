@@ -19,6 +19,7 @@ public class DragonScript : MonoBehaviour
     {
         damageDealerTrigger.SetActive(false);
         flameNear.SetActive(false);
+        flameFar.SetActive(false);
     }
 
     private void Update()

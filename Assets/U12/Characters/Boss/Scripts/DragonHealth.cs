@@ -42,7 +42,7 @@ public class DragonHealth : MonoBehaviour
         {
             HitVFXDragon();
             dragonHealth -= 1f;
-            Debug.Log("hit");
+            //Debug.Log("hit");
         }
     }
 
