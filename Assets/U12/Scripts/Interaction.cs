@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Intercation : MonoBehaviour
+public class Interaction : MonoBehaviour
 {
     private bool canHit = false;
     private bool canBreak = false;
@@ -11,6 +11,8 @@ public class Intercation : MonoBehaviour
     private Transform _transform;
 
     private GameObject triggeredObject;
+
+    public GameObject interactPanel;
 
     [SerializeField] GameObject axeHolder;
     [SerializeField] GameObject axe;
