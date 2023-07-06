@@ -39,6 +39,14 @@ public class DamageDealer : MonoBehaviour
                     enemyC.HitVFX(hit.point);
                     hasDealtDamage.Add(hit.transform.gameObject);
                 }
+
+                else if (hit.transform.TryGetComponent(out BearScript enemyB) && !hasDealtDamage.Contains(hit.transform.gameObject))
+                {
+                    //Debug.Log("damageBEAR");
+                    enemyB.TakeDamageBear(weaponDamage);
+                    enemyB.HitVFX(hit.point);
+                    hasDealtDamage.Add(hit.transform.gameObject);
+                }
             }
         }
     }

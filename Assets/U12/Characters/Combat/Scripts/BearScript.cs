@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CasualEnemy : MonoBehaviour
+public class BearScript : MonoBehaviour
 {
     [SerializeField] float health = 3f;
     [SerializeField] GameObject hitVFX;
     //[SerializeField] GameObject ragdoll;
+
+    public GameObject damageDealer;
 
     [Header("Combat")]
     [SerializeField] float attackCD = 3f;
@@ -19,13 +21,14 @@ public class CasualEnemy : MonoBehaviour
     float timePassed;
     float newDestinationCD = 0.5f;
 
-    private bool isDeadCasual = false;
+    private bool isDeadBear = false;
 
     void Start()
     {
         player = GameObject.FindWithTag("Player");
         __animator = GetComponent<Animator>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        damageDealer.SetActive(false);
     }
 
     void Update()
@@ -60,9 +63,9 @@ public class CasualEnemy : MonoBehaviour
 
 
 
-    public void TakeDamageCasual(float damageAmount)
+    public void TakeDamageBear(float damageAmount)
     {
-        if (isDeadCasual == false)
+        if (isDeadBear == false)
         {
             health -= damageAmount;
             __animator.SetTrigger("damage");
@@ -71,7 +74,7 @@ public class CasualEnemy : MonoBehaviour
             if (health <= 0)
             {
                 Die();
-                isDeadCasual = true;
+                isDeadBear = true;
             }
         }
 
@@ -79,25 +82,30 @@ public class CasualEnemy : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("DEAD");
+        //Debug.Log("DEAD");
         __animator.SetBool("Die", true);
-        EndDealDamage();
-
-        CapsuleCollider collider = GetComponent<CapsuleCollider>();
-        collider.enabled = false;
-
+        CapsuleCollider colliderBear = GetComponent<CapsuleCollider>();
+        colliderBear.enabled = false;
         enabled = false;
+        EndDealDamage();
+        isDeadBear = true;
+
 
     }
 
     public void StartDealDamage()
     {
-        GetComponentInChildren<EnemyDamageDealer>().StartDealDamage();
+        damageDealer.SetActive(true);
+        BearDamageDealer bearDamage = FindObjectOfType<BearDamageDealer>();
+        bearDamage.hasDealtDamage = false;
+
     }
 
     public void EndDealDamage()
     {
-        GetComponentInChildren<EnemyDamageDealer>().EndDealDamage();
+        BearDamageDealer bearDamage = FindObjectOfType<BearDamageDealer>();
+        damageDealer.SetActive(false);
+        bearDamage.hasDealtDamage = true;
     }
 
     private void OnDrawGizmos()

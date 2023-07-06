@@ -7,7 +7,8 @@ public class FlameDamageFar : MonoBehaviour
     public bool canFlameFar = false;
     [SerializeField] float weaponDamage;
     [SerializeField] GameObject hitVFX; //***///*/*
-    [SerializeField] GameObject hitPosition; //***///*/*
+    [SerializeField] GameObject hitPositionMan; //***///*/*
+    [SerializeField] GameObject hitPositionWoman;
 
     void Start()
     {
@@ -35,7 +36,16 @@ public class FlameDamageFar : MonoBehaviour
     }
     private void HitVFX()
     {
-        GameObject hit = Instantiate(hitVFX, hitPosition.transform);
-        Destroy(hit, 3f);
+        if (hitPositionMan != null)
+        {
+            GameObject hit = Instantiate(hitVFX, hitPositionMan.transform);
+            Destroy(hit, 3f);
+        }
+
+        if (hitPositionWoman != null)
+        {
+            GameObject hit = Instantiate(hitVFX, hitPositionWoman.transform);
+            Destroy(hit, 3f);
+        }
     }
 }

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DragonDamageDealer : MonoBehaviour
+public class BearDamageDealer : MonoBehaviour
 {
     bool canDealDamage;
     public bool hasDealtDamage;
@@ -10,7 +10,7 @@ public class DragonDamageDealer : MonoBehaviour
     [SerializeField] float weaponDamage;
     [SerializeField] GameObject hitVFX; //***///*/*
     [SerializeField] GameObject hitPositionMan; //***///*/*
-    [SerializeField] GameObject hitPositionWoman; 
+    [SerializeField] GameObject hitPositionWoman;
 
     void Start()
     {
@@ -31,11 +31,11 @@ public class DragonDamageDealer : MonoBehaviour
         {
             if (combatScript.isBlocking != true)
             {
-               //Debug.Log("enemy has dealt damage");
-               health.TakeDamage(weaponDamage);
-               HitVFX();
-               //enemy.HitVFX(bloodPos.transform.position);
-               hasDealtDamage = true;
+                //Debug.Log("enemy has dealt damage");
+                health.TakeDamage(weaponDamage);
+                HitVFX();
+                //enemy.HitVFX(bloodPos.transform.position);
+                hasDealtDamage = true;
             }
             else if (combatScript.isBlocking == true)
             {
@@ -44,26 +44,26 @@ public class DragonDamageDealer : MonoBehaviour
         }
     }
 
-    public void StartDragonDamage()
+    public void StartBearDamage()
     {
-       // canDealDamage = true;
+        // canDealDamage = true;
         hasDealtDamage = false;
     }
-    public void EndDragonDamage()
+    public void EndBearDamage()
     {
-       // canDealDamage = false;
+        // canDealDamage = false;
         hasDealtDamage = false;
     }
 
     private void HitVFX()
     {
-        if (hitPositionMan != null)
+        if(hitPositionMan != null)
         {
             GameObject hit = Instantiate(hitVFX, hitPositionMan.transform);
             Destroy(hit, 3f);
         }
 
-        if (hitPositionWoman != null)
+        if(hitPositionWoman != null)
         {
             GameObject hit = Instantiate(hitVFX, hitPositionWoman.transform);
             Destroy(hit, 3f);
