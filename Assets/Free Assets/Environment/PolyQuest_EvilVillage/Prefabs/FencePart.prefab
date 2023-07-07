@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4241134882983448}
   - component: {fileID: 33921838142340256}
   - component: {fileID: 23583745085175406}
+  - component: {fileID: 2868570236582984670}
   m_Layer: 0
   m_Name: FencePart
   m_TagString: Untagged
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &2868570236582984670
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403025981153546}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300002, guid: e30f367bac66aa546ac7a40c2e1cb179, type: 3}
 --- !u!1 &1498907357936410
 GameObject:
   m_ObjectHideFlags: 0
@@ -127,6 +142,7 @@ GameObject:
   - component: {fileID: 4097810875434110}
   - component: {fileID: 33087055219599644}
   - component: {fileID: 23085397852349208}
+  - component: {fileID: 1927324044917787624}
   m_Layer: 0
   m_Name: Poles
   m_TagString: Untagged
@@ -199,3 +215,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &1927324044917787624
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633414226725020}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: e30f367bac66aa546ac7a40c2e1cb179, type: 3}
