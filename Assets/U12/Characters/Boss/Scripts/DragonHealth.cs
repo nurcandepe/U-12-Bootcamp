@@ -10,10 +10,12 @@ public class DragonHealth : MonoBehaviour
 
     [SerializeField] GameObject hitVFX; //***///*/*
     [SerializeField] GameObject hitPosition; //***///*/*
+    [SerializeField] GameObject invisibleWall;
 
     void Start()
     {
         _animatorParent = GetComponentInParent<Animator>();
+        invisibleWall.SetActive(true);
     }
 
     void Update()
@@ -22,6 +24,7 @@ public class DragonHealth : MonoBehaviour
         {
             _animatorParent.SetBool("isAttacking", false);
             _animatorParent.SetTrigger("DragonDie");
+            invisibleWall.SetActive(false);
         }
     }
 
