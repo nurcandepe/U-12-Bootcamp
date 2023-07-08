@@ -26,9 +26,25 @@ public class DamageDealer : MonoBehaviour
             {
                 if (hit.transform.TryGetComponent(out Enemy enemy) && !hasDealtDamage.Contains(hit.transform.gameObject))
                 {
-                    //print("damage");
+                    //Debug.Log("damage");
                     enemy.TakeDamage(weaponDamage);
                     enemy.HitVFX(hit.point);
+                    hasDealtDamage.Add(hit.transform.gameObject);
+                }
+
+                else if (hit.transform.TryGetComponent(out CasualEnemy enemyC) && !hasDealtDamage.Contains(hit.transform.gameObject))
+                {
+                    //Debug.Log("damage");
+                    enemyC.TakeDamageCasual(weaponDamage);
+                    enemyC.HitVFX(hit.point);
+                    hasDealtDamage.Add(hit.transform.gameObject);
+                }
+
+                else if (hit.transform.TryGetComponent(out BearScript enemyB) && !hasDealtDamage.Contains(hit.transform.gameObject))
+                {
+                    //Debug.Log("damageBEAR");
+                    enemyB.TakeDamageBear(weaponDamage);
+                    enemyB.HitVFX(hit.point);
                     hasDealtDamage.Add(hit.transform.gameObject);
                 }
             }

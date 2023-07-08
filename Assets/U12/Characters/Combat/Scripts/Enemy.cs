@@ -72,8 +72,13 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        Instantiate(ragdoll, transform.position,transform.rotation);
-        Destroy(this.gameObject);
+        EndDealDamage();
+        // Instantiate(ragdoll, transform.position,transform.rotation);
+        // Destroy(this.gameObject);
+        CapsuleCollider collider = GetComponent<CapsuleCollider>();
+        collider.enabled = false;
+        animator.SetBool("Die", true);
+        enabled = false;
     }
 
     public void StartDealDamage()
@@ -94,11 +99,6 @@ public class Enemy : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, aggroRange);
     }
 
-    /*public void isKilled()
-    {
-        print("Killed");
-        animator.SetBool("isKilled", true);
-    }*/
 
     public void HitVFX(Vector3 hitPosition)
     {

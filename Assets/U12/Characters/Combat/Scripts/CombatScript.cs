@@ -74,4 +74,10 @@ public class CombatScript : MonoBehaviour
         _animator.SetBool("BlockImpact", false);
     }
 
+    public void HitTheDragon()
+    {
+        DragonHealth dragonHit = FindObjectOfType<DragonHealth>();
+        dragonHit.HitDragon();
+    }
+
 }
