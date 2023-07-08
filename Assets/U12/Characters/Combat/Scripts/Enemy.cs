@@ -72,8 +72,13 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
-        Instantiate(ragdoll, transform.position,transform.rotation);
-        Destroy(this.gameObject);
+        EndDealDamage();
+        // Instantiate(ragdoll, transform.position,transform.rotation);
+        // Destroy(this.gameObject);
+        CapsuleCollider collider = GetComponent<CapsuleCollider>();
+        collider.enabled = false;
+        animator.SetBool("Die", true);
+        enabled = false;
     }
 
     public void StartDealDamage()

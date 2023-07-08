@@ -79,7 +79,7 @@ public class CasualEnemy : MonoBehaviour
 
     void Die()
     {
-        Debug.Log("DEAD");
+       // Debug.Log("DEAD");
         __animator.SetBool("Die", true);
         EndDealDamage();
 
