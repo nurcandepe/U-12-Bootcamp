@@ -9,6 +9,7 @@ TagManager:
   - Tree
   - Rock
   - Fire
+  - Lever
   layers:
   - Default
   - TransparentFX

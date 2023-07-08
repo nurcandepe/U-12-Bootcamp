@@ -88,6 +88,13 @@ public class Interaction : MonoBehaviour
             interactPanel.SetActive(true);
             interactText.text = "Parçala";
         }
+
+        else if (other.gameObject.CompareTag("Lever"))
+        {
+            triggeredObject = other.gameObject;
+            interactPanel.SetActive(true);
+            interactText.text = "Kullan";
+        }
     }
     private void OnTriggerExit(Collider other)
     {
@@ -103,6 +110,11 @@ public class Interaction : MonoBehaviour
             //Debug.Log("Rock Out");
             canBreak = false;
             isHitting = false;
+            interactPanel.SetActive(false);
+        }
+
+        else if (other.gameObject.CompareTag("Lever"))
+        {
             interactPanel.SetActive(false);
         }
     }

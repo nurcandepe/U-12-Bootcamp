@@ -43,6 +43,11 @@ public class LeverScript : MonoBehaviour
                     Destroy(invisDoor);
                     Destroy(treaDoor);
                     LeverCount = false;
+
+                    //BoxCollider colliderBox = GetComponent<BoxCollider>();
+                    //colliderBox.enabled = false;
+
+                    // ******** Can use eklenmesi gerekiyor *********
                 }
             }
         }
