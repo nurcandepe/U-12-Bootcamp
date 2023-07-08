@@ -4156,7 +4156,8 @@ MonoBehaviour:
   canFlameFar: 0
   weaponDamage: 1
   hitVFX: {fileID: 1743637094903878, guid: 021a2f7a2c5bc4449b4c64a66a050e8c, type: 3}
-  hitPosition: {fileID: 0}
+  hitPositionMan: {fileID: 0}
+  hitPositionWoman: {fileID: 0}
 --- !u!1 &856314770
 GameObject:
   m_ObjectHideFlags: 0
@@ -4217,7 +4218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dragonHealth: 8
-  hitVFX: {fileID: 1743637094903878, guid: 021a2f7a2c5bc4449b4c64a66a050e8c, type: 3}
+  hitVFX: {fileID: 1743637094903878, guid: 1d9779fe3a465fc42840df7eb7c38f8e, type: 3}
   hitPosition: {fileID: 1486866040}
 --- !u!1 &865716332
 GameObject:
@@ -4454,7 +4455,8 @@ MonoBehaviour:
   canFlameNear: 0
   weaponDamage: 1
   hitVFX: {fileID: 1743637094903878, guid: 021a2f7a2c5bc4449b4c64a66a050e8c, type: 3}
-  hitPosition: {fileID: 0}
+  hitPositionMan: {fileID: 0}
+  hitPositionWoman: {fileID: 0}
 --- !u!1 &2035104695
 GameObject:
   m_ObjectHideFlags: 0
@@ -4516,7 +4518,8 @@ MonoBehaviour:
   hasDealtDamage: 0
   weaponDamage: 1
   hitVFX: {fileID: 1743637094903878, guid: 021a2f7a2c5bc4449b4c64a66a050e8c, type: 3}
-  hitPosition: {fileID: 0}
+  hitPositionMan: {fileID: 0}
+  hitPositionWoman: {fileID: 0}
 --- !u!1 &2594816511500367773
 GameObject:
   m_ObjectHideFlags: 0
