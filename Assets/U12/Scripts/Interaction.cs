@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
-public class Intercation : MonoBehaviour
+public class Interaction : MonoBehaviour
 {
     private bool canHit = false;
     private bool canBreak = false;
@@ -11,6 +12,9 @@ public class Intercation : MonoBehaviour
     private Transform _transform;
 
     private GameObject triggeredObject;
+
+    public GameObject interactPanel;
+    public TextMeshProUGUI interactText;
 
     [SerializeField] GameObject axeHolder;
     [SerializeField] GameObject axe;
@@ -24,6 +28,7 @@ public class Intercation : MonoBehaviour
     void Start()
     {
         _animator = GetComponentInParent<Animator>();
+        interactPanel.SetActive(false);
         //_transform = GetComponentInParent<Transform>();
     }
 
@@ -42,6 +47,7 @@ public class Intercation : MonoBehaviour
                         _animator.SetBool("hitTree", true);
                         isHitting = true;
                         axeInHand = Instantiate(axe, axeHolder.transform);
+                        interactPanel.SetActive(false);
                     }
                }
             }
@@ -58,6 +64,7 @@ public class Intercation : MonoBehaviour
                         _animator.SetBool("hitRock", true); 
                         isHitting = true;
                         axeInHand = Instantiate(pickaxe, axeHolder.transform);
+                        interactPanel.SetActive(false);
                     }
                }
             }
@@ -70,12 +77,16 @@ public class Intercation : MonoBehaviour
             //Debug.Log("Agac ");
             canHit = true;
             triggeredObject = other.gameObject;
+            interactPanel.SetActive(true);
+            interactText.text = "Kes";
         }
         else if (other.gameObject.CompareTag("Rock"))
         {
             //Debug.Log("Rock");
             canBreak = true;
             triggeredObject = other.gameObject;
+            interactPanel.SetActive(true);
+            interactText.text = "Parçala";
         }
     }
     private void OnTriggerExit(Collider other)
@@ -85,12 +96,14 @@ public class Intercation : MonoBehaviour
            // Debug.Log("Agactan cikildi");
             canHit = false;
             isHitting = false;
+            interactPanel.SetActive(false);
         }
         else if (other.gameObject.CompareTag("Rock"))
         {
             //Debug.Log("Rock Out");
             canBreak = false;
             isHitting = false;
+            interactPanel.SetActive(false);
         }
     }
 
@@ -111,6 +124,7 @@ public class Intercation : MonoBehaviour
         //Debug.Log(triggeredObject.tag);
         CreateObjects(triggeredObject);
         Destroy(triggeredObject);
+        interactPanel.SetActive(false);
     }
 
     private void CreateObjects(GameObject other)

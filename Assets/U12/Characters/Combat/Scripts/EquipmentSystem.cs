@@ -119,13 +119,13 @@ public class EquipmentSystem : MonoBehaviour
             combatScript.enabled = true;
         }
 
-        Intercation interaction = FindObjectOfType<Intercation>();
+        Interaction interaction = FindObjectOfType<Interaction>();
         interaction.InteractionAnimatorConfigure();
     }
 
     public void DestroyTheTriggeredObject()
     {
-        Intercation interaction = FindObjectOfType<Intercation>();
+        Interaction interaction = FindObjectOfType<Interaction>();
         interaction.DestroyTriggeredObject();
     }
 
