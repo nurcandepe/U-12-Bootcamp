@@ -88,6 +88,8 @@ public class CasualEnemy : MonoBehaviour
 
         enabled = false;
 
+        Invoke("DestroyCasualEnemy", 10f);
+
     }
 
     public void StartDealDamage()
@@ -115,4 +117,8 @@ public class CasualEnemy : MonoBehaviour
         Destroy(hit, 3f);
     }
 
+    private void DestroyCasualEnemy()
+    {
+        Destroy(gameObject);
+    }
 }

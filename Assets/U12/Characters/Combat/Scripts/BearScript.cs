@@ -90,6 +90,8 @@ public class BearScript : MonoBehaviour
         EndDealDamage();
         isDeadBear = true;
 
+        Invoke("DestroyBear", 10f);
+
 
     }
 
@@ -121,6 +123,11 @@ public class BearScript : MonoBehaviour
     {
         GameObject hit = Instantiate(hitVFX, hitPosition, Quaternion.identity);
         Destroy(hit, 3f);
+    }
+
+    private void DestroyBear()
+    {
+        Destroy(gameObject);
     }
 
 }
