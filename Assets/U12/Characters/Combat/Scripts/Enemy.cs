@@ -79,6 +79,7 @@ public class Enemy : MonoBehaviour
         collider.enabled = false;
         animator.SetBool("Die", true);
         enabled = false;
+        Invoke("DestroyEnemy", 10f);
     }
 
     public void StartDealDamage()
@@ -106,4 +107,9 @@ public class Enemy : MonoBehaviour
         Destroy(hit, 3f);
     }
 
+
+    private void DestroyEnemy()
+    {
+        Destroy(gameObject);
+    }
 }
