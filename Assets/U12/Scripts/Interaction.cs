@@ -7,6 +7,8 @@ public class Interaction : MonoBehaviour
 {
     private bool canHit = false;
     private bool canBreak = false;
+    private bool canTalk = false;
+
     private Animator _animator;
     private bool isHitting = false;
     private Transform _transform;
@@ -39,37 +41,38 @@ public class Interaction : MonoBehaviour
     {
         CombatScript combatScript = FindObjectOfType<CombatScript>();
 
-        if (canHit)
+        if (Input.GetKeyDown(KeyCode.E))
         {
-          if(combatScript.isSwordDrawed != true)
+            if (canHit)
             {
-                if(isHitting != true)
+                if (combatScript.isSwordDrawed != true)
                 {
-                    if (Input.GetKeyDown(KeyCode.E))
+                    if (isHitting != true)
                     {
                         _animator.SetBool("hitTree", true);
                         isHitting = true;
                         axeInHand = Instantiate(axe, axeHolder.transform);
                         interactPanel.SetActive(false);
                     }
-               }
+                }
             }
-
-        }
-        else if (canBreak)
-        {
-            if (combatScript.isSwordDrawed != true)
+            else if (canBreak)
             {
-                if(isHitting != true)
+                if (combatScript.isSwordDrawed != true)
                 {
-                    if (Input.GetKeyDown(KeyCode.E))
+                    if (isHitting != true)
                     {
-                        _animator.SetBool("hitRock", true); 
+                        _animator.SetBool("hitRock", true);
                         isHitting = true;
                         axeInHand = Instantiate(pickaxe, axeHolder.transform);
                         interactPanel.SetActive(false);
                     }
-               }
+                }
+            }
+            else if (canTalk)
+            {
+
+                Debug.Log("Konuþabilirim");
             }
         }
     }
@@ -91,12 +94,18 @@ public class Interaction : MonoBehaviour
             interactPanel.SetActive(true);
             interactText.text = "Parçala";
         }
-
         else if (other.gameObject.CompareTag("Lever"))
         {
             triggeredObject = other.gameObject;
             interactPanel.SetActive(true);
             interactText.text = "Kullan";
+        }
+        else if (other.gameObject.CompareTag("NPC"))
+        {
+            triggeredObject = other.gameObject;
+            interactPanel.SetActive(true);
+            canTalk = true;
+            interactText.text = "Konuþ";
         }
     }
     private void OnTriggerExit(Collider other)
@@ -115,9 +124,13 @@ public class Interaction : MonoBehaviour
             isHitting = false;
             interactPanel.SetActive(false);
         }
-
         else if (other.gameObject.CompareTag("Lever"))
         {
+            interactPanel.SetActive(false);
+        }
+        else if (other.gameObject.CompareTag("NPC"))
+        {
+            canTalk = false;
             interactPanel.SetActive(false);
         }
     }
