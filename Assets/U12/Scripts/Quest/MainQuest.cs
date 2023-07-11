@@ -75,6 +75,25 @@ public class MainQuest : MonoBehaviour
         }
     }
 
+    void WrongDialogue()
+    {
+        tpController.enabled = false;
+        animator.SetBool("npcTalk", true);
+
+        questNumber = values.quest;
+
+        switch (dialogueNumber)
+        {
+            case 0:
+                dialogueText.text = "Bugünlerde hava bir garip...";
+                dialogueNumber = 10;
+                break;
+            case 10:
+                DeactiveDialogue();
+                break;
+        }
+    }
+
     void ChangeDialogue()
     {
         tpController.enabled = false;
@@ -142,7 +161,7 @@ public class MainQuest : MonoBehaviour
         else
         {
             dialoguePanel.SetActive(true);
-            ChangeDialogue();
+            WrongDialogue();
         }
     }
 
