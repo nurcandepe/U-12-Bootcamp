@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using StarterAssets;
 
 public class MainQuest : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class MainQuest : MonoBehaviour
     public int questNumber;
     public string questNPC;
 
+    private ThirdPersonController tpController;
+    private Animator animator;
+
     void Start()
     {
         questNumber = values.quest;
@@ -37,7 +41,10 @@ public class MainQuest : MonoBehaviour
         dialogueNumber = 0;
 
         questInfoText.text = "Ýlk Görevin";
-        //Debug.Log(questInfoText.text);
+
+        tpController = GetComponentInParent<ThirdPersonController>();
+        animator = GetComponentInParent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -65,6 +72,9 @@ public class MainQuest : MonoBehaviour
 
     void ChangeDialogue()
     {
+        tpController.enabled = false;
+        animator.SetBool("npcTalk", true);
+
         questNumber = values.quest;
         switch (questNumber)
         {
@@ -82,6 +92,8 @@ public class MainQuest : MonoBehaviour
                     case 20:
                         dialoguePanel.SetActive(false);
                         dialogueNumber = 0;
+                        tpController.enabled = true;
+                        animator.SetBool("npcTalk", false);
                         break;
                 }
                 break;
