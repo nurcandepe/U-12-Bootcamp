@@ -69,6 +69,9 @@ public class MainQuest : MonoBehaviour
             case 20:
                 questInfoText.text = "CASE 20 \nÇiftçi ile konuþ";
                 break;
+            case 30:
+                questInfoText.text = "CASE 30 \n5 kütük topla ve papaza götür";
+                break;
             default:
                 questInfoText.text = "Görev Yok";
                 break;
@@ -134,6 +137,94 @@ public class MainQuest : MonoBehaviour
                         values.quest = 20;
                         DeactiveDialogue();
                         break;
+                }
+                break;
+            case 20:
+                switch (dialogueNumber)
+                {
+                    case 0:
+                        dialogueNameText.text = activeName;
+                        dialogueText.text = "Hello, Mr. Martin. The village elder mentioned you might have some tasks for me.";
+                        dialogueNumber = 10;
+                        break;
+                    case 10:
+                        dialogueNameText.text = "Farmer Martin";
+                        dialogueText.text = "I do indeed. But before you venture into the forest, there's something you need to know. Beware of the dangers that lurk within. You may encounter fierce and wild beasts while chopping down the trees.";
+                        dialogueNumber = 20;
+                        break;
+                    case 20:
+                        dialogueNameText.text = activeName;
+                        dialogueText.text = "Thank you for the warning, Mr. Martin. I'll equip myself accordingly and proceed with caution. Once I have the logs, where should I take them?";
+                        dialogueNumber = 30;
+                        break;
+                    case 30:
+                        dialogueNameText.text = "Farmer Martin";
+                        dialogueText.text = "Once you have the five logs, take them to the village church and seek the guidance of the wise old priest. He holds the knowledge to guide you further on your quest.";
+                        dialogueNumber = 40;
+                        break;
+                    case 40:
+                        dialogueNameText.text = activeName;
+                        dialogueText.text = "Understood, Mr. Martin. I won't underestimate the forest's dangers, and I'll stay vigilant. Thank you for your advice.";
+                        dialogueNumber = 50;
+                        break;
+                    case 50:
+                        values.quest = 30;
+                        DeactiveDialogue();
+                        break;
+                }
+                break;
+            case 30:
+                //Ýf içerisine bu görev için 5 kütük getirip getirilmediði kontrol edilecek
+                if (true)
+                {
+                    switch (dialogueNumber)
+                    {
+                        case 0:
+                            dialogueNameText.text = activeName;
+                            dialogueText.text = "Greetings, wise priest. I have come bearing the logs as a donation to the village church, as instructed by Mr. Martin. I've completed the task given by Mr. Martin to reach the treasure. What is the next step, wise priest?";
+                            dialogueNumber = 10;
+                            break;
+                        case 10:
+                            dialogueNameText.text = "Priest";
+                            dialogueText.text = "Ah, young warrior, your spirit and determination shine bright. At the summit of the treacherous mountain lies a hidden treasure—a sacred oar. It is said to possess remarkable powers. Retrieve this oar, for it will be a key to unveiling the secrets you seek.";
+                            dialogueNumber = 20;
+                            break;
+                        case 20:
+                            dialogueNameText.text = activeName;
+                            dialogueText.text = "A sacred oar? I had no knowledge of it. How can I reach it, wise priest?";
+                            dialogueNumber = 30;
+                            break;
+                        case 30:
+                            dialogueNameText.text = "Priest";
+                            dialogueText.text = "Journey to the mountain's peak, young warrior, and search for the sacred oar. Be wary of the dangers that await you, for fierce creatures guard the way. Trust your instincts and return safely with the oar.";
+                            dialogueNumber = 40;
+                            break;
+                        case 40:
+                            dialogueNameText.text = activeName;
+                            dialogueText.text = " I accept this challenge, wise priest. With your blessings and guidance, I will ascend the mountain and take the sacred oar.";
+                            dialogueNumber = 50;
+                            break;
+                        case 50:
+                            values.quest = 40;
+                            DeactiveDialogue();
+                            break;
+                    }
+                    break;
+                }
+                else
+                {
+                    switch (dialogueNumber)
+                    {
+                        case 0:
+                            dialogueNameText.text = "Priest";
+                            dialogueText.text = "Önce kütükleri görelim....";
+                            dialogueNumber = 10;
+                            break;
+                        case 10:
+                            DeactiveDialogue();
+                            break;
+                    }
+                    break;
                 }
                 break;
             default:
