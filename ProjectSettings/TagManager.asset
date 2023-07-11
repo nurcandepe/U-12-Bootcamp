@@ -10,6 +10,7 @@ TagManager:
   - Rock
   - Fire
   - Lever
+  - InventoryButton
   layers:
   - Default
   - TransparentFX

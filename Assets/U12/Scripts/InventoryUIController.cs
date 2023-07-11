@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class InventoryUIController : MonoBehaviour
@@ -7,15 +8,16 @@ public class InventoryUIController : MonoBehaviour
     Inventory userInventory;
     MouseController mouseController;
 
-    public GameObject inventoryPanel;
-    //private bool isPanelOpen = false;
-
-
-    //Paneldeki Tüm Slotlarý Gösteriyoruz
-    public List<SlotUI> uiList = new List<SlotUI>();
+    //Sahnedeki inventory paneli ve slotlarý ekliyoruz
+    private GameObject inventoryPanel;
+    private List<SlotUI> uiList;
 
     private void Start()
     {
+        inventoryPanel = GameObject.Find("InventoryPanel");
+        uiList = new List<SlotUI>(GameObject.FindGameObjectsWithTag("InventoryButton").Select(go => go.GetComponent<SlotUI>()));
+        uiList.Reverse(); //Elemanlar ters sýralanýyor düzeltmek için
+
         userInventory = gameObject.GetComponent<Inventory>();
         mouseController = gameObject.GetComponent<MouseController>();
         

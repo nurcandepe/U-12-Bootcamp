@@ -3866,7 +3866,7 @@ GameObject:
   - component: {fileID: 1587473807773172911}
   - component: {fileID: 1587473807773172913}
   m_Layer: 5
-  m_Name: Inventory
+  m_Name: InventoryPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

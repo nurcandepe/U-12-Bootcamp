@@ -4,13 +4,20 @@ using UnityEngine;
 
 public class MainMenuScript : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private GameObject playPanel;
+    private GameObject creditsPanel;
+    private GameObject settingsPanel;
+
     void Start()
     {
-        
+        playPanel = GameObject.Find("PlayPanel");
+        creditsPanel = GameObject.Find("CreditsPanel");
+        settingsPanel = GameObject.Find("SettingsPanel");
+
+        creditsPanel.SetActive(false);
+        settingsPanel.SetActive(false);
     }
 
-    // Update is called once per frame
     void Update()
     {
         

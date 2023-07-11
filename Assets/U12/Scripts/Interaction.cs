@@ -13,8 +13,8 @@ public class Interaction : MonoBehaviour
 
     private GameObject triggeredObject;
 
-    public GameObject interactPanel;
-    public TextMeshProUGUI interactText;
+    private GameObject interactPanel;
+    private TextMeshProUGUI interactText;
 
     [SerializeField] GameObject axeHolder;
     [SerializeField] GameObject axe;
@@ -27,6 +27,9 @@ public class Interaction : MonoBehaviour
 
     void Start()
     {
+        interactPanel = GameObject.Find("InteractionPanel");
+        interactText = GameObject.Find("InteractionText").GetComponent<TextMeshProUGUI>();
+
         _animator = GetComponentInParent<Animator>();
         interactPanel.SetActive(false);
         //_transform = GetComponentInParent<Transform>();
