@@ -24,6 +24,8 @@ public class MainQuest : MonoBehaviour
     private ThirdPersonController tpController;
     private Animator animator;
 
+    private string activeName = "Victor";
+
     void Start()
     {
         questNumber = values.quest;
@@ -62,7 +64,10 @@ public class MainQuest : MonoBehaviour
                 questInfoText.text = "Görev Atanmadý";
                 break;
             case 10:
-                questInfoText.text = "Ýlk Görev";
+                questInfoText.text = "CASE 10 \nKöylü ile konuþ";
+                break;
+            case 20:
+                questInfoText.text = "CASE 20 \nÇiftçi ile konuþ";
                 break;
             default:
                 questInfoText.text = "Görev Yok";
@@ -82,23 +87,47 @@ public class MainQuest : MonoBehaviour
                 switch (dialogueNumber)
                 {
                     case 0:
-                        dialogueText.text = "Çok zor durumdayýz. Yardým et!";
+                        dialogueNameText.text = "Village Elder";
+                        dialogueText.text = "I heard you're finally turning 18 today. Congratulations, kid! It means you can embark on the sea journey to distant islands now.";
                         dialogueNumber = 10;
                         break;
                     case 10:
-                        dialogueText.text = "Bitti.";
+                        dialogueNameText.text = activeName;
+                        dialogueText.text = "Thank you, sir! I've been eagerly waiting for this day. I heard there's a rumor about a treasure hidden on one of the islands. I want to find it and prove myself as a worthy warrior.";
                         dialogueNumber = 20;
                         break;
                     case 20:
-                        dialoguePanel.SetActive(false);
-                        dialogueNumber = 0;
-                        tpController.enabled = true;
-                        animator.SetBool("npcTalk", false);
+                        dialogueNameText.text = "Village Elder";
+                        dialogueText.text = "Ah, the treasure! It's been a talk of the town lately. They say it's hidden deep within the islands, waiting for someone brave enough to claim it. If you're serious about this quest, you must start by following the signs and completing various tasks.";
+                        dialogueNumber = 30;
+                        break;
+                    case 30:
+                        dialogueNameText.text = activeName;
+                        dialogueText.text = "I'm ready for the challenge! Who should I seek first to begin my journey?";
+                        dialogueNumber = 40;
+                        break;
+                    case 40:
+                        dialogueNameText.text = "Village Elder";
+                        dialogueText.text = "Head over to the farmer's fields, kid. Martin knows these lands like the back of his hand. Help him with his chores, and he might have valuable information or tasks for you.";
+                        dialogueNumber = 50;
+                        break;
+                    case 50:
+                        values.quest = 20;
+                        DeactiveDialogue();
                         break;
                 }
                 break;
             default:
-                dialogueText.text = "Bugünlerde hava bir garip...";
+                switch (dialogueNumber)
+                {
+                    case 0:
+                        dialogueText.text = "Bugünlerde hava bir garip...";
+                        dialogueNumber = 10;
+                        break;
+                    case 10:
+                        DeactiveDialogue();
+                        break;
+                }
                 break;
         }
     }
@@ -128,5 +157,13 @@ public class MainQuest : MonoBehaviour
         {
             return false;
         }
+    }
+
+    void DeactiveDialogue()
+    {
+        dialogueNumber = 0;
+        dialoguePanel.SetActive(false);
+        tpController.enabled = true;
+        animator.SetBool("npcTalk", false);
     }
 }
