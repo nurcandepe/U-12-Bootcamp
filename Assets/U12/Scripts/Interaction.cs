@@ -27,6 +27,10 @@ public class Interaction : MonoBehaviour
     public GameObject log;
     public GameObject stone;
 
+    //Görev takibi için deðiþkenler
+    public SOValues values;
+    private MainQuest mainQuest;
+
     void Start()
     {
         interactPanel = GameObject.Find("InteractionPanel");
@@ -35,6 +39,11 @@ public class Interaction : MonoBehaviour
         _animator = GetComponentInParent<Animator>();
         interactPanel.SetActive(false);
         //_transform = GetComponentInParent<Transform>();
+
+        //Sahneye ilk girdiðinde deðiþkeni none yapýyoruz
+        values.triggerNPC = "None";
+
+        mainQuest = GetComponent<MainQuest>();
     }
 
     void Update()
@@ -71,8 +80,8 @@ public class Interaction : MonoBehaviour
             }
             else if (canTalk)
             {
-
-                Debug.Log("Konuþabilirim");
+                interactPanel.SetActive(false);
+                mainQuest.ActiveDialogue();
             }
         }
     }
@@ -103,6 +112,7 @@ public class Interaction : MonoBehaviour
         else if (other.gameObject.CompareTag("NPC"))
         {
             triggeredObject = other.gameObject;
+            values.triggerNPC = triggeredObject.name;
             interactPanel.SetActive(true);
             canTalk = true;
             interactText.text = "Konuþ";
@@ -131,6 +141,7 @@ public class Interaction : MonoBehaviour
         else if (other.gameObject.CompareTag("NPC"))
         {
             canTalk = false;
+            values.triggerNPC = "None";
             interactPanel.SetActive(false);
         }
     }

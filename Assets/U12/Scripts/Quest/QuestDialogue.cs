@@ -9,7 +9,6 @@ public class QuestDialogue : MonoBehaviour
     void Start()
     {
         mainQuest = GetComponent<MainQuest>();
-        Debug.Log(mainQuest.questNumber);
     }
 
     void Update()

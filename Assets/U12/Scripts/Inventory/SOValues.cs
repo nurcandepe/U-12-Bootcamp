@@ -7,6 +7,8 @@ public class SOValues : ScriptableObject
 {
     public string gender;
     public int quest;
+    public string questNPCName;
+    public string triggerNPC;
     public int map;
     public int waypoint;
 }
