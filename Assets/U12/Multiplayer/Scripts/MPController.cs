@@ -159,7 +159,7 @@ namespace StarterAssets
 
         private void Update()
         {
-            //if (!isLocalPlayer) return;
+            if (!isLocalPlayer) return;
             _hasAnimator = TryGetComponent(out _animator);
 
             JumpAndGravity();
