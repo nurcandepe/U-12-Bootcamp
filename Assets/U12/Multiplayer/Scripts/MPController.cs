@@ -128,6 +128,8 @@ namespace StarterAssets
             }
         }
 
+        private MouseController mouseController;
+
 
         private void Awake()
         {
@@ -170,6 +172,8 @@ namespace StarterAssets
             // reset our timeouts on start
             _jumpTimeoutDelta = JumpTimeout;
             _fallTimeoutDelta = FallTimeout;
+
+            mouseController = GetComponent<MouseController>();
         }
 
         private void Update()
@@ -181,6 +185,11 @@ namespace StarterAssets
             GroundedCheck();
             Move();
 
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                mouseController.MouseAutoReverse();
+
+            }
 
         }
 
