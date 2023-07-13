@@ -11,7 +11,7 @@ TagManager:
   - Fire
   - Lever
   - InventoryButton
-  - NPC
+  - PlayerFollowCamera
   layers:
   - Default
   - TransparentFX
