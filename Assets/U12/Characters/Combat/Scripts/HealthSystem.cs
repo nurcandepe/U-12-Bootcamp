@@ -2,9 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using StarterAssets;
+using Unity.VisualScripting;
 
 public class HealthSystem : MonoBehaviour
 {
+    SoundManager soundManagerScript;
+
+
     [SerializeField] float health = 100;
     [SerializeField] GameObject hitVFX;
     //[SerializeField] GameObject ragdoll;
@@ -15,6 +19,7 @@ public class HealthSystem : MonoBehaviour
 
     void Start()
     {
+        soundManagerScript = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
         animator = GetComponent<Animator>();
     }
 
@@ -23,6 +28,7 @@ public class HealthSystem : MonoBehaviour
         health -= damageAmount;
         animator.SetTrigger("damage");
         CameraShake.Instance.ShakeCamera(1f, 0.2f); //CAMERA SHAKE
+        soundManagerScript.Injured();
 
         if (health <= 0)
         {
