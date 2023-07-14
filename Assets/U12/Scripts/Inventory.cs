@@ -23,4 +23,43 @@ public class Inventory : MonoBehaviour
             }
         }
     }
+
+    public int GetItemCount(string objectName)
+    {
+        int count = 0;
+
+        foreach (Slot slot in playerInventory.inventorySlots)
+        {
+            if (slot.item != null && slot.item.itemName == objectName)
+            {
+                count += slot.itemCount;
+            }
+        }
+        return count;
+    }
+
+    public void DeleteItemCount(string objectName, int amount)
+    {
+        int remainingAmount = amount;
+
+        foreach (Slot slot in playerInventory.inventorySlots)
+        {
+            if (slot.item != null && slot.item.itemName == objectName)
+            {
+                if (slot.itemCount <= remainingAmount)
+                {
+                    remainingAmount -= slot.itemCount;
+                    slot.itemCount = 0;
+                    slot.item = null;
+                    slot.isFull = false;
+                }
+                else
+                {
+                    slot.itemCount -= remainingAmount;
+                    remainingAmount = 0;
+                    break;
+                }
+            }
+        }
+    }
 }
