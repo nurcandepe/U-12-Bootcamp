@@ -2485,6 +2485,7 @@ MonoBehaviour:
   pickaxe: {fileID: 5676840300738598790, guid: 2ce7f3f60a7219d478bdc624979d8024, type: 3}
   log: {fileID: 522459008932986039, guid: c82df2cf0bfd57f46a40dfb255d3df92, type: 3}
   stone: {fileID: 4695085743662960305, guid: b3e666ed958e9c7428a830afa55b8621, type: 3}
+  values: {fileID: 11400000, guid: db3687a117b9e87419263a6ea70a7a3b, type: 2}
 --- !u!1 &4387422783723202194
 GameObject:
   m_ObjectHideFlags: 0
