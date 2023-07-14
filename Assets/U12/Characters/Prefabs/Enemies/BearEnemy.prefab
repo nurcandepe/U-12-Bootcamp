@@ -920,7 +920,8 @@ MonoBehaviour:
   hasDealtDamage: 0
   weaponDamage: 0.5
   hitVFX: {fileID: 1743637094903878, guid: 021a2f7a2c5bc4449b4c64a66a050e8c, type: 3}
-  hitPosition: {fileID: 0}
+  hitPositionMan: {fileID: 0}
+  hitPositionWoman: {fileID: 0}
 --- !u!1 &2818735574162032628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1687,7 +1688,7 @@ MonoBehaviour:
   damageDealer: {fileID: 2595634907576853792}
   attackCD: 1
   attackRange: 2.8
-  aggroRange: 8
+  aggroRange: 13
   __animator: {fileID: 0}
 --- !u!195 &2595634908748931382
 NavMeshAgent:
