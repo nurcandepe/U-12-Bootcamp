@@ -86,7 +86,7 @@ public class Interaction : MonoBehaviour
             canBreak = true;
             triggeredObject = other.gameObject;
             interactPanel.SetActive(true);
-            interactText.text = "Parçala";
+            interactText.text = "Parï¿½ala";
         }
 
         else if (other.gameObject.CompareTag("Lever"))
