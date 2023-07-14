@@ -2216,8 +2216,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4287029888090569493}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.19999984, y: 1.375, z: -4.0000005}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.20000076, y: 1.375, z: -4.000017}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2417,6 +2417,8 @@ GameObject:
   - component: {fileID: 4371419483540200165}
   - component: {fileID: 4371419483540200154}
   - component: {fileID: 4371419483540200155}
+  - component: {fileID: 1503297001}
+  - component: {fileID: 1503297011}
   m_Layer: 8
   m_Name: Interaction
   m_TagString: Untagged
@@ -2485,6 +2487,34 @@ MonoBehaviour:
   pickaxe: {fileID: 5676840300738598790, guid: 2ce7f3f60a7219d478bdc624979d8024, type: 3}
   log: {fileID: 522459008932986039, guid: c82df2cf0bfd57f46a40dfb255d3df92, type: 3}
   stone: {fileID: 4695085743662960305, guid: b3e666ed958e9c7428a830afa55b8621, type: 3}
+  values: {fileID: 11400000, guid: db3687a117b9e87419263a6ea70a7a3b, type: 2}
+--- !u!114 &1503297001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4371419483540200153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 981e314a093a11f46a42cd4a51d10089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  values: {fileID: 11400000, guid: db3687a117b9e87419263a6ea70a7a3b, type: 2}
+  questNumber: 0
+  questNPC: 
+--- !u!114 &1503297011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4371419483540200153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be361dc8c072cd440b9f5eb378b5f83e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   values: {fileID: 11400000, guid: db3687a117b9e87419263a6ea70a7a3b, type: 2}
 --- !u!1 &4387422783723202194
 GameObject:
@@ -4004,7 +4034,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6621236496887461002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.19999984, y: 1.375, z: -4.0000005}
+  m_LocalPosition: {x: 0.20000076, y: 1.375, z: -4.000017}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
