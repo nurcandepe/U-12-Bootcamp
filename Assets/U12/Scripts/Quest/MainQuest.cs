@@ -88,6 +88,7 @@ public class MainQuest : MonoBehaviour
         switch (dialogueNumber)
         {
             case 0:
+                dialogueNameText.text = values.triggerNPC;
                 dialogueText.text = "Bugünlerde hava bir garip...";
                 dialogueNumber = 10;
                 break;
@@ -209,7 +210,6 @@ public class MainQuest : MonoBehaviour
                             DeactiveDialogue();
                             break;
                     }
-                    break;
                 }
                 else
                 {
@@ -224,13 +224,13 @@ public class MainQuest : MonoBehaviour
                             DeactiveDialogue();
                             break;
                     }
-                    break;
                 }
                 break;
             default:
                 switch (dialogueNumber)
                 {
                     case 0:
+                        dialogueNameText.text = values.triggerNPC;
                         dialogueText.text = "Bugünlerde hava bir garip...";
                         dialogueNumber = 10;
                         break;

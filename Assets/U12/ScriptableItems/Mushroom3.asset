@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b077f571035a624fbd09c71d5ac8dca, type: 3}
   m_Name: Mushroom3
   m_EditorClassIdentifier: 
-  itemName: Mushroom 3
+  itemName: Mushroom3
   itemDescription: Mushroom
   canStackable: 1
   itemIcon: {fileID: 21300000, guid: 7539b24fdcf205f4f9f264f3ccf77f01, type: 3}

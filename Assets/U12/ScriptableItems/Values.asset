@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Values
   m_EditorClassIdentifier: 
   gender: male
-  quest: 30
+  quest: 40
   questNPCName: default
   triggerNPC: None
   map: 0
