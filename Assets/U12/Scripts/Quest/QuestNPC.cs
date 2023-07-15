@@ -37,6 +37,9 @@ public class QuestNPC : MonoBehaviour
             case 30:
                 questNPC = "Priest";
                 break;
+            case 40:
+                questNPC = "Priest";
+                break;
             default:
                 questNPC = "default";
                 break;
