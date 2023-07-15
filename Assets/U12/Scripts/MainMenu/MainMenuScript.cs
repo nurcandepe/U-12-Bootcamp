@@ -16,6 +16,7 @@ public class MainMenuScript : MonoBehaviour
     public Button playButton;
     public Button manButton;
     public Button womanButton;
+    public Button multiplayerButton;
     public Button settingsButton;
     public Button creditsButton;
     public Button exitButton;
@@ -40,14 +41,15 @@ public class MainMenuScript : MonoBehaviour
     private void OnEnable()
     {
         playButton.onClick.AddListener(EnablePlayPanel);
-        manButton.onClick.AddListener(StartGameFuncMan);
+        manButton.onClick.AddListener(StartGameMan);
         womanButton.onClick.AddListener(StartGameWoman);
+        multiplayerButton.onClick.AddListener(StartMultiplayer);
         settingsButton.onClick.AddListener(EnableSettingsPanel);
         creditsButton.onClick.AddListener(EnableCreditsPanel);
         exitButton.onClick.AddListener(ExitGameFunc);
     }
 
-    private void StartGameFuncMan()
+    private void StartGameMan()
     {
         values.gender = "male";
         values.playerName = "Victor";
@@ -62,6 +64,10 @@ public class MainMenuScript : MonoBehaviour
         values.map = 10;
         values.quest = 10;
         SceneManager.LoadScene("Base");
+    }
+    private void StartMultiplayer()
+    {
+        SceneManager.LoadScene("Multiplayer");
     }
 
     private void ExitGameFunc()
