@@ -26,6 +26,9 @@ public class MainQuest : MonoBehaviour
 
     private string activeName = "Victor";
 
+    private Inventory inventory; //Item kontrolu icin Inventory scriptine erisim
+    private GoldenPaddle paddle;
+
     void Start()
     {
         questNumber = values.quest;
@@ -47,6 +50,9 @@ public class MainQuest : MonoBehaviour
         tpController = GetComponentInParent<ThirdPersonController>();
         animator = GetComponentInParent<Animator>();
 
+        inventory = FindObjectOfType<Inventory>();
+        paddle = FindObjectOfType<GoldenPaddle>();
+
     }
 
     // Update is called once per frame
@@ -67,10 +73,16 @@ public class MainQuest : MonoBehaviour
                 questInfoText.text = "CASE 10 \nKöylü ile konuþ";
                 break;
             case 20:
-                questInfoText.text = "CASE 20 \nÇiftçi ile konuþ";
+                questInfoText.text = "CASE 20 \nPatikayý takip et ve Çiftçi Martin ile konuþ";
                 break;
             case 30:
-                questInfoText.text = "CASE 30 \n5 kütük topla ve papaza götür";
+                questInfoText.text = "CASE 30 \nAðaç kesme bölgesinden 5 kütük topla ve papaza götür, patikayý takip et.";
+                break;
+            case 40:
+                questInfoText.text = "CASE 40 \nDaða çýkan yolu takip et ve Kutsal Kürek'i alýp papaza dön.";
+                break;
+            case 50:
+                questInfoText.text = "CASE 50 \nÝskeledeki kayýða bin ve yeni adaya yelken aç. Gelirken kullandýðýn patikayý takip et.";
                 break;
             default:
                 questInfoText.text = "Görev Yok";
@@ -176,7 +188,7 @@ public class MainQuest : MonoBehaviour
                 break;
             case 30:
                 //Ýf içerisine bu görev için 5 kütük getirip getirilmediði kontrol edilecek
-                if (true)
+                if (inventory.GetItemCount("Log") >= 5)
                 {
                     switch (dialogueNumber)
                     {
@@ -206,8 +218,9 @@ public class MainQuest : MonoBehaviour
                             dialogueNumber = 50;
                             break;
                         case 50:
-                            values.quest = 40;
+                            inventory.DeleteItemCount("Log", 5);
                             DeactiveDialogue();
+                            values.quest = 40;
                             break;
                     }
                 }
@@ -239,7 +252,51 @@ public class MainQuest : MonoBehaviour
                         break;
                 }
                 break;
+
+            case 40:
+                if (paddle.didPaddle) //kürek kontrolü
+                {
+                    switch (dialogueNumber)
+                    {
+                        case 0:
+                            dialogueNameText.text = activeName;
+                            dialogueText.text = "Merhaba bilge papaz. Bahsettiðin kutsal küreði aldým.";
+                            dialogueNumber = 10;
+                            break;
+                        case 10:
+                            dialogueNameText.text = "Priest";
+                            dialogueText.text = "Çok güzel, baþaracaðýna inanýyordum zaten. Ama asýl macera þimdi baþlýyor, iskelede seni bekleyen bir kayýk var. Bu kayýða atlayýp bir sonraki adaya gidebilirsin. Sana güvenim tam, maceranda bol þans!";
+                            dialogueNumber = 20;
+                            break;
+                        case 20:
+                            dialogueNameText.text = activeName;
+                            dialogueText.text = "Teþekkür ederim, güveninizi boþa çýkarmayacaðým.";
+                            dialogueNumber = 30;
+                            break;
+                        case 30:
+                            values.quest = 50;
+                            DeactiveDialogue();
+                            break;
+                    }
+                }
+                else
+                {
+                    switch (dialogueNumber)
+                    {
+                        case 0:
+                            dialogueNameText.text = "Priest";
+                            dialogueText.text = "Henüz kutsal küreði bulmadýn";
+                            dialogueNumber = 10;
+                            break;
+                        case 10:
+                            DeactiveDialogue();
+                            break;
+                    }
+                }
+                break;
+
         }
+        
     }
 
     public void ActiveDialogue()
