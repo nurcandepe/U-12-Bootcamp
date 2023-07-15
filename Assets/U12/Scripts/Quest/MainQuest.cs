@@ -45,7 +45,7 @@ public class MainQuest : MonoBehaviour
         dialoguePanel.SetActive(false);
         dialogueNumber = 0;
 
-        questInfoText.text = "Ýlk Görevin";
+        questInfoText.text = "Your First Mission";
 
         tpController = GetComponentInParent<ThirdPersonController>();
         animator = GetComponentInParent<Animator>();
@@ -67,25 +67,25 @@ public class MainQuest : MonoBehaviour
         switch (questNumber)
         {
             case 0:
-                questInfoText.text = "Görev Atanmadý";
+                questInfoText.text = "Mission not assigned";
                 break;
             case 10:
-                questInfoText.text = "CASE 10 \nKöylü ile konuþ";
+                questInfoText.text = "MISSION 1 \nTalk with the village elder.";
                 break;
             case 20:
-                questInfoText.text = "CASE 20 \nPatikayý takip et ve Çiftçi Martin ile konuþ";
+                questInfoText.text = "MISSION 2 \nFollow the path. Head over to the Farmer Martin’s fields. Help him with his chores.";
                 break;
             case 30:
-                questInfoText.text = "CASE 30 \nAðaç kesme bölgesinden 5 kütük topla ve papaza götür, patikayý takip et.";
+                questInfoText.text = "MISSION 3 \nChop down the trees in the logging area. Once you have the 5 logs, take them to the Priest. Follow the path.";
                 break;
             case 40:
-                questInfoText.text = "CASE 40 \nDaða çýkan yolu takip et ve Kutsal Kürek'i alýp papaza dön.";
+                questInfoText.text = "MISSION 4 \nGo to the summit of the mountain and take the Sacred Oar to give it to the Priest";
                 break;
             case 50:
-                questInfoText.text = "CASE 50 \nÝskeledeki kayýða bin ve yeni adaya yelken aç. Gelirken kullandýðýn patikayý takip et.";
+                questInfoText.text = "MISSION 5 \nReach the pier and board the boat to the next island. Follow the path you used before.";
                 break;
             default:
-                questInfoText.text = "Görev Yok";
+                questInfoText.text = "No mission";
                 break;
         }
     }
@@ -101,7 +101,7 @@ public class MainQuest : MonoBehaviour
         {
             case 0:
                 dialogueNameText.text = values.triggerNPC;
-                dialogueText.text = "Bugünlerde hava bir garip...";
+                dialogueText.text = "The weather is weird these days, isn't it?";
                 dialogueNumber = 10;
                 break;
             case 10:
@@ -172,7 +172,7 @@ public class MainQuest : MonoBehaviour
                         break;
                     case 30:
                         dialogueNameText.text = "Farmer Martin";
-                        dialogueText.text = "Once you have the five logs, take them to the village church and seek the guidance of the wise old priest. He holds the knowledge to guide you further on your quest.";
+                        dialogueText.text = "Once you have the five logs, take them to the village church and seek the guidance of the wise old Priest. He holds the knowledge to guide you further on your mission.";
                         dialogueNumber = 40;
                         break;
                     case 40:
@@ -194,27 +194,27 @@ public class MainQuest : MonoBehaviour
                     {
                         case 0:
                             dialogueNameText.text = activeName;
-                            dialogueText.text = "Greetings, wise priest. I have come bearing the logs as a donation to the village church, as instructed by Mr. Martin. I've completed the task given by Mr. Martin to reach the treasure. What is the next step, wise priest?";
+                            dialogueText.text = "Greetings, wise Priest. I have come bearing the logs as a donation to the village church, as instructed by Mr. Martin. I've completed the task given by Mr. Martin to reach the treasure. What is the next step, wise Priest?";
                             dialogueNumber = 10;
                             break;
                         case 10:
                             dialogueNameText.text = "Priest";
-                            dialogueText.text = "Ah, young warrior, your spirit and determination shine bright. At the summit of the treacherous mountain lies a hidden treasure—a sacred oar. It is said to possess remarkable powers. Retrieve this oar, for it will be a key to unveiling the secrets you seek.";
+                            dialogueText.text = "Ah, young warrior, your spirit and determination shine bright. At the summit of the treacherous mountain lies a hidden treasure—a Sacred Oar. It is said to possess remarkable powers. Retrieve this oar, for it will be a key to unveiling the secrets you seek.";
                             dialogueNumber = 20;
                             break;
                         case 20:
                             dialogueNameText.text = activeName;
-                            dialogueText.text = "A sacred oar? I had no knowledge of it. How can I reach it, wise priest?";
+                            dialogueText.text = "A Sacred Oar? I had no knowledge of it. How can I reach it, wise Priest?";
                             dialogueNumber = 30;
                             break;
                         case 30:
                             dialogueNameText.text = "Priest";
-                            dialogueText.text = "Journey to the mountain's peak, young warrior, and search for the sacred oar. Be wary of the dangers that await you, for fierce creatures guard the way. Trust your instincts and return safely with the oar.";
+                            dialogueText.text = "Journey to the mountain's peak, young warrior, and search for the Sacred Oar. Be wary of the dangers that await you, for fierce creatures guard the way. Trust your instincts and return safely with the oar.";
                             dialogueNumber = 40;
                             break;
                         case 40:
                             dialogueNameText.text = activeName;
-                            dialogueText.text = " I accept this challenge, wise priest. With your blessings and guidance, I will ascend the mountain and take the sacred oar.";
+                            dialogueText.text = "I accept this challenge, wise priest. With your blessings and guidance, I will ascend the mountain and take the Sacred Oar.";
                             dialogueNumber = 50;
                             break;
                         case 50:
@@ -230,7 +230,7 @@ public class MainQuest : MonoBehaviour
                     {
                         case 0:
                             dialogueNameText.text = "Priest";
-                            dialogueText.text = "Önce kütükleri görelim....";
+                            dialogueText.text = "Let's see the logs first, kid!";
                             dialogueNumber = 10;
                             break;
                         case 10:
@@ -244,7 +244,7 @@ public class MainQuest : MonoBehaviour
                 {
                     case 0:
                         dialogueNameText.text = values.triggerNPC;
-                        dialogueText.text = "Bugünlerde hava bir garip...";
+                        dialogueText.text = "The weather is weird these days, isn't it?";
                         dialogueNumber = 10;
                         break;
                     case 10:
@@ -260,17 +260,17 @@ public class MainQuest : MonoBehaviour
                     {
                         case 0:
                             dialogueNameText.text = activeName;
-                            dialogueText.text = "Merhaba bilge papaz. Bahsettiðin kutsal küreði aldým.";
+                            dialogueText.text = "Hello again wise Priest. I got the Sacred Oar you mentioned.";
                             dialogueNumber = 10;
                             break;
                         case 10:
                             dialogueNameText.text = "Priest";
-                            dialogueText.text = "Çok güzel, baþaracaðýna inanýyordum zaten. Ama asýl macera þimdi baþlýyor, iskelede seni bekleyen bir kayýk var. Bu kayýða atlayýp bir sonraki adaya gidebilirsin. Sana güvenim tam, maceranda bol þans!";
+                            dialogueText.text = "Great! I believed you could make it. But the real adventure begins now, there is a boat waiting for you at the pier. Board this boat to the next island. I trust you, good luck in your adventure!";
                             dialogueNumber = 20;
                             break;
                         case 20:
                             dialogueNameText.text = activeName;
-                            dialogueText.text = "Teþekkür ederim, güveninizi boþa çýkarmayacaðým.";
+                            dialogueText.text = "Thank you, I won't let you down.";
                             dialogueNumber = 30;
                             break;
                         case 30:
@@ -285,7 +285,7 @@ public class MainQuest : MonoBehaviour
                     {
                         case 0:
                             dialogueNameText.text = "Priest";
-                            dialogueText.text = "Henüz kutsal küreði bulmadýn";
+                            dialogueText.text = "You haven't found the Sacred Oar yet";
                             dialogueNumber = 10;
                             break;
                         case 10:

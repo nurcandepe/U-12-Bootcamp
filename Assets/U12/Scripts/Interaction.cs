@@ -93,7 +93,7 @@ public class Interaction : MonoBehaviour
             canHit = true;
             triggeredObject = other.gameObject;
             interactPanel.SetActive(true);
-            interactText.text = "Kes";
+            interactText.text = "Cut";
         }
         else if (other.gameObject.CompareTag("Rock"))
         {
@@ -101,13 +101,13 @@ public class Interaction : MonoBehaviour
             canBreak = true;
             triggeredObject = other.gameObject;
             interactPanel.SetActive(true);
-            interactText.text = "Parï¿½ala";
+            interactText.text = "Smash";
         }
         else if (other.gameObject.CompareTag("Lever"))
         {
             triggeredObject = other.gameObject;
             interactPanel.SetActive(true);
-            interactText.text = "Kullan";
+            interactText.text = "Take";
         }
         else if (other.gameObject.CompareTag("NPC"))
         {
@@ -115,7 +115,7 @@ public class Interaction : MonoBehaviour
             values.triggerNPC = triggeredObject.name;
             interactPanel.SetActive(true);
             canTalk = true;
-            interactText.text = "Konuþ";
+            interactText.text = "Talk";
         }
     }
     private void OnTriggerExit(Collider other)
