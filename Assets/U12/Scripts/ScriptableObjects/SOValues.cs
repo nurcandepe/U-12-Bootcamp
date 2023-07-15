@@ -6,6 +6,7 @@ using UnityEngine;
 public class SOValues : ScriptableObject
 {
     public string gender;
+    public string playerName;
     public int quest;
     public string questNPCName;
     public string triggerNPC;
