@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Values
   m_EditorClassIdentifier: 
   gender: male
-  quest: 50
-  questNPCName: default
+  quest: 10
+  questNPCName: VillageElder
   triggerNPC: None
   map: 0
   waypoint: 0
