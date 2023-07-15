@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Values
   m_EditorClassIdentifier: 
   gender: male
-  quest: 30
-  questNPCName: Priest
+  quest: 50
+  questNPCName: default
   triggerNPC: None
   map: 0
   waypoint: 0
