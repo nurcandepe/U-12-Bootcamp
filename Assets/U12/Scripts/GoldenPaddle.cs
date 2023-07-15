@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class GoldenPaddle : MonoBehaviour
 {
+    public bool isKeyPicked = false;
     public bool didPaddle = false; // Teleport Scriptinde Kullanilacak
     private bool canPick = false;
     [SerializeField] GameObject paddle;
@@ -26,6 +27,7 @@ public class GoldenPaddle : MonoBehaviour
             {
                 didPaddle = true;
                 canPick = false;
+                isKeyPicked = true;
                 Destroy(paddle);
             }
         }
