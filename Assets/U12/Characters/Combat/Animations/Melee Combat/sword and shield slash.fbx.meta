@@ -57,6 +57,13 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
+      - time: 0.079245284
+        functionName: Swing
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       - time: 0.14379369
         functionName: StartDealDamage
         data: 
@@ -64,15 +71,15 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.4513354
-        functionName: EndDealDamage
+      - time: 0.24408142
+        functionName: HitTheDragon
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.24408142
-        functionName: HitTheDragon
+      - time: 0.4513354
+        functionName: EndDealDamage
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0

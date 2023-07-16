@@ -71,13 +71,13 @@ public class CasualEnemy : MonoBehaviour
             health -= damageAmount;
             __animator.SetTrigger("damage");
             CameraShake.Instance.ShakeCamera(1f, 0.2f); //CAMERA SHAKE
-            soundManagerfarmerhurt.Farmerhurt();
+            //soundManagerfarmerhurt.Farmerhurt();
 
             if (health <= 0)
             {
                 Die();
                 isDeadCasual = true;
-                soundManagerfarmerdie.Farmerdie();
+                //soundManagerfarmerdie.Farmerdie();
             }
         }
 

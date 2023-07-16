@@ -48,7 +48,7 @@ public class CombatScript : MonoBehaviour
             if (isSwordDrawed == true)
             {
                 _animator.SetTrigger("Attack");
-                SoundManagerswingscript.Swing();
+                //SoundManagerswingscript.Swing();
             }
             }
 

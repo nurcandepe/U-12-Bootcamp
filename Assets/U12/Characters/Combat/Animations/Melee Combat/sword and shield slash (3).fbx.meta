@@ -64,8 +64,8 @@ ModelImporter:
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.6423895
-        functionName: EndDealDamage
+      - time: 0.33584908
+        functionName: Swing
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
@@ -73,6 +73,13 @@ ModelImporter:
         messageOptions: 0
       - time: 0.42613637
         functionName: HitTheDragon
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.6423895
+        functionName: EndDealDamage
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0

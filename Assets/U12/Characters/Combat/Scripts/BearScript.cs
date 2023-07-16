@@ -27,8 +27,8 @@ public class BearScript : MonoBehaviour
 
     void Start()
     {
-        soundManagermonsterroar = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
-        soundManagermonsterdead = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
+       // soundManagermonsterroar = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
+       // soundManagermonsterdead = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
         player = GameObject.FindWithTag("Player");
         __animator = GetComponent<Animator>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -74,12 +74,12 @@ public class BearScript : MonoBehaviour
             health -= damageAmount;
             __animator.SetTrigger("damage");
             CameraShake.Instance.ShakeCamera(1f, 0.2f); //CAMERA SHAKE
-            soundManagermonsterroar.Monsterroar();
+            //soundManagermonsterroar.Monsterroar();
 
             if (health <= 0)
             {
                 Die();
-                soundManagermonsterdead.Mosterdead();
+                //soundManagermonsterdead.Mosterdead();
                 isDeadBear = true;
             }
         }
