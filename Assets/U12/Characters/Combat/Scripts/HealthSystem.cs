@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using StarterAssets;
 using Unity.VisualScripting;
+using UnityEngine.UI;
 
 public class HealthSystem : MonoBehaviour
 {
@@ -17,10 +18,15 @@ public class HealthSystem : MonoBehaviour
     public bool isDead = false;
     //public Enemy enemy;
 
+    private GameObject diePanel;
+
     void Start()
     {
-        soundManagerScript = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
+        //soundManagerScript = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
         animator = GetComponent<Animator>();
+
+        diePanel = GameObject.Find("DiePanel");
+        diePanel.SetActive(false);
     }
 
     public void TakeDamage(float damageAmount)
@@ -33,6 +39,7 @@ public class HealthSystem : MonoBehaviour
         if (health <= 0)
         {
             Die();
+            diePanel.SetActive(true);
         }
     }
 

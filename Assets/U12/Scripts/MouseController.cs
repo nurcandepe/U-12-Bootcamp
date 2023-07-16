@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class MouseController : MonoBehaviour
 {
-    private CharacterController characterController;
+    //private CharacterController characterController;
     private bool isMouseLocked = true;
 
 
     private void Start()
     {
-        characterController = GetComponent<CharacterController>();
+        //characterController = GetComponent<CharacterController>();
     }
 
     public void MouseAutoReverse()
