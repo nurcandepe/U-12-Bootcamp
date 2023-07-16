@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    SoundManager SoundManagerskeletonhurt;
+    SoundManager SoundManagerskeletondead;
     [SerializeField] float health = 3f;
     [SerializeField] GameObject hitVFX;
     [SerializeField] GameObject ragdoll;
@@ -21,6 +23,8 @@ public class Enemy : MonoBehaviour
 
     void Start()
     {
+        SoundManagerskeletonhurt = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
+        SoundManagerskeletondead = GameObject.Find("Sound Manager").GetComponent<SoundManager>(); 
         player = GameObject.FindWithTag("Player");
         animator = GetComponent<Animator>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -63,10 +67,12 @@ public class Enemy : MonoBehaviour
         health -= damageAmount;
         animator.SetTrigger("damage");
         CameraShake.Instance.ShakeCamera(1f, 0.2f); //CAMERA SHAKE
+        SoundManagerskeletonhurt.Skeletonhurt();
 
         if (health <= 0)
         {
             Die();
+            SoundManagerskeletondead.Skeletondead();
         }
     }
 

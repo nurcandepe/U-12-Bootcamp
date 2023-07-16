@@ -6,6 +6,8 @@ public class BearScript : MonoBehaviour
 {
     [SerializeField] float health = 3f;
     [SerializeField] GameObject hitVFX;
+    SoundManager soundManagermonsterroar;
+    SoundManager soundManagermonsterdead;
     //[SerializeField] GameObject ragdoll;
 
     public GameObject damageDealer;
@@ -25,6 +27,8 @@ public class BearScript : MonoBehaviour
 
     void Start()
     {
+        soundManagermonsterroar = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
+        soundManagermonsterdead = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
         player = GameObject.FindWithTag("Player");
         __animator = GetComponent<Animator>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -70,10 +74,12 @@ public class BearScript : MonoBehaviour
             health -= damageAmount;
             __animator.SetTrigger("damage");
             CameraShake.Instance.ShakeCamera(1f, 0.2f); //CAMERA SHAKE
+            soundManagermonsterroar.Monsterroar();
 
             if (health <= 0)
             {
                 Die();
+                soundManagermonsterdead.Mosterdead();
                 isDeadBear = true;
             }
         }
@@ -89,7 +95,6 @@ public class BearScript : MonoBehaviour
         enabled = false;
         EndDealDamage();
         isDeadBear = true;
-
         Invoke("DestroyBear", 10f);
 
 

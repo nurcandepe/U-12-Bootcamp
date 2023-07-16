@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class CombatScript : MonoBehaviour
 {
+    SoundManager SoundManagerswingscript;
+    SoundManager SoundManagerblok;
     public Animator _animator;
     public bool isSwordDrawed;
     public bool isBlocking;
@@ -12,6 +14,8 @@ public class CombatScript : MonoBehaviour
 
     void Start()
     {
+        SoundManagerswingscript = FindObjectOfType<SoundManager>();
+        SoundManagerblok = FindObjectOfType<SoundManager>();
         _animator = GetComponent<Animator>();
         isSwordDrawed = false;
         isBlocking = false;
@@ -44,6 +48,7 @@ public class CombatScript : MonoBehaviour
             if (isSwordDrawed == true)
             {
                 _animator.SetTrigger("Attack");
+                SoundManagerswingscript.Swing();
             }
             }
 
@@ -67,6 +72,7 @@ public class CombatScript : MonoBehaviour
     public void BlockTrigger()
     {
         _animator.SetBool("BlockImpact", true);
+        SoundManagerblok.Blok();
     }
 
     public void BlockTriggerOFF()

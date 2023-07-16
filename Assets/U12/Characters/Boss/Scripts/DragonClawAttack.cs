@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class DragonClawAttack : MonoBehaviour
 {
+    SoundManager Soundmanagerattack; 
     private Animator _animator;
 
     void Start()
     {
+        Soundmanagerattack = FindObjectOfType<SoundManager>();
         _animator = GetComponentInParent<Animator>();
     }
 
@@ -15,5 +17,6 @@ public class DragonClawAttack : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         _animator.SetBool("isAttacking", true);
+        Soundmanagerattack.DragonJumpAttack();
     }
 }
