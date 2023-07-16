@@ -1060,7 +1060,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 4
   hitVFX: {fileID: 1743637094903878, guid: 021a2f7a2c5bc4449b4c64a66a050e8c, type: 3}
-  damageDealer: {fileID: 807199537505050570}
+  damageDealer: {fileID: 4906915416871181455, guid: 62e438ba80a69354c93770df0ca82253,
+    type: 3}
   attackCD: 1
   attackRange: 2.8
   aggroRange: 8
@@ -2503,6 +2504,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube
       objectReference: {fileID: 0}
+    - target: {fileID: 4906915416871181455, guid: 62e438ba80a69354c93770df0ca82253,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4906915416871181457, guid: 62e438ba80a69354c93770df0ca82253,
         type: 3}
       propertyPath: m_IsTrigger
@@ -2575,12 +2581,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62e438ba80a69354c93770df0ca82253, type: 3}
---- !u!1 &807199537505050570 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4906915416871181455, guid: 62e438ba80a69354c93770df0ca82253,
-    type: 3}
-  m_PrefabInstance: {fileID: 5704761246912840517}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &807199537505050583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4906915416871181458, guid: 62e438ba80a69354c93770df0ca82253,

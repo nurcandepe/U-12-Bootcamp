@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DragonHealth : MonoBehaviour
 {
+    SoundManager soundManagerDragondeath;
+    SoundManager soundManagerDragonhurt;
     private Animator _animatorParent;
     [SerializeField] float dragonHealth = 5f;
     private bool isInsideCollider = false;
@@ -14,6 +16,8 @@ public class DragonHealth : MonoBehaviour
 
     void Start()
     {
+        soundManagerDragondeath = FindObjectOfType<SoundManager>();
+        soundManagerDragonhurt = FindObjectOfType<SoundManager>();
         _animatorParent = GetComponentInParent<Animator>();
         invisibleWall.SetActive(true);
     }
@@ -24,6 +28,7 @@ public class DragonHealth : MonoBehaviour
         {
             _animatorParent.SetBool("isAttacking", false);
             _animatorParent.SetTrigger("DragonDie");
+            soundManagerDragondeath.DragonDeath();
             invisibleWall.SetActive(false);
         }
     }
@@ -45,6 +50,7 @@ public class DragonHealth : MonoBehaviour
         {
             HitVFXDragon();
             dragonHealth -= 1f;
+            soundManagerDragonhurt.DragonHurt();
             //Debug.Log("hit");
         }
     }

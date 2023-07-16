@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class FlameTrigger : MonoBehaviour
 {
+    SoundManager soundManagerDragonbreath; 
     private Animator _animator;
 
     void Start()
     {
+        soundManagerDragonbreath = FindObjectOfType<SoundManager>(); 
         _animator = GetComponentInParent<Animator>();
     }
 
@@ -15,5 +17,6 @@ public class FlameTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         _animator.SetBool("isFlaming", true);
+        soundManagerDragonbreath.Dragonbreath();
     }
 }

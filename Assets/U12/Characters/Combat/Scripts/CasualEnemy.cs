@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CasualEnemy : MonoBehaviour
 {
+    SoundManager soundManagerfarmerhurt;
+    SoundManager soundManagerfarmerdie;
     [SerializeField] float health = 3f;
     [SerializeField] GameObject hitVFX;
     //[SerializeField] GameObject ragdoll;
@@ -23,6 +25,8 @@ public class CasualEnemy : MonoBehaviour
 
     void Start()
     {
+        soundManagerfarmerhurt = FindObjectOfType<SoundManager>();
+        soundManagerfarmerdie = FindObjectOfType<SoundManager>();
         player = GameObject.FindWithTag("Player");
         __animator = GetComponent<Animator>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
@@ -67,11 +71,13 @@ public class CasualEnemy : MonoBehaviour
             health -= damageAmount;
             __animator.SetTrigger("damage");
             CameraShake.Instance.ShakeCamera(1f, 0.2f); //CAMERA SHAKE
+            soundManagerfarmerhurt.Farmerhurt();
 
             if (health <= 0)
             {
                 Die();
                 isDeadCasual = true;
+                soundManagerfarmerdie.Farmerdie();
             }
         }
 

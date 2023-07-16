@@ -4,16 +4,19 @@ using UnityEngine;
 
 public class AlertDragon : MonoBehaviour
 {
-    private Animator _animator;
+    SoundManager soundManagerDragonroar; 
+    public Animator _animator;
 
     void Start()
     {
         _animator = GetComponentInParent<Animator>();
+        soundManagerDragonroar = FindObjectOfType<SoundManager>();
     }
 
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
         _animator.SetTrigger("Alert");
+        soundManagerDragonroar.Dragonroar();
     }
 }

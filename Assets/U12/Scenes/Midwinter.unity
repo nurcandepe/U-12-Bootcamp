@@ -440,7 +440,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh38866
+  m_Name: pb_Mesh30170
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -605,11 +605,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 406947464}
     m_Modifications:
-    - target: {fileID: 4635645171980570257, guid: da1454c83390e9843b8067e10c42ff22,
-        type: 3}
-      propertyPath: aggroRange
-      value: 15
-      objectReference: {fileID: 0}
     - target: {fileID: 4635645171980570258, guid: da1454c83390e9843b8067e10c42ff22,
         type: 3}
       propertyPath: m_Name
@@ -7657,7 +7652,7 @@ GameObject:
   m_Component:
   - component: {fileID: 587317567}
   - component: {fileID: 587317566}
-  - component: {fileID: 587317565}
+  - component: {fileID: 587317568}
   m_Layer: 0
   m_Name: Sound Manager
   m_TagString: Untagged
@@ -7665,19 +7660,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &587317565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 587317564}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c654481271ce8ba4a800e18bb724379e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  injured: {fileID: 8300000, guid: 9b1773f21b4f90a4390541098448329e, type: 3}
 --- !u!82 &587317566
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7789,6 +7771,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &587317568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 587317564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c654481271ce8ba4a800e18bb724379e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  injured: {fileID: 8300000, guid: 9b1773f21b4f90a4390541098448329e, type: 3}
+  dragonroar: {fileID: 0}
+  monsterroar: {fileID: 8300000, guid: e6f850da4c018334f90c3ea4faf7f5ca, type: 3}
+  monsterdead: {fileID: 8300000, guid: 76c5da1b60b8eca4786391e0067ac3b6, type: 3}
+  skeletonhurt: {fileID: 8300000, guid: 6e62c5b8f5979ef4ba01b721fd119a5b, type: 3}
+  skeletondead: {fileID: 8300000, guid: de54569bb1d8cd04c9e6a518d5689085, type: 3}
+  swing: {fileID: 8300000, guid: 4f515ea96c97e2944954b97caede2c59, type: 3}
+  blok: {fileID: 8300000, guid: e0a8f60de8fb3ba41a2ccfd1e4284846, type: 3}
+  dragondeath: {fileID: 0}
 --- !u!1001 &589627152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9125,7 +9128,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 4f36be3abc410ce49a3bed0d65163800, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.23
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -20802,11 +20805,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 406947464}
     m_Modifications:
-    - target: {fileID: 4635645171980570257, guid: da1454c83390e9843b8067e10c42ff22,
-        type: 3}
-      propertyPath: aggroRange
-      value: 13
-      objectReference: {fileID: 0}
     - target: {fileID: 4635645171980570258, guid: da1454c83390e9843b8067e10c42ff22,
         type: 3}
       propertyPath: m_Name
@@ -24081,11 +24079,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 406947464}
     m_Modifications:
-    - target: {fileID: 4635645171980570257, guid: da1454c83390e9843b8067e10c42ff22,
-        type: 3}
-      propertyPath: aggroRange
-      value: 18
-      objectReference: {fileID: 0}
     - target: {fileID: 4635645171980570258, guid: da1454c83390e9843b8067e10c42ff22,
         type: 3}
       propertyPath: m_Name
@@ -28001,11 +27994,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 406947464}
     m_Modifications:
-    - target: {fileID: 4635645171980570257, guid: da1454c83390e9843b8067e10c42ff22,
-        type: 3}
-      propertyPath: aggroRange
-      value: 16
-      objectReference: {fileID: 0}
     - target: {fileID: 4635645171980570258, guid: da1454c83390e9843b8067e10c42ff22,
         type: 3}
       propertyPath: m_Name
