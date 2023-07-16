@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/U12/Scenes/Desert.unity
     guid: 007686a9c814e7945bb077cca89fa216
+  - enabled: 1
+    path: Assets/U12/Scenes/Dungeon.unity
+    guid: cc769aa426439dd4b968a56dcff8e57e
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7,
       type: 2}

@@ -90,6 +90,12 @@ public class MainQuest : MonoBehaviour
             case 70:
                 questInfoText.text = "MISSION 7 \n\nFollow the white path and reach the water well. Collect 3 rocks near the well and repair it, then come back to Farmer Justin. ";
                 break;
+            case 80:
+                questInfoText.text = "MISSION 8 \n\nFollow the white path and come back to Farmer Justin. ";
+                break;
+            case 90:
+                questInfoText.text = "MISSION 9 \n\nFind the dungeon entrance. Follow the black path. ";
+                break;
             default:
                 questInfoText.text = "No mission";
                 break;
@@ -321,6 +327,41 @@ public class MainQuest : MonoBehaviour
                         break;
                     case 30:
                         values.quest = 70;
+                        DeactiveDialogue();
+                        break;
+                }
+                break;
+
+            case 80:
+                switch (dialogueNumber)
+                {
+                    case 0:
+                        dialogueNameText.text = activeName;
+                        dialogueText.text = "Sir, I repaired the water well.";
+                        dialogueNumber = 10;
+                        break;
+                    case 10:
+                        dialogueNameText.text = "FarmerJustin";
+                        dialogueText.text = "Good job! I liked you kid, now listen carefully. I don't know the exact location of the treasure, we were searching it for weeks. But we found a dungeon entrance, there's definitely something valuable inside.  ";
+                        dialogueNumber = 20;
+                        break;
+                    case 20:
+                        dialogueNameText.text = activeName;
+                        dialogueText.text = "How can I go there?";
+                        dialogueNumber = 30;
+                        break;
+                    case 30:
+                        dialogueNameText.text = "FarmerJustin";
+                        dialogueText.text = "Follow the black path, it will take you to the entrance. But be careful, it's very dangerous. We'll be waiting for you outside just in case. ";
+                        dialogueNumber = 40;
+                        break;
+                    case 40:
+                        dialogueNameText.text = activeName;
+                        dialogueText.text = "Thank you for your help, sir. See you soon.";
+                        dialogueNumber = 50;
+                        break;
+                    case 50:
+                        values.quest = 90;
                         DeactiveDialogue();
                         break;      //////////////////////////HERE******************************************
                 }

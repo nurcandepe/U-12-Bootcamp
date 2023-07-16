@@ -11,6 +11,7 @@ public class WellScript : MonoBehaviour
     GameObject newWell;
     private bool canRepair;
     private bool repairCount;
+    public SOValues values;
 
     private Inventory inventory;
 
@@ -37,6 +38,7 @@ public class WellScript : MonoBehaviour
                         Destroy(oldWell);
                         newWell = Instantiate(repairedWell, wellPoint.transform);
                         inventory.DeleteItemCount("Stone6", 3);
+                        values.quest = 80;
                         repairCount = false;
                     }
                 }
