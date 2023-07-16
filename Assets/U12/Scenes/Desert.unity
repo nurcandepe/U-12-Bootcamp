@@ -795,11 +795,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: FarmerJustin
       objectReference: {fileID: 0}
-    - target: {fileID: 5867612992626858627, guid: 3013052ca52614c4db376980c63ae990,
-        type: 3}
-      propertyPath: m_TagString
-      value: NPC
-      objectReference: {fileID: 0}
     - target: {fileID: 6495917176477564985, guid: 3013052ca52614c4db376980c63ae990,
         type: 3}
       propertyPath: m_RootOrder
@@ -11760,7 +11755,7 @@ PrefabInstance:
     - target: {fileID: 1587473806755183191, guid: 348cffdf423ecb64693a316b489f4a12,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.5000763
+      value: 0.5002289
       objectReference: {fileID: 0}
     - target: {fileID: 1587473807092360189, guid: 348cffdf423ecb64693a316b489f4a12,
         type: 3}
