@@ -15,7 +15,7 @@ MonoBehaviour:
   gender: female
   playerName: 
   quest: 10
-  questNPCName: VillageElder
+  questNPCName: Priest
   triggerNPC: None
   map: 0
   waypoint: 0

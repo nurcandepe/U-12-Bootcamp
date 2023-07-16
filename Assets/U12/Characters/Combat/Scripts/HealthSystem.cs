@@ -13,9 +13,9 @@ public class HealthSystem : MonoBehaviour
     [SerializeField] GameObject hitVFX;
     //[SerializeField] GameObject ragdoll;
 
-    Animator animator;
+    public Animator animator;
     public bool isDead = false;
-    public Enemy enemy;
+    //public Enemy enemy;
 
     void Start()
     {
@@ -28,7 +28,7 @@ public class HealthSystem : MonoBehaviour
         health -= damageAmount;
         animator.SetTrigger("damage");
         CameraShake.Instance.ShakeCamera(1f, 0.2f); //CAMERA SHAKE
-        soundManagerScript.Injured();
+        //soundManagerScript.Injured();
 
         if (health <= 0)
         {
