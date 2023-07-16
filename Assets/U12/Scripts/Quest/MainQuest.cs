@@ -84,6 +84,12 @@ public class MainQuest : MonoBehaviour
             case 50:
                 questInfoText.text = "MISSION 5 \n\nReach the pier and board the boat to the next island. Follow the path you used before.";
                 break;
+            case 60:
+                questInfoText.text = "MISSION 6 \n\nTalk with Farmer Justin.  ";
+                break;
+            case 70:
+                questInfoText.text = "MISSION 7 \n\nFollow the white path and reach the water well. Collect 3 rocks near the well and repair it, then come back to Farmer Justin. ";
+                break;
             default:
                 questInfoText.text = "No mission";
                 break;
@@ -310,13 +316,13 @@ public class MainQuest : MonoBehaviour
                         break;
                     case 20:
                         dialogueNameText.text = "FarmerJustin";
-                        dialogueText.text = "Follow the white path, you will see the water well. You have to use 3 rocks for repairing it. Then come back for your reward.";
+                        dialogueText.text = "Follow the white path, you will see the water well. You have to use 3 rocks for repairing it. Collect these rocks near the well and use them for repairing. Then come back for your reward. Good luck!";
                         dialogueNumber = 30;
                         break;
                     case 30:
-                        values.quest = 50;
+                        values.quest = 70;
                         DeactiveDialogue();
-                        break;
+                        break;      //////////////////////////HERE******************************************
                 }
                 break;
 
