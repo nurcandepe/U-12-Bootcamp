@@ -96,6 +96,12 @@ public class MainQuest : MonoBehaviour
             case 90:
                 questInfoText.text = "MISSION 9 \n\nFind the dungeon entrance. Follow the black path. ";
                 break;
+            case 100:
+                questInfoText.text = "MISSION 10 \n\nFind a way for reaching the treasure chest.";
+                break;
+            case 110:
+                questInfoText.text = "MISSION 11 \n\nLeave the dungeon.";
+                break;
             default:
                 questInfoText.text = "No mission";
                 break;
@@ -362,6 +368,20 @@ public class MainQuest : MonoBehaviour
                         break;
                     case 50:
                         values.quest = 90;
+                        DeactiveDialogue();
+                        break;      
+                }
+                break;
+            case 100:
+                switch (dialogueNumber)
+                {
+                    case 0:
+                        dialogueNameText.text = "?????";
+                        dialogueText.text = "You, the brave warrior! Use the door to return to Island but beware of enemy villagers, they will try to kill you. Reach the boat immediately, and travel to Midwinter Island. The great treasure is waiting for you.";
+                        dialogueNumber = 10;
+                        break;
+                    case 10:
+                        values.quest = 110;
                         DeactiveDialogue();
                         break;      //////////////////////////HERE******************************************
                 }
