@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class basenewscene : MonoBehaviour
 {
-
+    public SOValues values;
     public string Scenename;
 
     GoldenPaddle paddle2;
@@ -14,6 +14,7 @@ public class basenewscene : MonoBehaviour
         paddle2 = FindObjectOfType<GoldenPaddle>();
         if (other.CompareTag("Player") && paddle2.isKeyPicked)
         {
+            values.quest = 60;
             SceneManager.LoadScene(Scenename);
         }
     }

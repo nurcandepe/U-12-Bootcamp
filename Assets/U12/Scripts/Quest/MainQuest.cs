@@ -70,19 +70,19 @@ public class MainQuest : MonoBehaviour
                 questInfoText.text = "Mission not assigned";
                 break;
             case 10:
-                questInfoText.text = "MISSION 1 \nTalk with the village elder.";
+                questInfoText.text = "MISSION 1 \n\nTalk with the village elder.";
                 break;
             case 20:
-                questInfoText.text = "MISSION 2 \nFollow the path. Head over to the Farmer Martin’s fields. Help him with his chores.";
+                questInfoText.text = "MISSION 2 \n\nFollow the path. Head over to the Farmer Martin’s fields. Help him with his chores.";
                 break;
             case 30:
-                questInfoText.text = "MISSION 3 \nChop down the trees in the logging area. Once you have the 5 logs, take them to the Priest. Follow the path.";
+                questInfoText.text = "MISSION 3 \n\nChop down the trees in the logging area. Once you have the 5 logs, take them to the Priest. Follow the path.";
                 break;
             case 40:
-                questInfoText.text = "MISSION 4 \nGo to the summit of the mountain and take the Sacred Oar to give it to the Priest";
+                questInfoText.text = "MISSION 4 \n\nGo to the summit of the mountain and take the Sacred Oar, then talk with Priest";
                 break;
             case 50:
-                questInfoText.text = "MISSION 5 \nReach the pier and board the boat to the next island. Follow the path you used before.";
+                questInfoText.text = "MISSION 5 \n\nReach the pier and board the boat to the next island. Follow the path you used before.";
                 break;
             default:
                 questInfoText.text = "No mission";

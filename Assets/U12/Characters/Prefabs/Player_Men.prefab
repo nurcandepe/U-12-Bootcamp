@@ -2216,8 +2216,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4287029888090569493}
-  m_LocalRotation: {x: 0, y: 0.06767526, z: -0, w: 0.9977075}
-  m_LocalPosition: {x: 0.022587895, y: 0.6502633, z: -4.8731146}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.20000073, y: 1.375, z: -4.0000167}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5624,8 +5624,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   hitVFX: {fileID: 1743637094903878, guid: 021a2f7a2c5bc4449b4c64a66a050e8c, type: 3}
+  animator: {fileID: 2862550562833465549}
   isDead: 0
-  enemy: {fileID: 0}
 --- !u!114 &6637309128054002703
 MonoBehaviour:
   m_ObjectHideFlags: 0
