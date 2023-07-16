@@ -8,10 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/U12/Scenes/MainMenu.unity
     guid: c68d63746e6c2eb4eb0d2c549c595c04
-  - enabled: 1
+  - enabled: 0
     path: Assets/U12/Scenes/Base.unity
     guid: c8e2009f700eabb47826ca7e3cb6ff5e
-  - enabled: 1
+  - enabled: 0
     path: Assets/U12/Scenes/Multiplayer.unity
     guid: f78a1aa16caaf7742b06a13c8a2d7003
   - enabled: 1
