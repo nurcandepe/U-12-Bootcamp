@@ -61,5 +61,6 @@ public class Inventory : MonoBehaviour
                 }
             }
         }
+        inventoryUI.UpdateUI();
     }
 }

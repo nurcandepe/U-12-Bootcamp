@@ -32,6 +32,7 @@ public class InventoryUIController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.I))
         {
             PanelAutoReverse();
+            UpdateUI();
         }
     }
 
