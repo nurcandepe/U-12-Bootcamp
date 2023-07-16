@@ -295,6 +295,31 @@ public class MainQuest : MonoBehaviour
                 }
                 break;
 
+            case 60:
+                switch (dialogueNumber)
+                {
+                    case 0:
+                        dialogueNameText.text = "FarmerJustin";
+                        dialogueText.text = " I see you've arrived on the desert island. Welcome, kid. I guess you are searching for the treasure. I can help you, but first I need your help. Our water well is broken, if you repair it I will give you some information about treasure.";
+                        dialogueNumber = 10;
+                        break;
+                    case 10:
+                        dialogueNameText.text = activeName;
+                        dialogueText.text = "Sure, I will help you. What should I do?";
+                        dialogueNumber = 20;
+                        break;
+                    case 20:
+                        dialogueNameText.text = "FarmerJustin";
+                        dialogueText.text = "Follow the white path, you will see the water well. You have to use 3 rocks for repairing it. Then come back for your reward.";
+                        dialogueNumber = 30;
+                        break;
+                    case 30:
+                        values.quest = 50;
+                        DeactiveDialogue();
+                        break;
+                }
+                break;
+
         }
         
     }
