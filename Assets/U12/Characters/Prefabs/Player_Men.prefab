@@ -5624,7 +5624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 955c00e6133535249bd0ab2ff3326426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 3
+  health: 8
   hitVFX: {fileID: 1743637094903878, guid: 021a2f7a2c5bc4449b4c64a66a050e8c, type: 3}
   animator: {fileID: 2862550562833465549}
   isDead: 0
