@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0666419, g: 0.0003680751, b: 0.00012375084, a: 1}
+  m_IndirectSpecularColor: {r: 0.06664197, g: 0.00036803551, b: 0.00012371942, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -32224,6 +32224,65 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 33063a0916b40684cb3583f7c047950e, type: 3}
+--- !u!1 &820252030
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 820252032}
+  - component: {fileID: 820252031}
+  - component: {fileID: 820252033}
+  m_Layer: 9
+  m_Name: GameFinisher
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &820252031
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820252030}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.684007, y: 1.0919533, z: 1.0319262}
+  m_Center: {x: 0.07009506, y: 0.45782948, z: 0.015963107}
+--- !u!4 &820252032
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820252030}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 212.98392, y: 29.775688, z: 0.75}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &820252033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820252030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce5e2dacb9076df4ebbf1860b3e2b687, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scenename: Ending
 --- !u!1001 &823910828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34029,7 +34088,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 79d380cc1be7a9d49a76e0d4a3c58e90, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 85c1a7e424285454bb7cc828255f291e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -78051,6 +78110,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 44707578003523741, guid: 348cffdf423ecb64693a316b489f4a12,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.8999939
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587473805922092478, guid: 348cffdf423ecb64693a316b489f4a12,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.2728119
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587473806155623566, guid: 348cffdf423ecb64693a316b489f4a12,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.27281952
+      objectReference: {fileID: 0}
     - target: {fileID: 1587473806638451803, guid: 348cffdf423ecb64693a316b489f4a12,
         type: 3}
       propertyPath: m_Name
@@ -78160,6 +78234,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1587473806755183191, guid: 348cffdf423ecb64693a316b489f4a12,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.5000763
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498257511695431399, guid: 348cffdf423ecb64693a316b489f4a12,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.9000015
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 348cffdf423ecb64693a316b489f4a12, type: 3}

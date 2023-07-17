@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gender: female
   playerName: 
-  quest: 100
-  questNPCName: DungeonChestTrigger
+  quest: 10
+  questNPCName: VillageElder
   triggerNPC: None
   map: 0
   waypoint: 0
