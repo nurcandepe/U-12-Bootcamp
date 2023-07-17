@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gender: female
   playerName: 
-  quest: 100
+  quest: 10
   questNPCName: DungeonChestTrigger
   triggerNPC: None
   map: 0
