@@ -413,7 +413,7 @@ GameObject:
   - component: {fileID: 900796964871166137}
   m_Layer: 8
   m_Name: Player_Women
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -608,7 +608,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd8324f53a11ab545a1105ddee9fb744, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axeHolder: {fileID: 0}
+  axeHolder: {fileID: 4488102736275469596}
   axe: {fileID: 6454499749934941597, guid: 5c266243bdd7a6a4c8d069957f6bff9f, type: 3}
   pickaxe: {fileID: 5676840300738598790, guid: 2ce7f3f60a7219d478bdc624979d8024, type: 3}
   log: {fileID: 522459008932986039, guid: c82df2cf0bfd57f46a40dfb255d3df92, type: 3}
@@ -953,7 +953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51559a0dcafbf064aaa6c38608628afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _animator: {fileID: 0}
+  _animator: {fileID: 4148088508582258876}
   isSwordDrawed: 0
   isBlocking: 0
 --- !u!114 &9113659174181254096
@@ -989,8 +989,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 3
   hitVFX: {fileID: 1743637094903878, guid: 021a2f7a2c5bc4449b4c64a66a050e8c, type: 3}
+  animator: {fileID: 0}
   isDead: 0
-  enemy: {fileID: 0}
 --- !u!114 &346551914624030982
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2478,7 +2478,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3705093096001203621}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.19999856, y: 1.375, z: -4.0000024}
+  m_LocalPosition: {x: 0.19999981, y: 1.375, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4633,8 +4633,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6050286968744288826}
-  m_LocalRotation: {x: 0, y: -0.06767526, z: -0, w: 0.9977075}
-  m_LocalPosition: {x: 0.2610749, y: 1.4649997, z: -4.00144}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.19999981, y: 1.375, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
