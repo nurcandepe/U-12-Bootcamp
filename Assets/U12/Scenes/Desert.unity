@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17939988, g: 0.22463253, b: 0.30629668, a: 1}
+  m_IndirectSpecularColor: {r: 0.17939973, g: 0.22463232, b: 0.30629617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11824,16 +11824,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1587473805922092478, guid: 348cffdf423ecb64693a316b489f4a12,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.27280998
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587473806155623566, guid: 348cffdf423ecb64693a316b489f4a12,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.2728176
-      objectReference: {fileID: 0}
     - target: {fileID: 1587473806638451803, guid: 348cffdf423ecb64693a316b489f4a12,
         type: 3}
       propertyPath: m_Name
@@ -11943,26 +11933,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587473806755183191, guid: 348cffdf423ecb64693a316b489f4a12,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.5012512
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587473807092360189, guid: 348cffdf423ecb64693a316b489f4a12,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.710022
-      objectReference: {fileID: 0}
-    - target: {fileID: 1587473807653892054, guid: 348cffdf423ecb64693a316b489f4a12,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 1.2100182
-      objectReference: {fileID: 0}
-    - target: {fileID: 3462759557554415739, guid: 348cffdf423ecb64693a316b489f4a12,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -1.8964844
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 348cffdf423ecb64693a316b489f4a12, type: 3}
