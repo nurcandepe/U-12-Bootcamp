@@ -9,8 +9,7 @@ public class GenderCont : MonoBehaviour
     private GameObject male;
     private GameObject female;
 
-
-    void Start()
+    private void Awake()
     {
         female = GameObject.Find("Player_Women");
         male = GameObject.Find("Player_Men");
@@ -31,6 +30,10 @@ public class GenderCont : MonoBehaviour
 
             female.SetActive(true);
         }
+    }
+    void Start()
+    {
+       
     }
 
     void Update()
