@@ -102,6 +102,9 @@ public class MainQuest : MonoBehaviour
             case 110:
                 questInfoText.text = "MISSION 11 \n\nLeave the dungeon.";
                 break;
+            case 120:
+                questInfoText.text = "MISSION 12 \n\nRUN!!\nThe farmers betrayed you. Reach your boat and sail to the Midwinter Island. Follow the black path.";
+                break;
             default:
                 questInfoText.text = "No mission";
                 break;
