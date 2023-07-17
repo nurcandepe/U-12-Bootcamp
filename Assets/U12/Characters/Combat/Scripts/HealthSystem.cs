@@ -39,12 +39,12 @@ public class HealthSystem : MonoBehaviour
         if (health <= 0)
         {
             Die();
-            diePanel.SetActive(true);
         }
     }
 
     public void Die()
     {
+        diePanel.SetActive(true);
         isDead = true;
         animator.SetTrigger("isDead");
         health = 100;
