@@ -27,7 +27,7 @@ public class CasualEnemy : MonoBehaviour
     {
         soundManagerfarmerhurt = FindObjectOfType<SoundManager>();
         soundManagerfarmerdie = FindObjectOfType<SoundManager>();
-        player = GameObject.FindWithTag("Player");
+        player = GameObject.Find("PlayerArmature");
         __animator = GetComponent<Animator>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
     }

@@ -27,9 +27,9 @@ public class BearScript : MonoBehaviour
 
     void Start()
     {
-       // soundManagermonsterroar = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
-       // soundManagermonsterdead = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
-        player = GameObject.FindWithTag("Player");
+        // soundManagermonsterroar = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
+        // soundManagermonsterdead = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
+        player = GameObject.Find("PlayerArmature");
         __animator = GetComponent<Animator>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
         damageDealer.SetActive(false);
