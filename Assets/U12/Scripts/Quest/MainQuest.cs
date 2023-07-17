@@ -24,13 +24,14 @@ public class MainQuest : MonoBehaviour
     private ThirdPersonController tpController;
     private Animator animator;
 
-    private string activeName = "Victor";
+    private string activeName;
 
     private Inventory inventory; //Item kontrolu icin Inventory scriptine erisim
     private GoldenPaddle paddle;
 
     void Start()
     {
+        activeName = values.playerName;
         questNumber = values.quest;
 
         //Saðdaki görev takip paneli
