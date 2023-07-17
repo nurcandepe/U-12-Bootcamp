@@ -25,7 +25,7 @@ public class Enemy : MonoBehaviour
     {
         //SoundManagerskeletonhurt = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
         //SoundManagerskeletondead = GameObject.Find("Sound Manager").GetComponent<SoundManager>(); 
-        player = GameObject.FindWithTag("Player");
+        player = GameObject.Find("PlayerArmature");
         animator = GetComponent<Animator>();
         agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
     }
