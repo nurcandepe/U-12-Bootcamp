@@ -105,6 +105,12 @@ public class MainQuest : MonoBehaviour
             case 120:
                 questInfoText.text = "MISSION 12 \n\nRUN!!\nThe farmers betrayed you. Reach your boat and sail to the Midwinter Island. Follow the black path.";
                 break;
+            case 130:
+                questInfoText.text = "MISSION 13 \n\nFind a way to reach the portal in labyrinth.";
+                break;
+            case 140:
+                questInfoText.text = "FINAL \n\nDefeat the boss and take the treasure!";
+                break;
             default:
                 questInfoText.text = "No mission";
                 break;
