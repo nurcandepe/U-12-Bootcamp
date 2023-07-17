@@ -85,16 +85,16 @@ public class MainQuest : MonoBehaviour
                 questInfoText.text = "MISSION 5 \n\nReach the pier and board the boat to the next island. Follow the path you used before.";
                 break;
             case 60:
-                questInfoText.text = "MISSION 6 \n\nTalk with Farmer Justin.  ";
+                questInfoText.text = "MISSION 6 \n\nTalk with Farmer Justin.";
                 break;
             case 70:
-                questInfoText.text = "MISSION 7 \n\nFollow the white path and reach the water well. Collect 3 rocks near the well and repair it, then come back to Farmer Justin. ";
+                questInfoText.text = "MISSION 7 \n\nFollow the white path and reach the water well. Collect 3 rocks near the well and repair it, then come back to Farmer Justin.";
                 break;
             case 80:
-                questInfoText.text = "MISSION 8 \n\nFollow the white path and come back to Farmer Justin. ";
+                questInfoText.text = "MISSION 8 \n\nFollow the white path and come back to Farmer Justin.";
                 break;
             case 90:
-                questInfoText.text = "MISSION 9 \n\nFind the dungeon entrance. Follow the black path. ";
+                questInfoText.text = "MISSION 9 \n\nFind the dungeon entrance. Follow the black path.";
                 break;
             case 100:
                 questInfoText.text = "MISSION 10 \n\nFind a way for reaching the treasure chest.";
@@ -106,7 +106,7 @@ public class MainQuest : MonoBehaviour
                 questInfoText.text = "MISSION 12 \n\nRUN!!\nThe farmers betrayed you. Reach your boat and sail to the Midwinter Island. Follow the black path.";
                 break;
             case 130:
-                questInfoText.text = "MISSION 13 \n\nFind a way to reach the portal in labyrinth.";
+                questInfoText.text = "MISSION 13 \n\nFind a way to reach the portal in the maze.";
                 break;
             case 140:
                 questInfoText.text = "FINAL \n\nDefeat the boss and take the treasure!";
@@ -327,7 +327,7 @@ public class MainQuest : MonoBehaviour
                 {
                     case 0:
                         dialogueNameText.text = "FarmerJustin";
-                        dialogueText.text = " I see you've arrived on the desert island. Welcome, kid. I guess you are searching for the treasure. I can help you, but first I need your help. Our water well is broken, if you repair it I will give you some information about treasure.";
+                        dialogueText.text = "I see you've arrived on the Desert Island. Welcome, kid. I guess you are searching for the treasure. I can help you, but first I need your help. Our water well is broken, if you repair it I will give you some information about treasure.";
                         dialogueNumber = 10;
                         break;
                     case 10:
@@ -357,7 +357,7 @@ public class MainQuest : MonoBehaviour
                         break;
                     case 10:
                         dialogueNameText.text = "FarmerJustin";
-                        dialogueText.text = "Good job! I liked you kid, now listen carefully. I don't know the exact location of the treasure, we were searching it for weeks. But we found a dungeon entrance, there's definitely something valuable inside.  ";
+                        dialogueText.text = "Good job! You deserve a reward then, now listen carefully. I don't know the exact location of the treasure, we have been searched it for weeks. But we found a dungeon entrance, there must be something valuable inside.";
                         dialogueNumber = 20;
                         break;
                     case 20:
@@ -367,7 +367,7 @@ public class MainQuest : MonoBehaviour
                         break;
                     case 30:
                         dialogueNameText.text = "FarmerJustin";
-                        dialogueText.text = "Follow the black path, it will take you to the entrance. But be careful, it's very dangerous. We'll be waiting for you outside just in case. ";
+                        dialogueText.text = "Follow the black path, it will take you to the entrance. But be careful, it's very dangerous. We'll be waiting for you outside just in case.";
                         dialogueNumber = 40;
                         break;
                     case 40:
@@ -386,7 +386,7 @@ public class MainQuest : MonoBehaviour
                 {
                     case 0:
                         dialogueNameText.text = "?????";
-                        dialogueText.text = "You, the brave warrior! Use the door to return to Island but beware of enemy villagers, they will try to kill you. Reach the boat immediately, and travel to Midwinter Island. The great treasure is waiting for you.";
+                        dialogueText.text = "You, the brave warrior! Use the door to return to island but beware of enemy villagers, they will try to kill you. Reach the boat immediately, and travel to Midwinter Island. The great treasure is waiting for you.";
                         dialogueNumber = 10;
                         break;
                     case 10:
