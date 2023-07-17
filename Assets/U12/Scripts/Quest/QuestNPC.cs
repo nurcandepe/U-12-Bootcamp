@@ -43,6 +43,12 @@ public class QuestNPC : MonoBehaviour
             case 60:
                 questNPC = "FarmerJustin";
                 break;
+            case 80:
+                questNPC = "FarmerJustin";
+                break;
+            case 100:
+                questNPC = "DungeonChestTrigger";
+                break;
             default:
                 questNPC = "default";
                 break;

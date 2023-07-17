@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gender: female
   playerName: 
-  quest: 60
+  quest: 110
   questNPCName: default
   triggerNPC: None
   map: 0

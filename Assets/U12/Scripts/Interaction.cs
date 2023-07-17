@@ -107,7 +107,7 @@ public class Interaction : MonoBehaviour
         {
             triggeredObject = other.gameObject;
             interactPanel.SetActive(true);
-            interactText.text = "Take";
+            interactText.text = "Use";
         }
         else if (other.gameObject.CompareTag("NPC"))
         {

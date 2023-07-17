@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    SoundManager SoundManagerskeletonhurt;
-    SoundManager SoundManagerskeletondead;
+    //SoundManager SoundManagerskeletonhurt;
+    //SoundManager SoundManagerskeletondead;
     [SerializeField] float health = 3f;
     [SerializeField] GameObject hitVFX;
     [SerializeField] GameObject ragdoll;
