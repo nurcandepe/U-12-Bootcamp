@@ -9,6 +9,12 @@ public class EndingMenu : MonoBehaviour
 
     public Button menuButton;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
     private void OnEnable()
     {
         menuButton.onClick.AddListener(ReturnMainMenu);
