@@ -10,14 +10,14 @@ public class MainMenuScript : MonoBehaviour
     public SOValues values;
     //Paneller
     private GameObject playPanel;
-    private GameObject settingsPanel;
+    //private GameObject settingsPanel;
     private GameObject creditsPanel;
     //Butonlar
     public Button playButton;
     public Button manButton;
     public Button womanButton;
     public Button multiplayerButton;
-    public Button settingsButton;
+    //public Button settingsButton;
     public Button creditsButton;
     public Button exitButton;
     
@@ -25,11 +25,11 @@ public class MainMenuScript : MonoBehaviour
     void Start()
     {
         playPanel = GameObject.Find("PlayPanel");
-        settingsPanel = GameObject.Find("SettingsPanel");
+        //settingsPanel = GameObject.Find("SettingsPanel");
         creditsPanel = GameObject.Find("CreditsPanel");
 
         playPanel.SetActive(false);
-        settingsPanel.SetActive(false);
+        //settingsPanel.SetActive(false);
         creditsPanel.SetActive(false);
     }
 
@@ -44,7 +44,7 @@ public class MainMenuScript : MonoBehaviour
         manButton.onClick.AddListener(StartGameMan);
         womanButton.onClick.AddListener(StartGameWoman);
         multiplayerButton.onClick.AddListener(StartMultiplayer);
-        settingsButton.onClick.AddListener(EnableSettingsPanel);
+        //settingsButton.onClick.AddListener(EnableSettingsPanel);
         creditsButton.onClick.AddListener(EnableCreditsPanel);
         exitButton.onClick.AddListener(ExitGameFunc);
     }
@@ -78,19 +78,19 @@ public class MainMenuScript : MonoBehaviour
     private void EnablePlayPanel()
     {
         playPanel.SetActive(true);
-        settingsPanel.SetActive(false);
+        //settingsPanel.SetActive(false);
         creditsPanel.SetActive(false);
     }
     private void EnableSettingsPanel()
     {
         playPanel.SetActive(false);
-        settingsPanel.SetActive(true);
+        //settingsPanel.SetActive(true);
         creditsPanel.SetActive(false);
     }
     private void EnableCreditsPanel()
     {
         playPanel.SetActive(false);
-        settingsPanel.SetActive(false);
+        //settingsPanel.SetActive(false);
         creditsPanel.SetActive(true);
     }
 

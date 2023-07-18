@@ -10,7 +10,7 @@ public class HealthSystem : MonoBehaviour
     SoundManager soundManagerScript;
 
 
-    [SerializeField] float health = 100;
+    [SerializeField] float health = 8f;
     [SerializeField] GameObject hitVFX;
     //[SerializeField] GameObject ragdoll;
 
@@ -19,12 +19,14 @@ public class HealthSystem : MonoBehaviour
     //public Enemy enemy;
 
     private GameObject diePanel;
+    private GameObject bar;
 
     void Start()
     {
         //soundManagerScript = GameObject.Find("Sound Manager").GetComponent<SoundManager>();
         animator = GetComponent<Animator>();
 
+        bar = GameObject.Find("Bar");
         diePanel = GameObject.Find("DiePanel");
         diePanel.SetActive(false);
     }
@@ -32,6 +34,7 @@ public class HealthSystem : MonoBehaviour
     public void TakeDamage(float damageAmount)
     {
         health -= damageAmount;
+        bar.transform.localScale = new Vector3((health/8f), 1f, 1f);
         animator.SetTrigger("damage");
         CameraShake.Instance.ShakeCamera(1f, 0.2f); //CAMERA SHAKE
         //soundManagerScript.Injured();
@@ -47,7 +50,8 @@ public class HealthSystem : MonoBehaviour
         diePanel.SetActive(true);
         isDead = true;
         animator.SetTrigger("isDead");
-        health = 100;
+        health = 8f;
+        bar.transform.localScale = new Vector3((0f), 1f, 1f);
 
         ThirdPersonController tpsController = GetComponent<ThirdPersonController>();
         if(tpsController != null)
