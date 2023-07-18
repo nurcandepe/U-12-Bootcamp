@@ -7,12 +7,14 @@ public class DragonHealth : MonoBehaviour
     SoundManager soundManagerDragondeath;
     SoundManager soundManagerDragonhurt;
     private Animator _animatorParent;
-    [SerializeField] float dragonHealth = 5f;
+    [SerializeField] float dragonHealth = 8f;
     private bool isInsideCollider = false;
 
     [SerializeField] GameObject hitVFX; //***///*/*
     [SerializeField] GameObject hitPosition; //***///*/*
     [SerializeField] GameObject invisibleWall;
+
+    private GameObject dragonBar;
 
     void Start()
     {
@@ -20,6 +22,8 @@ public class DragonHealth : MonoBehaviour
         soundManagerDragonhurt = FindObjectOfType<SoundManager>();
         _animatorParent = GetComponentInParent<Animator>();
         invisibleWall.SetActive(true);
+
+        dragonBar = GameObject.Find("DragonBar");
     }
 
     void Update()
@@ -30,6 +34,7 @@ public class DragonHealth : MonoBehaviour
             _animatorParent.SetTrigger("DragonDie");
             soundManagerDragondeath.DragonDeath();
             invisibleWall.SetActive(false);
+            dragonBar.transform.localScale = new Vector3((0f), 1f, 1f);
         }
     }
 
@@ -50,6 +55,7 @@ public class DragonHealth : MonoBehaviour
         {
             HitVFXDragon();
             dragonHealth -= 1f;
+            dragonBar.transform.localScale = new Vector3((dragonHealth / 8f), 1f, 1f);
             soundManagerDragonhurt.DragonHurt();
             //Debug.Log("hit");
         }

@@ -20,7 +20,6 @@ public class HealthSystem : MonoBehaviour
 
     private GameObject diePanel;
     private GameObject bar;
-    private float barScale;
 
     void Start()
     {
