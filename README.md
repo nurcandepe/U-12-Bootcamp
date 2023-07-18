@@ -15,6 +15,7 @@ Hikâye ana karakterimizin 18 yaşına girmesinin ardından denizaşırı sefere
 * Oyun temelde aksiyon-macera oyunu. 
 * Üçüncü şahıs bakış açısı kullanılıyor. 
 * Açık dünya macera türü oyunları tarzında tasarlandı.
+* Kız ve erkek karakter seçenekleri oyuncuya sunuluyor.
 * Dört adet ada bulunuyor: Village Island, Desert Island, Midwinter Island ve Evil Island. 
 * Karakterimiz düşmanlara karşı kendisini kılıç ve kalkan ile savunuyor. 
 * Ağaç kesme, taş kırma gibi görevlerde kullanmak için balta, kazma gibi craft mekanikleri tasarlandı.
@@ -93,4 +94,4 @@ Sprint Review katılımcıları: Onur Yılmaz, Nurcan Depe, Mert Kavilcioğlu, V
 * **Sprint Retrospective:** Takım sürekli iletişim halinde olarak oyunu tamamlamıştır. Son sprintle beraber proje süreci değerlendirilmiş, bir sonraki projelerde neler yapılmalı / yapılmamalı tartışılmıştır. Değerlendirme ardından görev dağılımının eşit düzeyde ilerletildiği ve her ne kadar süreç boyu değişiklikler olsa da projenin ana hatlarının ilk aşamada planlandığı gibi tamamlandığı sonucuna varılmıştır.
   
 # Diğer Notlar:
-* N/A
+* Oyun Steam'e ücretli olarak yüklenecektir. Karakter ve kılıç görünümleri gibi kozmetikler de DLC olarak satışa sunulacaktır.
